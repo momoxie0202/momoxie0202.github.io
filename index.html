@@ -57,7 +57,7 @@
     "description": "The video practice tool built for dance and movement learning. Slow down to catch every detail, record yourself alongside the reference, compare side-by-side, and merge into one video.",
     "url": "https://syncmirror.app/",
     "applicationCategory": "MultimediaApplication",
-    "operatingSystem": "iOS 14.0+, Android",
+    "operatingSystem": "iOS 14.0+, Android 8.0+",
     "downloadUrl": [
       "https://apps.apple.com/app/id6755509268",
       "https://play.google.com/store/apps/details?id=com.syncmirror.syncmirror_plus_android"
@@ -94,7 +94,7 @@
       {
         "@type": "Question",
         "name": "What devices does SyncMirror support?",
-        "acceptedAnswer": { "@type": "Answer", "text": "SyncMirror is available on iPhone, iPad (iOS 14.0+), and Android devices." }
+        "acceptedAnswer": { "@type": "Answer", "text": "SyncMirror is available on iPhone and iPad (iOS 14.0+), and Android devices (Android 8.0+)." }
       },
       {
         "@type": "Question",
@@ -440,8 +440,8 @@
       filter: brightness(0) saturate(100%) invert(82%) sepia(67%) saturate(700%) hue-rotate(358deg) brightness(103%) contrast(104%);
     }
 
-    /* For the play/pause icons that are already gold, no filter needed */
-    .feature-icon img.icon-native { filter: none; }
+    /* ── Header download group ── */
+    .header-dl-group { display: flex; align-items: center; gap: 8px; }
 
     .feature-card h3 {
       font-size: 17px;
@@ -586,10 +586,16 @@
           <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
           <button class="lang-btn" data-lang="zh-TW" onclick="setLang('zh-TW')">繁中</button>
         </div>
-        <a href="#" class="header-cta" id="header-download" onclick="goToStore(event)">
-          <span id="header-store-icon"></span>
-          <span data-i18n="header_cta">Download Free</span>
-        </a>
+        <div class="header-dl-group">
+          <a href="https://apps.apple.com/app/id6755509268" class="header-cta">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <span data-i18n="header_cta_ios">Download</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.syncmirror.syncmirror_plus_android" class="header-cta">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3.61 1.814L13.793 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .61-.92zm1.377-.47L15.98 7.076l-2.87 2.87L5.418 2.253l-.431-.909zm0 21.312l-.43-.909 7.69-7.693 2.87 2.87L4.988 22.656zM21.434 10.88l-3.678 2.074-3.192-3.192 3.192-3.192 3.678 2.074a1.235 1.235 0 0 1 0 2.236z"/></svg>
+            <span data-i18n="header_cta_android">Download</span>
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -666,7 +672,7 @@
 
           <article class="feature-card">
             <div class="feature-icon">
-              <img src="play.png" class="icon-native" alt="" width="22" height="22">
+              <img src="play.png" alt="" width="22" height="22">
             </div>
             <h3 data-i18n="f1_title">Variable Speed</h3>
             <p data-i18n="f1_desc">0.25x to 2.0x. Break down the details in slow motion, or speed up to challenge yourself.</p>
@@ -768,7 +774,7 @@
         <div class="faq-list">
           <details class="faq-item">
             <summary data-i18n="faq1_q">What devices does SyncMirror support?</summary>
-            <div class="faq-answer" data-i18n="faq1_a">SyncMirror is available on iPhone, iPad (iOS 14.0+), and Android devices.</div>
+            <div class="faq-answer" data-i18n="faq1_a">SyncMirror is available on iPhone and iPad (iOS 14.0+), and Android devices (Android 8.0+).</div>
           </details>
           <details class="faq-item">
             <summary data-i18n="faq2_q">Is SyncMirror free to use?</summary>
@@ -797,8 +803,8 @@
     <!-- ── Final CTA ── -->
     <section class="final-cta">
       <div class="container">
-        <h2 data-i18n="final_title_html">Stop practicing <span class="gold">by feel alone</span></h2>
-        <p data-i18n="final_desc">Make progress visible. Free to download, no account required.</p>
+        <h2 data-i18n="final_title_html">Stop guessing. <span class="gold">Start seeing progress.</span></h2>
+        <p data-i18n="final_desc">Free to download. No account needed.</p>
         <div class="cta-group">
           <a href="https://apps.apple.com/app/id6755509268" class="cta-primary">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
@@ -830,6 +836,8 @@
     var I18N = {
       en: {
         header_cta: "Download Free",
+        header_cta_ios: "Download",
+        header_cta_android: "Download",
         hero_badge: "Trusted by 50,000+ practitioners",
         hero_title_html: 'Learn any move.<br><span class="gold">The right way, faster.</span>',
         hero_desc: "Import any video. Slow it down, loop the hard parts, record yourself, and compare side-by-side. SyncMirror lets you actually see your progress \u2014 not just guess.",
@@ -885,7 +893,7 @@
         faq_label: "FAQ",
         faq_title: "Common questions",
         faq1_q: "What devices does SyncMirror support?",
-        faq1_a: "SyncMirror is available on iPhone, iPad (iOS 14.0+), and Android devices.",
+        faq1_a: "SyncMirror is available on iPhone and iPad (iOS 14.0+), and Android devices (Android 8.0+).",
         faq2_q: "Is SyncMirror free to use?",
         faq2_a: "Yes. SyncMirror is free to download with unlimited video imports, full playback features including AB Loop and speed control, 3 recordings per day, and 720p exports. Upgrade to PRO for unlimited recordings, 4K exports, and watermark-free videos.",
         faq3_q: "What videos can I import?",
@@ -896,13 +904,15 @@
         faq5_a: "Not at all. While many users are dancers, SyncMirror is used by athletes, musicians, martial artists, fitness coaches, physical therapists, and anyone who learns by watching and repeating movements.",
         faq6_q: "Can I export my comparison videos?",
         faq6_a: "Yes. You can merge your recording with the original into a single side-by-side video and export it to your photo library. Free users get 720p with watermark; PRO users get up to 4K with no watermark.",
-        final_title_html: 'Stop practicing <span class="gold">by feel alone</span>',
-        final_desc: "Make progress visible. Free to download, no account required.",
+        final_title_html: 'Stop guessing. <span class="gold">Start seeing progress.</span>',
+        final_desc: "Free to download. No account needed.",
         footer_privacy: "Privacy Policy",
         footer_terms: "Terms of Use"
       },
       "zh-TW": {
         header_cta: "\u514D\u8CBB\u4E0B\u8F09",
+        header_cta_ios: "\u4E0B\u8F09",
+        header_cta_android: "\u4E0B\u8F09",
         hero_badge: "\u53D7\u5168\u7403\u8D85\u904E 50,000 \u4F4D\u7DF4\u7FD2\u8005\u4FE1\u8CF4",
         hero_title_html: '\u5B78\u6703\u4EFB\u4F55\u52D5\u4F5C\u3002<br><span class="gold">\u7528\u5C0D\u65B9\u6CD5\uff0C\u9032\u6B65\u66F4\u5FEB\u3002</span>',
         hero_desc: "\u532F\u5165\u4EFB\u4F55\u5F71\u7247 \u2192 \u653E\u6162 \u2192 \u5FAA\u74B0 \u2192 \u9304\u5F71 \u2192 \u4E26\u6392\u6BD4\u5C0D\u3002SyncMirror \u8B93\u4F60\u771F\u6B63\u770B\u898B\u81EA\u5DF1\u7684\u9032\u6B65\uff0C\u800C\u4E0D\u662F\u53EA\u9760\u611F\u89BA\u7DF4\u7FD2\u3002",
@@ -958,7 +968,7 @@
         faq_label: "\u5E38\u898B\u554F\u984C",
         faq_title: "\u5E38\u898B\u554F\u984C",
         faq1_q: "SyncMirror \u652F\u63F4\u54EA\u4E9B\u88DD\u7F6E\uFF1F",
-        faq1_a: "SyncMirror \u652F\u63F4 iPhone\u3001iPad\uFF08iOS 14.0+\uFF09\u53CA Android \u88DD\u7F6E\u3002",
+        faq1_a: "SyncMirror \u652F\u63F4 iPhone \u8207 iPad\uFF08iOS 14.0 \u4EE5\u4E0A\uFF09\u53CA Android \u88DD\u7F6E\uFF08Android 8.0 \u4EE5\u4E0A\uFF09\u3002",
         faq2_q: "SyncMirror \u53EF\u4EE5\u514D\u8CBB\u4F7F\u7528\u55CE\uFF1F",
         faq2_a: "\u53EF\u4EE5\u3002SyncMirror \u514D\u8CBB\u4E0B\u8F09\uFF0C\u5305\u542B\u7121\u9650\u5F71\u7247\u532F\u5165\u3001\u5B8C\u6574\u64AD\u653E\u529F\u80FD\uFF08\u542B AB \u5FAA\u74B0\u3001\u8B8A\u901F\uFF09\u3001\u6BCF\u65E5 3 \u6B21\u9304\u5F71\u3001720p \u532F\u51FA\u3002\u5347\u7D1A PRO \u53EF\u89E3\u9396\u7121\u9650\u9304\u5F71\u30014K \u532F\u51FA\u53CA\u7121\u6D6E\u6C34\u5370\u3002",
         faq3_q: "\u53EF\u4EE5\u532F\u5165\u54EA\u4E9B\u5F71\u7247\uFF1F",
@@ -969,8 +979,8 @@
         faq5_a: "\u7576\u7136\u4E0D\u662F\u3002\u96D6\u7136\u5F88\u591A\u7528\u6236\u662F\u821E\u8005\uff0C\u4F46 SyncMirror \u4E5F\u88AB\u904B\u52D5\u54E1\u3001\u97F3\u6A02\u5BB6\u3001\u6B66\u8853\u7DF4\u7FD2\u8005\u3001\u5065\u8EAB\u6559\u7DF4\u3001\u7269\u7406\u6CBB\u7642\u5E2B\u7B49\u5EE3\u6CDB\u4F7F\u7528\u3002\u4EFB\u4F55\u9700\u8981\u89C0\u770B\u4E26\u91CD\u8907\u52D5\u4F5C\u7684\u5B78\u7FD2\u90FD\u9069\u7528\u3002",
         faq6_q: "\u53EF\u4EE5\u532F\u51FA\u6BD4\u5C0D\u5F71\u7247\u55CE\uFF1F",
         faq6_a: "\u53EF\u4EE5\u3002\u4F60\u53EF\u4EE5\u5C07\u9304\u88FD\u5F71\u7247\u8207\u539F\u5F71\u7247\u5408\u4F75\u70BA\u4E00\u6BB5\u4E26\u6392\u5F71\u7247\uFF0C\u532F\u51FA\u5230\u76F8\u7C3F\u3002\u514D\u8CBB\u7528\u6236\u53EF\u532F\u51FA 720p\uFF08\u542B\u6D6E\u6C34\u5370\uFF09\uFF1BPRO \u7528\u6236\u53EF\u532F\u51FA\u6700\u9AD8 4K\uFF08\u7121\u6D6E\u6C34\u5370\uFF09\u3002",
-        final_title_html: '\u5225\u518D\u7528\u300C\u611F\u89BA\u300D\u7DF4\u7FD2\u4E86',
-        final_desc: "\u8B93\u9032\u6B65\u8B8A\u6210\u770B\u5F97\u898B\u7684\u7D50\u679C\u3002\u514D\u8CBB\u4E0B\u8F09\uff0C\u7121\u9700\u8A3B\u518A\u3002",
+        final_title_html: '\u5225\u518D\u6491\u8457\u611F\u89BA\u7DF4\u4E86\u3002<span class="gold">\u8B93\u9032\u6B65\u770B\u5F97\u898B\u3002</span>',
+        final_desc: "\u514D\u8CBB\u4E0B\u8F09\uff0C\u7121\u9700\u8A3B\u518A\uff0C\u73FE\u5728\u5C31\u958B\u59CB\u3002",
         footer_privacy: "\u96B1\u79C1\u653F\u7B56",
         footer_terms: "\u4F7F\u7528\u689D\u6B3E"
       }
