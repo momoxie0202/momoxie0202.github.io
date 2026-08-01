@@ -4,26 +4,51 @@
   <meta charset="UTF-8" />
   <title>Apps 隱私權政策｜Privacy Policy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" href="assets/site.css" />
+  <script>
+    // 在畫面繪製前套用已儲存的主題，避免閃爍
+    (function () {
+      document.documentElement.className += " js";
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") {
+          document.documentElement.setAttribute("data-theme", t);
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <script src="assets/theme.js" defer></script>
 </head>
 
-<body style="font-family:-apple-system,BlinkMacSystemFont,sans-serif; padding:40px; max-width:880px; margin:auto; line-height:1.7;">
+<body>
+
+<div class="theme-switch">
+  <div class="group" role="group" aria-label="主題 / Theme">
+    <button type="button" data-mode="auto" aria-pressed="true">系統 Auto</button>
+    <button type="button" data-mode="light" aria-pressed="false">淺色 Light</button>
+    <button type="button" data-mode="dark" aria-pressed="false">深色 Dark</button>
+  </div>
+</div>
 
 <h1>Apps 隱私權政策</h1>
-<p style="color:#555;">Privacy Policy for Apps Developed by Momoxie</p>
+<p class="en">Privacy Policy for Apps Developed by Momoxie</p>
 
-<p style="background:#f4f4f4; padding:12px 16px; border-radius:6px;">
+<p class="notice">
 需要使用說明或聯絡我們？請前往 <a href="support.html">支援頁面</a>。<br />
-<span style="color:#555;">Need help or want to contact us? Visit the <a href="support.html">Support page</a>.</span>
+<span class="en">Need help or want to contact us? Visit the <a href="support.html">Support page</a>.</span>
 </p>
 
 <p>更新日期：2026-08-01</p>
-<p style="color:#555;">Last Updated: 2026-08-01</p>
+<p class="en">Last Updated: 2026-08-01</p>
 
 <p>
 本隱私權政策適用於個人開發者 Momoxie 所開發與提供的行動應用程式，包括 SyncMirror - 練舞神器、喵轉盤、誰是臥底？、你演我猜、真心話大冒險、循環計時器。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 This Privacy Policy applies to mobile applications developed and provided by the individual developer Momoxie, including SyncMirror, MeowWheel, Undercover, Charades, TruthOrDare, and LoopTimer.
 </p>
 
@@ -31,20 +56,20 @@ This Privacy Policy applies to mobile applications developed and provided by the
 不同 App 依功能不同，可能使用不同的裝置權限、廣告、App 內購買、訂閱、分析、當機回報或遠端設定功能。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 Depending on each app's features, different device permissions, advertising, in-app purchases, subscriptions, analytics, crash reporting, or remote configuration features may be used.
 </p>
 
 <hr />
 
 <h2>1. 我們處理的資料</h2>
-<h2 style="color:#555;">1. Information We Process</h2>
+<h2 class="en">1. Information We Process</h2>
 
 <p>
 我們不要求使用者註冊帳號，也不會主動要求您提供姓名、電話、Email、精確地址或身分證明文件。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 We do not require users to create an account, and we do not directly ask for personal information such as name, phone number, email address, precise address, or identity documents.
 </p>
 
@@ -52,12 +77,12 @@ We do not require users to create an account, and we do not directly ask for per
 為了提供 App 功能、廣告、App 內購買、訂閱、分析、當機回報與遠端設定，部分資料可能會由裝置本地端處理，或由第三方服務依其隱私權政策處理。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 To provide app features, advertising, in-app purchases, subscriptions, analytics, crash reporting, and remote configuration, certain data may be processed locally on your device or by third-party services according to their own privacy policies.
 </p>
 
 <h3>（1）本地資料</h3>
-<h3 style="color:#555;">(1) Local Data</h3>
+<h3 class="en">(1) Local Data</h3>
 
 <p>
 App 可能會在您的裝置本地端儲存功能所需資料，例如使用者設定、播放設定、遊戲設定、轉盤內容、計時器設定、主題偏好、購買狀態、影片清單或錄影相關設定。
@@ -67,13 +92,13 @@ App 可能會在您的裝置本地端儲存功能所需資料，例如使用者�
 這些資料主要用於 App 功能運作。我們不會主動將這些本地資料上傳至我們自己的伺服器。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 The apps may store data locally on your device, such as user settings, playback settings, game settings, wheel content, timer settings, theme preferences, purchase status, video lists, or recording-related settings.
 This data is mainly used for app functionality. We do not actively upload this local data to our own servers.
 </p>
 
 <h3>（2）裝置權限</h3>
-<h3 style="color:#555;">(2) Device Permissions</h3>
+<h3 class="en">(2) Device Permissions</h3>
 
 <p>
 部分 App 可能會請求相機、麥克風、相簿或通知權限，用於錄製影片、錄製聲音、匯入或儲存影片、匯出使用者產生的內容，或發送本機提醒通知。
@@ -83,7 +108,7 @@ This data is mainly used for app functionality. We do not actively upload this l
 除非您主動使用相關功能，否則 App 不會存取、錄製、儲存或分享您的媒體內容。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 Some apps may request camera, microphone, photo library, or notification permissions to record videos, capture audio, import or save videos, export user-generated content, or send local reminder notifications.
 The apps do not access, record, save, or share your media content unless you actively use the related features.
 </p>
@@ -91,7 +116,7 @@ The apps do not access, record, save, or share your media content unless you act
 <hr />
 
 <h2>2. 廣告與追蹤</h2>
-<h2 style="color:#555;">2. Advertising and Tracking</h2>
+<h2 class="en">2. Advertising and Tracking</h2>
 
 <p>
 本服務可能使用第三方廣告服務顯示廣告。廣告可能包含個人化廣告或非個人化廣告。
@@ -105,7 +130,7 @@ The apps do not access, record, save, or share your media content unless you act
 在 iOS 裝置上，若 App 使用追蹤或存取廣告識別碼，會依 Apple App Tracking Transparency（ATT）規範請求使用者授權。您可以在 iOS 系統設定中管理追蹤權限。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 The Services may use third-party advertising services to display ads. Ads may include personalized or non-personalized ads.
 Third-party advertising services may process device information, device identifiers, advertising identifiers, advertising data, product interaction data, approximate location, diagnostics, or performance data according to their privacy policies.
 On iOS, when an app uses tracking or accesses the advertising identifier, it requests user permission under Apple's App Tracking Transparency (ATT) framework. You can manage tracking permission in iOS Settings.
@@ -114,7 +139,7 @@ On iOS, when an app uses tracking or accesses the advertising identifier, it req
 <hr />
 
 <h2>3. 分析、當機回報與遠端設定</h2>
-<h2 style="color:#555;">3. Analytics, Crash Reporting, and Remote Configuration</h2>
+<h2 class="en">3. Analytics, Crash Reporting, and Remote Configuration</h2>
 
 <p>
 部分 App 可能使用第三方服務提供使用分析、當機回報或遠端設定功能。這些服務可能會處理裝置資訊、使用情形、產品互動、當機紀錄、錯誤紀錄、診斷資料或效能資料，用於改善 App 穩定性、功能與服務品質。
@@ -124,7 +149,7 @@ On iOS, when an app uses tracking or accesses the advertising identifier, it req
 我們不會使用這些資料直接識別您的真實身分。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 Some apps may use third-party services for analytics, crash reporting, or remote configuration. These services may process device information, usage data, product interactions, crash logs, error logs, diagnostics, or performance data to improve app stability, features, and service quality.
 We do not use this data to directly identify your real-world identity.
 </p>
@@ -132,7 +157,7 @@ We do not use this data to directly identify your real-world identity.
 <hr />
 
 <h2>4. App 內購買與訂閱</h2>
-<h2 style="color:#555;">4. In-App Purchases and Subscriptions</h2>
+<h2 class="en">4. In-App Purchases and Subscriptions</h2>
 
 <p>
 部分 App 提供 App 內購買或自動續訂訂閱。付款、續訂、取消訂閱與購買紀錄由 Apple 透過 App Store 處理。
@@ -146,7 +171,7 @@ We do not use this data to directly identify your real-world identity.
 本服務可能使用第三方購買管理服務協助管理購買與訂閱狀態。該服務可能會處理匿名使用者識別碼、產品 ID、購買狀態、訂閱狀態或交易驗證資訊，用於確認購買資格、解鎖付費功能、恢復購買或管理訂閱狀態。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 Some apps offer in-app purchases or auto-renewable subscriptions. Payments, renewals, cancellations, and purchase records are handled by Apple through the App Store.
 We do not collect or store your credit card number, bank account information, billing address, or payment authentication details.
 The Services may use a third-party purchase management service to help manage purchase and subscription status. Such service may process anonymous user identifiers, product IDs, purchase status, subscription status, or transaction validation information to verify purchase eligibility, unlock paid features, restore purchases, or manage subscription status.
@@ -155,20 +180,20 @@ The Services may use a third-party purchase management service to help manage pu
 <hr />
 
 <h2>5. 第三方服務</h2>
-<h2 style="color:#555;">5. Third-Party Services</h2>
+<h2 class="en">5. Third-Party Services</h2>
 
 <p>
 本服務可能使用或連結至第三方服務，例如廣告服務、分析與當機回報服務、購買管理服務、App Store，或使用者主動開啟的外部網站與服務。第三方服務會依其各自的隱私權政策處理資料。我們會盡合理努力選擇提供適當資料保護措施的第三方服務。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 The Services may use or link to third-party services, such as advertising services, analytics and crash reporting services, purchase management services, the App Store, or external websites and services opened by the user. Third-party services process data according to their respective privacy policies. We take reasonable efforts to use third-party services that provide appropriate data protection measures.
 </p>
 
 <hr />
 
 <h2>6. 我們不會做的事</h2>
-<h2 style="color:#555;">6. What We Do Not Do</h2>
+<h2 class="en">6. What We Do Not Do</h2>
 
 <ul>
   <li>不會要求使用者註冊帳號</li>
@@ -177,27 +202,27 @@ The Services may use or link to third-party services, such as advertising servic
   <li>不會出售您的個人資料</li>
 </ul>
 
-<p style="color:#555;">
+<p class="en">
 We do not require account registration, do not directly ask for personal identity information, do not upload your videos, photos, game content, wheel content, or timer settings to our own servers, and do not sell your personal data.
 </p>
 
 <hr />
 
 <h2>7. 兒童隱私</h2>
-<h2 style="color:#555;">7. Children's Privacy</h2>
+<h2 class="en">7. Children's Privacy</h2>
 
 <p>
 本服務並非特別設計給 13 歲以下兒童使用，也不會刻意蒐集 13 歲以下兒童的個人資料。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 The Services are not specifically directed to children under the age of 13, and we do not knowingly collect personal information from children under 13.
 </p>
 
 <hr />
 
 <h2>8. 資料保留、刪除與使用者控制</h2>
-<h2 style="color:#555;">8. Data Retention, Deletion, and User Controls</h2>
+<h2 class="en">8. Data Retention, Deletion, and User Controls</h2>
 
 <p>
 儲存在裝置本地端的資料會保留至您在 App 內刪除、重設，或刪除 App 為止。若資料由第三方服務處理，例如廣告、分析、當機回報或購買管理服務，該等資料會依第三方服務各自的隱私權政策與資料保留規則處理。
@@ -207,72 +232,72 @@ The Services are not specifically directed to children under the age of 13, and 
 您可以在 iOS 系統設定中管理相機、麥克風、相簿、通知與追蹤權限；也可以在 App Store 帳號設定中管理訂閱、取消訂閱或查看購買紀錄。若您有資料刪除或隱私權相關請求，可透過本政策底部的聯絡方式與我們聯繫。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 Data stored locally on your device is retained until you delete or reset it within the app, or delete the app. Data processed by third-party services, such as advertising, analytics, crash reporting, or purchase management services, is handled according to those third-party services' own privacy policies and data retention practices.
 </p>
 
-<p style="color:#555;">
+<p class="en">
 You can manage camera, microphone, photo library, notification, and tracking permissions in iOS Settings. You can also manage subscriptions, cancel subscriptions, or view purchase history in your App Store account settings. If you have any data deletion or privacy-related request, you may contact us using the contact information below.
 </p>
 
 <hr />
 
 <h2>9. 歐洲經濟區、英國與瑞士使用者的權利（GDPR / UK GDPR）</h2>
-<h2 style="color:#555;">9. Rights of Users in the EEA, the UK, and Switzerland (GDPR / UK GDPR)</h2>
+<h2 class="en">9. Rights of Users in the EEA, the UK, and Switzerland (GDPR / UK GDPR)</h2>
 
 <p>
 若您位於歐洲經濟區（EEA）、英國或瑞士，本節適用於您，並優先於本政策其他章節中相衝突的內容。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 If you are located in the European Economic Area (EEA), the United Kingdom, or Switzerland, this section applies to you and prevails over any conflicting provisions elsewhere in this Policy.
 </p>
 
 <h3>（1）資料控管者</h3>
-<h3 style="color:#555;">(1) Data Controller</h3>
+<h3 class="en">(1) Data Controller</h3>
 
 <p>
 本服務的資料控管者為個人開發者 Momoxie。聯絡方式：
 <a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a>。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 The data controller for the Services is the individual developer Momoxie. Contact:
 <a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a>.
 </p>
 
 <h3>（2）處理的法律依據</h3>
-<h3 style="color:#555;">(2) Legal Bases for Processing</h3>
+<h3 class="en">(2) Legal Bases for Processing</h3>
 
-<table style="border-collapse:collapse; width:100%; margin:12px 0;">
+<table class="legal">
   <thead>
-    <tr style="background:#f4f4f4;">
-      <th style="text-align:left; padding:8px; border:1px solid #ddd;">處理目的<br /><span style="font-weight:normal; color:#555;">Purpose</span></th>
-      <th style="text-align:left; padding:8px; border:1px solid #ddd;">法律依據<br /><span style="font-weight:normal; color:#555;">Legal basis</span></th>
+    <tr>
+      <th>處理目的<br /><span class="en">Purpose</span></th>
+      <th>法律依據<br /><span class="en">Legal basis</span></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="padding:8px; border:1px solid #ddd;">個人化廣告與廣告成效衡量<br /><span style="color:#555;">Personalized advertising and ad measurement</span></td>
-      <td style="padding:8px; border:1px solid #ddd;">您的同意（GDPR 第 6(1)(a) 條），透過 App 內的同意訊息取得<br /><span style="color:#555;">Your consent (Art. 6(1)(a) GDPR), collected via the in-app consent message</span></td>
+      <td>個人化廣告與廣告成效衡量<br /><span class="en">Personalized advertising and ad measurement</span></td>
+      <td>您的同意（GDPR 第 6(1)(a) 條），透過 App 內的同意訊息取得<br /><span class="en">Your consent (Art. 6(1)(a) GDPR), collected via the in-app consent message</span></td>
     </tr>
     <tr>
-      <td style="padding:8px; border:1px solid #ddd;">非個人化廣告<br /><span style="color:#555;">Non-personalized advertising</span></td>
-      <td style="padding:8px; border:1px solid #ddd;">維持免費服務營運的正當利益（第 6(1)(f) 條）<br /><span style="color:#555;">Legitimate interest in funding a free service (Art. 6(1)(f))</span></td>
+      <td>非個人化廣告<br /><span class="en">Non-personalized advertising</span></td>
+      <td>維持免費服務營運的正當利益（第 6(1)(f) 條）<br /><span class="en">Legitimate interest in funding a free service (Art. 6(1)(f))</span></td>
     </tr>
     <tr>
-      <td style="padding:8px; border:1px solid #ddd;">當機回報、穩定性與效能分析<br /><span style="color:#555;">Crash reporting, stability and performance analytics</span></td>
-      <td style="padding:8px; border:1px solid #ddd;">維護與改善服務品質的正當利益（第 6(1)(f) 條）<br /><span style="color:#555;">Legitimate interest in maintaining and improving the Services (Art. 6(1)(f))</span></td>
+      <td>當機回報、穩定性與效能分析<br /><span class="en">Crash reporting, stability and performance analytics</span></td>
+      <td>維護與改善服務品質的正當利益（第 6(1)(f) 條）<br /><span class="en">Legitimate interest in maintaining and improving the Services (Art. 6(1)(f))</span></td>
     </tr>
     <tr>
-      <td style="padding:8px; border:1px solid #ddd;">App 內購買與訂閱狀態的驗證與恢復<br /><span style="color:#555;">Verifying and restoring in-app purchases and subscriptions</span></td>
-      <td style="padding:8px; border:1px solid #ddd;">履行契約所必需（第 6(1)(b) 條）<br /><span style="color:#555;">Necessary for performance of a contract (Art. 6(1)(b))</span></td>
+      <td>App 內購買與訂閱狀態的驗證與恢復<br /><span class="en">Verifying and restoring in-app purchases and subscriptions</span></td>
+      <td>履行契約所必需（第 6(1)(b) 條）<br /><span class="en">Necessary for performance of a contract (Art. 6(1)(b))</span></td>
     </tr>
   </tbody>
 </table>
 
 <h3>（3）您的權利</h3>
-<h3 style="color:#555;">(3) Your Rights</h3>
+<h3 class="en">(3) Your Rights</h3>
 
 <p>
 您有權要求存取、更正、刪除您的個人資料，限制或反對處理，以及要求資料可攜。若處理是基於您的同意，您可以隨時撤回同意，撤回不影響撤回前依同意所為處理的合法性。您也有權向所在地的資料保護主管機關提出申訴。
@@ -283,16 +308,16 @@ The data controller for the Services is the individual developer Momoxie. Contac
 由於我們不要求註冊帳號，也不儲存可直接識別您的資料，我們可能需要您提供足以定位相關資料的資訊（例如裝置與 App 版本），才能處理您的請求。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 You have the right to request access to, rectification of, or erasure of your personal data; to restrict or object to processing; and to data portability. Where processing is based on your consent, you may withdraw that consent at any time; withdrawal does not affect the lawfulness of processing carried out before the withdrawal. You also have the right to lodge a complaint with your local data protection supervisory authority.
 </p>
 
-<p style="color:#555;">
+<p class="en">
 To exercise any of these rights, email <a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a>. Because we do not require account registration and do not store directly identifying data, we may need additional information from you (such as your device and app version) in order to locate any relevant data.
 </p>
 
 <h3>（4）如何變更或撤回廣告同意</h3>
-<h3 style="color:#555;">(4) How to Change or Withdraw Advertising Consent</h3>
+<h3 class="en">(4) How to Change or Withdraw Advertising Consent</h3>
 
 <p>
 在適用同意規範的地區，App 會在首次啟動時顯示廣告同意訊息。之後若要變更決定，請開啟該 App 的<strong>設定頁面</strong>，點選底部的<strong>「隱私選項」</strong>，即可重新開啟同意表單。此入口只會在適用的地區顯示。
@@ -302,42 +327,42 @@ To exercise any of these rights, email <a href="mailto:support.hc7@gmail.com">su
 在 iOS 上，Apple 的追蹤授權（ATT）是另一套獨立機制，可於「設定 → 隱私權與安全性 → 追蹤」中管理。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 In regions where consent requirements apply, the app displays an advertising consent message on first launch. To change your decision afterwards, open the app's <strong>Settings</strong> page and tap <strong>"Privacy options"</strong> at the bottom to reopen the consent form. This entry point only appears in applicable regions.
 </p>
 
-<p style="color:#555;">
+<p class="en">
 On iOS, Apple's App Tracking Transparency (ATT) is a separate mechanism and can be managed under Settings → Privacy &amp; Security → Tracking.
 </p>
 
 <h3>（5）國際傳輸</h3>
-<h3 style="color:#555;">(5) International Transfers</h3>
+<h3 class="en">(5) International Transfers</h3>
 
 <p>
 我們使用的第三方服務（廣告、分析、當機回報、購買管理）可能將資料傳輸至歐洲經濟區以外的地區處理，包括美國。該等傳輸由各服務提供者依其隱私權政策，透過歐盟標準契約條款或其他適當保護措施進行。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 The third-party services we use (advertising, analytics, crash reporting, purchase management) may transfer data outside the EEA for processing, including to the United States. Such transfers are carried out by those providers under Standard Contractual Clauses or other appropriate safeguards, as described in their respective privacy policies.
 </p>
 
 <hr />
 
 <h2>10. 隱私權政策更新</h2>
-<h2 style="color:#555;">10. Changes to This Privacy Policy</h2>
+<h2 class="en">10. Changes to This Privacy Policy</h2>
 
 <p>
 我們可能會因 App 功能、第三方服務、法規或營運需求而更新本隱私權政策。更新時，我們會修改本頁的更新日期。
 </p>
 
-<p style="color:#555;">
+<p class="en">
 We may update this Privacy Policy due to changes in app features, third-party services, legal requirements, or operational needs. When updated, the date on this page will be changed.
 </p>
 
 <hr />
 
 <h2>11. 聯絡方式</h2>
-<h2 style="color:#555;">11. Contact</h2>
+<h2 class="en">11. Contact</h2>
 
 <p>
 如有任何隱私權相關問題，請聯繫：
@@ -347,17 +372,17 @@ We may update this Privacy Policy due to changes in app features, third-party se
 Email：<a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a>
 </p>
 
-<p style="color:#555;">
+<p class="en">
 If you have any questions about this Privacy Policy, please contact:
 </p>
 
-<p style="color:#555;">
+<p class="en">
 Email: <a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a>
 </p>
 
 <hr />
 
-<p style="color:#555; font-size:14px;">
+<p class="footer">
 <a href="support.html">支援 / Support</a>
 </p>
 
