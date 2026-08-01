@@ -2,7 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://momoxie0202.github.io/</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://momoxie0202.github.io/support.html</loc>
+    <lastmod>2026-08-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
