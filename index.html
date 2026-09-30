@@ -1,398 +1,557 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" data-lang="zh">
 <head>
   <meta charset="UTF-8" />
-  <title>Apps 隱私權政策｜Privacy Policy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="color-scheme" content="light dark" />
-  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
+  <title>隱私權政策、使用條款與支援｜Momoxie Apps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Momoxie 所有 App（SyncMirror、喵轉盤、誰是臥底？、你演我猜、你畫我猜、真心話大冒險、Cleaner 相簿清理）的隱私權政策、使用條款與支援。Privacy Policy, Terms of Use, and Support for Momoxie apps." />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#121212" />
   <link rel="stylesheet" href="assets/site.css" />
-  <script>
-    // 在畫面繪製前套用已儲存的主題，避免閃爍
-    (function () {
-      document.documentElement.className += " js";
-      try {
-        var t = localStorage.getItem("theme");
-        if (t === "light" || t === "dark") {
-          document.documentElement.setAttribute("data-theme", t);
-        }
-      } catch (e) {}
-    })();
-  </script>
-  <script src="assets/theme.js" defer></script>
+  <script src="assets/lang.js"></script>
 </head>
 
 <body>
 
-<div class="theme-switch">
-  <div class="group" role="group" aria-label="主題 / Theme">
-    <button type="button" data-mode="auto" aria-pressed="true">系統 Auto</button>
-    <button type="button" data-mode="light" aria-pressed="false">淺色 Light</button>
-    <button type="button" data-mode="dark" aria-pressed="false">深色 Dark</button>
-  </div>
+<header class="page-header">
+  <h1>Momoxie Apps</h1>
+  <nav class="lang-switch" aria-label="語言 / Language">
+    <a href="#zh" data-lang="zh" hreflang="zh-Hant">中文</a>
+    <a href="#en" data-lang="en" hreflang="en">English</a>
+  </nav>
+</header>
+
+<!-- ============================== 中文 ============================== -->
+<main data-block="zh" id="zh" lang="zh-Hant">
+
+<nav class="tabs" aria-label="頁面章節">
+  <a href="#privacy">隱私權政策</a>
+  <a href="#terms">使用條款</a>
+  <a href="#support">支援</a>
+</nav>
+
+<div class="card">
+  <p>
+    這是個人開發者 Momoxie 所有 App 的隱私權政策、使用條款與支援頁面。有任何問題，歡迎來信，通常會在數個工作天內回覆。
+  </p>
+  <a class="button" href="mailto:support.hc7@gmail.com">來信：support.hc7@gmail.com</a>
 </div>
 
-<h1>Apps 隱私權政策</h1>
-<p class="en">Privacy Policy for Apps Developed by Momoxie</p>
+<p class="muted small">更新日期：2026-09-30</p>
 
-<p class="notice">
-需要使用說明或聯絡我們？請前往 <a href="support.html">支援頁面</a>。<br />
-<span class="en">Need help or want to contact us? Visit the <a href="support.html">Support page</a>.</span>
-</p>
-
-<p>更新日期：2026-08-01</p>
-<p class="en">Last Updated: 2026-08-01</p>
-
-<p>
-本隱私權政策適用於個人開發者 Momoxie 所開發與提供的行動應用程式，包括 SyncMirror - 練舞神器、喵轉盤、誰是臥底？、你演我猜、真心話大冒險、循環計時器。
-</p>
-
-<p class="en">
-This Privacy Policy applies to mobile applications developed and provided by the individual developer Momoxie, including SyncMirror, MeowWheel, Undercover, Charades, TruthOrDare, and LoopTimer.
-</p>
-
-<p>
-Cleaner 相簿清理 不會上傳您的照片與影片，資料處理方式請見其專屬的 <a href="cleaner-privacy.html">隱私權政策</a>。
-</p>
-
-<p class="en">
-Cleaner never uploads your photos or videos; see its own <a href="cleaner-privacy.html">Privacy Policy</a>.
-</p>
-
-<p>
-不同 App 依功能不同，可能使用不同的裝置權限、廣告、App 內購買、訂閱、分析、當機回報或遠端設定功能。
-</p>
-
-<p class="en">
-Depending on each app's features, different device permissions, advertising, in-app purchases, subscriptions, analytics, crash reporting, or remote configuration features may be used.
-</p>
-
-<hr />
-
-<h2>1. 我們處理的資料</h2>
-<h2 class="en">1. Information We Process</h2>
-
-<p>
-我們不要求使用者註冊帳號，也不會主動要求您提供姓名、電話、Email、精確地址或身分證明文件。
-</p>
-
-<p class="en">
-We do not require users to create an account, and we do not directly ask for personal information such as name, phone number, email address, precise address, or identity documents.
-</p>
-
-<p>
-為了提供 App 功能、廣告、App 內購買、訂閱、分析、當機回報與遠端設定，部分資料可能會由裝置本地端處理，或由第三方服務依其隱私權政策處理。
-</p>
-
-<p class="en">
-To provide app features, advertising, in-app purchases, subscriptions, analytics, crash reporting, and remote configuration, certain data may be processed locally on your device or by third-party services according to their own privacy policies.
-</p>
-
-<h3>（1）本地資料</h3>
-<h3 class="en">(1) Local Data</h3>
-
-<p>
-App 可能會在您的裝置本地端儲存功能所需資料，例如使用者設定、播放設定、遊戲設定、轉盤內容、計時器設定、主題偏好、購買狀態、影片清單或錄影相關設定。
-</p>
-
-<p>
-這些資料主要用於 App 功能運作。我們不會主動將這些本地資料上傳至我們自己的伺服器。
-</p>
-
-<p class="en">
-The apps may store data locally on your device, such as user settings, playback settings, game settings, wheel content, timer settings, theme preferences, purchase status, video lists, or recording-related settings.
-This data is mainly used for app functionality. We do not actively upload this local data to our own servers.
-</p>
-
-<h3>（2）裝置權限</h3>
-<h3 class="en">(2) Device Permissions</h3>
-
-<p>
-部分 App 可能會請求相機、麥克風、相簿或通知權限，用於錄製影片、錄製聲音、匯入或儲存影片、匯出使用者產生的內容，或發送本機提醒通知。
-</p>
-
-<p>
-除非您主動使用相關功能，否則 App 不會存取、錄製、儲存或分享您的媒體內容。
-</p>
-
-<p class="en">
-Some apps may request camera, microphone, photo library, or notification permissions to record videos, capture audio, import or save videos, export user-generated content, or send local reminder notifications.
-The apps do not access, record, save, or share your media content unless you actively use the related features.
-</p>
-
-<hr />
-
-<h2>2. 廣告與追蹤</h2>
-<h2 class="en">2. Advertising and Tracking</h2>
-
-<p>
-本服務可能使用第三方廣告服務顯示廣告。廣告可能包含個人化廣告或非個人化廣告。
-</p>
-
-<p>
-第三方廣告服務可能會依其隱私權政策處理裝置資訊、裝置識別碼、廣告識別碼、廣告互動資料、產品互動資料、粗略位置、診斷資料或效能資料。
-</p>
-
-<p>
-在 iOS 裝置上，若 App 使用追蹤或存取廣告識別碼，會依 Apple App Tracking Transparency（ATT）規範請求使用者授權。您可以在 iOS 系統設定中管理追蹤權限。
-</p>
-
-<p class="en">
-The Services may use third-party advertising services to display ads. Ads may include personalized or non-personalized ads.
-Third-party advertising services may process device information, device identifiers, advertising identifiers, advertising data, product interaction data, approximate location, diagnostics, or performance data according to their privacy policies.
-On iOS, when an app uses tracking or accesses the advertising identifier, it requests user permission under Apple's App Tracking Transparency (ATT) framework. You can manage tracking permission in iOS Settings.
-</p>
-
-<hr />
-
-<h2>3. 分析、當機回報與遠端設定</h2>
-<h2 class="en">3. Analytics, Crash Reporting, and Remote Configuration</h2>
-
-<p>
-部分 App 可能使用第三方服務提供使用分析、當機回報或遠端設定功能。這些服務可能會處理裝置資訊、使用情形、產品互動、當機紀錄、錯誤紀錄、診斷資料或效能資料，用於改善 App 穩定性、功能與服務品質。
-</p>
-
-<p>
-我們不會使用這些資料直接識別您的真實身分。
-</p>
-
-<p class="en">
-Some apps may use third-party services for analytics, crash reporting, or remote configuration. These services may process device information, usage data, product interactions, crash logs, error logs, diagnostics, or performance data to improve app stability, features, and service quality.
-We do not use this data to directly identify your real-world identity.
-</p>
-
-<hr />
-
-<h2>4. App 內購買與訂閱</h2>
-<h2 class="en">4. In-App Purchases and Subscriptions</h2>
-
-<p>
-部分 App 提供 App 內購買或自動續訂訂閱。付款、續訂、取消訂閱與購買紀錄由 Apple 透過 App Store 處理。
-</p>
-
-<p>
-我們不會收集或儲存您的信用卡號碼、銀行帳戶資料、帳單地址或付款驗證資料。
-</p>
-
-<p>
-本服務可能使用第三方購買管理服務協助管理購買與訂閱狀態。該服務可能會處理匿名使用者識別碼、產品 ID、購買狀態、訂閱狀態或交易驗證資訊，用於確認購買資格、解鎖付費功能、恢復購買或管理訂閱狀態。
-</p>
-
-<p class="en">
-Some apps offer in-app purchases or auto-renewable subscriptions. Payments, renewals, cancellations, and purchase records are handled by Apple through the App Store.
-We do not collect or store your credit card number, bank account information, billing address, or payment authentication details.
-The Services may use a third-party purchase management service to help manage purchase and subscription status. Such service may process anonymous user identifiers, product IDs, purchase status, subscription status, or transaction validation information to verify purchase eligibility, unlock paid features, restore purchases, or manage subscription status.
-</p>
-
-<hr />
-
-<h2>5. 第三方服務</h2>
-<h2 class="en">5. Third-Party Services</h2>
-
-<p>
-本服務可能使用或連結至第三方服務，例如廣告服務、分析與當機回報服務、購買管理服務、App Store，或使用者主動開啟的外部網站與服務。第三方服務會依其各自的隱私權政策處理資料。我們會盡合理努力選擇提供適當資料保護措施的第三方服務。
-</p>
-
-<p class="en">
-The Services may use or link to third-party services, such as advertising services, analytics and crash reporting services, purchase management services, the App Store, or external websites and services opened by the user. Third-party services process data according to their respective privacy policies. We take reasonable efforts to use third-party services that provide appropriate data protection measures.
-</p>
-
-<hr />
-
-<h2>6. 我們不會做的事</h2>
-<h2 class="en">6. What We Do Not Do</h2>
-
-<ul>
-  <li>不會要求使用者註冊帳號</li>
-  <li>不會主動要求您提供姓名、電話、Email、精確地址或身分證明文件</li>
-  <li>不會將您的影片、照片、遊戲內容、轉盤內容或計時器設定上傳至我們自己的伺服器</li>
-  <li>不會出售您的個人資料</li>
+<h3>適用的 App</h3>
+<ul class="list">
+  <li><strong>SyncMirror - 練舞神器</strong><span class="meta">相機、麥克風、照片、追蹤（ATT）</span>匯入與播放影片、跟拍錄影、比對與合併匯出；支援 Apple Watch 遙控與 YouTube 連結匯入；提供訂閱與買斷方案。</li>
+  <li><strong>喵轉盤</strong><span class="meta">追蹤（ATT）</span>轉盤與選項存於裝置，並同步到您配對的 Apple Watch。</li>
+  <li><strong>誰是臥底？</strong><span class="meta">追蹤（ATT）</span>單機派對遊戲，玩家名稱與設定存於裝置。</li>
+  <li><strong>你演我猜</strong><span class="meta">相機、麥克風、照片（僅寫入）、動作感測器、追蹤（ATT）</span>以手機傾斜作答；可選擇錄下遊戲過程並存入相簿。</li>
+  <li><strong>你畫我猜</strong><span class="meta">追蹤（ATT）</span>畫作與自訂題目存於裝置，只有您主動分享時才會送出。</li>
+  <li><strong>真心話大冒險</strong><span class="meta">追蹤（ATT）</span>單機派對遊戲，自訂題目與設定存於裝置。</li>
+  <li><strong>Cleaner 相簿清理</strong><span class="meta">照片（讀取、寫入、刪除）</span>照片與影片只在裝置上分析與編輯，不會上傳；不要求追蹤權限。另見<a href="cleaner-privacy.html">補充說明</a>。</li>
 </ul>
 
-<p class="en">
-We do not require account registration, do not directly ask for personal identity information, do not upload your videos, photos, game content, wheel content, or timer settings to our own servers, and do not sell your personal data.
-</p>
+<!-- ---------- 隱私權政策 ---------- -->
+<h2 id="privacy">隱私權政策</h2>
 
-<hr />
-
-<h2>7. 兒童隱私</h2>
-<h2 class="en">7. Children's Privacy</h2>
-
-<p>
-本服務並非特別設計給 13 歲以下兒童使用，也不會刻意蒐集 13 歲以下兒童的個人資料。
-</p>
-
-<p class="en">
-The Services are not specifically directed to children under the age of 13, and we do not knowingly collect personal information from children under 13.
-</p>
-
-<hr />
-
-<h2>8. 資料保留、刪除與使用者控制</h2>
-<h2 class="en">8. Data Retention, Deletion, and User Controls</h2>
+<div class="card">
+  <p>
+    <strong>簡單來說：</strong>我們的 App 都不需要註冊帳號，您的影片、照片、畫作與遊戲內容都留在您的裝置上，不會上傳到我們的伺服器。為了顯示廣告、處理購買、統計使用狀況與修正當機，App 使用了 Google（AdMob、Firebase）與 RevenueCat 的服務。我們不會出售您的資料。
+  </p>
+</div>
 
 <p>
-儲存在裝置本地端的資料會保留至您在 App 內刪除、重設，或刪除 App 為止。若資料由第三方服務處理，例如廣告、分析、當機回報或購買管理服務，該等資料會依第三方服務各自的隱私權政策與資料保留規則處理。
+本隱私權政策適用於個人開發者 Momoxie（以下稱「我們」）所開發的上列 App（以下合稱「本服務」）。使用本服務即表示您已閱讀並了解本政策。
 </p>
+
+<h3>1. 我們處理的資料</h3>
+<p>
+我們不要求註冊帳號，也不會要求您提供姓名、電話、Email、地址或身分證明文件。我們沒有用來接收您資料的伺服器；以下資料由您的裝置本地處理，或由第 3 點的第三方服務依其隱私權政策處理。
+</p>
+<ul>
+  <li><strong>裝置上的資料：</strong>設定、語言偏好、遊戲設定、玩家名稱、自訂題目、轉盤內容、畫作、影片清單、播放與錄影設定、Cleaner 的待刪除清單與購買狀態。這些資料不會上傳給我們，刪除 App 時會一併刪除。</li>
+  <li><strong>相機、麥克風與照片：</strong>只有在您主動使用錄影、匯入、儲存或清理功能時才會存取。錄製的影片、匯入的媒體與編輯結果只存在您的裝置上（或您自行選擇的相簿與分享對象），不會傳送給我們或任何第三方服務。</li>
+  <li><strong>Apple Watch：</strong>SyncMirror 與喵轉盤透過 Apple 的 WatchConnectivity 在手機與手錶之間直接傳輸，不經過我們的伺服器。</li>
+  <li><strong>您主動提供的資料：</strong>來信或使用「意見回饋」（可能開啟 Email 或 Google 表單）時，我們只會收到您填寫的內容與寄件地址，僅用於回覆與改善 App。</li>
+</ul>
+<p>
+相機、麥克風與照片權限會在您第一次使用相關功能時才請求；追蹤權限則在首次啟動時詢問。拒絕權限時，只有需要該權限的功能無法使用。
+</p>
+
+<h3>2. 廣告與追蹤</h3>
+<p>
+免費版 App 透過 Google AdMob 顯示廣告並衡量成效。購買去廣告或付費方案後不再顯示廣告；部分 App 另提供觀看獎勵廣告以暫時解鎖功能，是否觀看由您決定。
+</p>
+<p>
+在 iOS 上，除 Cleaner 以外的 App 會依 Apple「App 追蹤透明度」（ATT）詢問您是否允許追蹤。只有在您允許時，廣告服務才能存取廣告識別碼（IDFA）以顯示個人化廣告；拒絕時仍會顯示廣告，但不會使用 IDFA。您可以隨時在「設定 → 隱私權與安全性 → 追蹤」變更。
+</p>
+
+<h3 id="third-parties">3. 第三方服務</h3>
+<p>
+下列服務可能處理裝置識別碼（例如 IDFV，以及您允許追蹤時的 IDFA）、由 IP 位址推估的大致位置、裝置型號、系統版本、語言、App 使用情形（例如開啟的畫面、功能使用、廣告互動）與當機紀錄。這些服務不會收到您的影片、照片、畫作或遊戲內容。
+</p>
+<ul class="list">
+  <li><strong>Google AdMob／User Messaging Platform</strong>顯示廣告、衡量成效；在適用地區取得廣告同意。</li>
+  <li><strong>Firebase Analytics</strong>統計功能使用情形，用於改善 App。</li>
+  <li><strong>Firebase Crashlytics</strong>當機時傳送當機紀錄與裝置資訊，用於修正問題。</li>
+  <li><strong>Firebase Remote Config</strong>下載功能、廣告與版本設定，會傳送國家、語言、時區、系統與 App 版本。</li>
+  <li><strong>RevenueCat</strong>管理購買、訂閱與恢復購買，會收到匿名使用者代碼、產品 ID 與交易紀錄。</li>
+  <li><strong>Apple App Store／Google Play</strong>下載、付款、續訂與退款。</li>
+</ul>
+<p class="small">
+各服務隱私權政策：<a href="https://policies.google.com/privacy" rel="noopener">Google</a>、<a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase</a>、<a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a>、<a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple</a>
+</p>
+<p>
+SyncMirror 的 YouTube 匯入功能會依您輸入的連結直接連線至 YouTube，YouTube 會收到您的 IP 位址等連線資訊；該連結與影片不會傳送給我們。您從 App 開啟的外部網站，依該網站的政策處理資料。
+</p>
+
+<h3>4. 購買與付款資料</h3>
+<p>
+付款、續訂、取消與退款由 Apple 或 Google 處理。我們與 RevenueCat 都不會取得您的信用卡號碼、銀行帳戶、帳單地址或付款驗證資料。部分 App 會在本機執行裝置完整性檢查（例如偵測越獄），用於防止付費功能遭竄改；結果不會上傳給我們。
+</p>
+
+<h3>5. 我們不會做的事</h3>
+<ul>
+  <li>不要求註冊帳號，不要求姓名、Email 等可直接識別您的資料</li>
+  <li>不上傳您的影片、照片、錄音、畫作、轉盤或遊戲內容</li>
+  <li>不出售、出租您的個人資料</li>
+  <li>不在您未允許追蹤時使用廣告識別碼（IDFA）</li>
+</ul>
+
+<h3>6. 兒童隱私</h3>
+<p>
+本服務並非專為 13 歲以下兒童設計，我們也不會刻意蒐集 13 歲以下兒童的個人資料。未成年人應在法定代理人同意與陪同下使用。若您認為兒童透過本服務提供了個人資料，請與我們聯絡。
+</p>
+
+<h3>7. 資料保留與您的控制</h3>
+<ul>
+  <li>裝置上的資料保留至您在 App 內刪除、重設或刪除 App 為止；第三方服務處理的資料依各服務的保留規則處理。</li>
+  <li>相機、麥克風、照片與追蹤權限：iOS「設定 → 隱私權與安全性」。</li>
+  <li>訂閱：iOS「設定 → [您的名稱] → 訂閱」，或 Google Play「付款與訂閱」。</li>
+  <li>購買去廣告或付費方案即可停止顯示廣告。</li>
+</ul>
+
+<h3 id="gdpr">8. 歐洲經濟區、英國與瑞士使用者（GDPR／UK GDPR）</h3>
+<p>
+若您位於歐洲經濟區（EEA）、英國或瑞士，本點適用於您，並優先於本政策其他內容。
+</p>
+<ul>
+  <li><strong>資料控管者：</strong>個人開發者 Momoxie，<a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a>。</li>
+  <li><strong>法律依據：</strong>個人化廣告與廣告成效衡量——您的同意（第 6(1)(a) 條）；非個人化廣告——維持免費服務的正當利益（第 6(1)(f) 條）；使用分析、當機回報與遠端設定——改善服務的正當利益（第 6(1)(f) 條）；購買與訂閱的驗證與恢復——履行契約所必需（第 6(1)(b) 條）；回覆來信——回應您請求的正當利益（第 6(1)(f) 條）。</li>
+  <li><strong>您的權利：</strong>您有權要求存取、更正、刪除您的個人資料，限制或反對處理，以及資料可攜；可隨時撤回同意，撤回不影響撤回前處理的合法性；也可向所在地的資料保護主管機關申訴。請來信行使權利；因我們不要求帳號，可能需要您提供 App 名稱、版本與裝置型號以協助定位資料。</li>
+  <li id="ad-consent"><strong>變更或撤回廣告同意：</strong>在適用同意規範的地區，App 會在首次啟動時顯示廣告同意訊息。之後若要變更或撤回決定，請點選 App 內的「廣告設定」，即可重新開啟同意表單。此入口只會在適用同意規範的地區顯示。iOS 的追蹤授權（ATT）是另一套獨立機制，請於「設定 → 隱私權與安全性 → 追蹤」管理。</li>
+  <li><strong>國際傳輸：</strong>第三方服務可能將資料傳輸至歐洲經濟區以外的地區（包括美國）處理，並由各服務提供者透過歐盟標準契約條款或其他適當保護措施進行。</li>
+</ul>
+
+<h3>9. 資料安全</h3>
+<p>
+App 與第三方服務之間的連線皆經加密（HTTPS）。由於您的內容只存在裝置上，裝置本身的螢幕鎖定與備份設定也是保護資料的重要一環。
+</p>
+
+<h3>10. 政策更新</h3>
+<p>
+我們可能因 App 功能、第三方服務、法規或營運需求更新本政策，並修改本頁的更新日期；若變更會實質影響您的權益，我們會在 App 內或本頁明顯通知。
+</p>
+
+<!-- ---------- 使用條款 ---------- -->
+<h2 id="terms">使用條款</h2>
 
 <p>
-您可以在 iOS 系統設定中管理相機、麥克風、相簿、通知與追蹤權限；也可以在 App Store 帳號設定中管理訂閱、取消訂閱或查看購買紀錄。若您有資料刪除或隱私權相關請求，可透過本政策底部的聯絡方式與我們聯繫。
+下載、安裝或使用本服務，即表示您同意本使用條款（以下稱「本條款」）與上方的隱私權政策。若您不同意，請勿使用本服務。
 </p>
 
-<p class="en">
-Data stored locally on your device is retained until you delete or reset it within the app, or delete the app. Data processed by third-party services, such as advertising, analytics, crash reporting, or purchase management services, is handled according to those third-party services' own privacy policies and data retention practices.
+<h3>1. 與 App Store／Google Play 條款的關係</h3>
+<p>
+經由 Apple App Store 取得的 App，適用 Apple 的<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">授權應用程式最終使用者授權協議（標準 EULA）</a>，本條款為其補充；兩者衝突時，以標準 EULA 為準。經由 Google Play 取得的 App，另適用 <a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play 服務條款</a>。Apple 與 Google 並非本條款的當事人，對本服務不負維護或支援責任。
 </p>
 
-<p class="en">
-You can manage camera, microphone, photo library, notification, and tracking permissions in iOS Settings. You can also manage subscriptions, cancel subscriptions, or view purchase history in your App Store account settings. If you have any data deletion or privacy-related request, you may contact us using the contact information below.
+<h3>2. 使用授權</h3>
+<p>
+我們授予您個人、非專屬、不可轉讓、可撤銷的授權，在您擁有或控制的裝置上使用本服務。您不得：
+</p>
+<ul>
+  <li>複製、修改、反向工程、反組譯或散布本服務（法律明文允許者除外）</li>
+  <li>規避或破解付費功能、廣告或其他技術保護措施</li>
+  <li>將本服務用於違法用途，或侵害他人權利</li>
+  <li>擷取、重製或販售 App 內的題庫、素材或其他內容</li>
+</ul>
+
+<h3>3. 購買、訂閱與退款</h3>
+<ul>
+  <li>部分 App 提供一次性購買（例如去廣告、解鎖題庫或 Pro）；SyncMirror 另提供自動續訂訂閱。價格以購買時 App 內與商店顯示為準。</li>
+  <li>付款由 Apple 或 Google 向您的帳號收取。自動續訂訂閱會在每期結束前 24 小時內自動續訂並扣款，除非您在此之前取消；取消後可使用至當期結束。</li>
+  <li>免費試用（如有）未使用完的部分，在您購買訂閱時即失效。</li>
+  <li>刪除 App 不會自動取消訂閱，請至商店的訂閱管理頁面取消。</li>
+  <li>退款由 Apple 或 Google 依其政策處理，我們無法直接退款。</li>
+  <li>購買紀錄綁定您的商店帳號，可透過「恢復購買」在其他裝置還原。</li>
+</ul>
+
+<h3>4. 您的內容</h3>
+<p>
+您在本服務中建立或匯入的內容（例如錄影、影片、畫作、自訂題目、轉盤選項、玩家名稱）仍屬於您或原權利人，我們不主張任何權利，也不會取得這些內容。您須自行確保有權使用這些內容並對其負責；分享或公開前，請取得畫面中其他人的同意。
+</p>
+<p>
+SyncMirror 的影片與 YouTube 連結匯入僅供您個人練習使用。您只能匯入有權使用的影片，並須遵守 YouTube 服務條款及著作權等相關法律；未經權利人授權，不得將匯入、比對或合併後的影片用於重製、公開散布或商業用途。因您匯入或使用第三方內容所生之爭議，由您自行負責。
 </p>
 
-<hr />
+<h3>5. 安全與適當使用</h3>
+<ul>
+  <li><strong>派對遊戲</strong>（誰是臥底？、你演我猜、你畫我猜、真心話大冒險）：請在安全的環境中遊玩，尊重其他玩家的意願與界線，任何人都可以拒絕任何題目或挑戰。請勿進行危險、違法、傷害自己或他人、或未經同意的行為，也勿在飲酒後從事有風險的挑戰。</li>
+  <li><strong>你演我猜：</strong>遊戲時需舉起並移動手機，請注意周遭環境，避免摔落手機或碰撞他人。</li>
+  <li><strong>SyncMirror：</strong>練習前請暖身並量力而為；本 App 不提供醫療、健身或專業指導建議。</li>
+  <li><strong>喵轉盤：</strong>結果為隨機產生，僅供娛樂參考，請勿用於賭博或涉及健康、財務、法律等重要決定。</li>
+  <li><strong>Cleaner 相簿清理：</strong>照片與影片只會在您確認後刪除，並先移至系統「最近刪除」，由 iOS 於一段時間後永久刪除。清理前請自行備份重要資料；因您確認刪除而造成的資料遺失，我們無法復原。</li>
+</ul>
 
-<h2>9. 歐洲經濟區、英國與瑞士使用者的權利（GDPR / UK GDPR）</h2>
-<h2 class="en">9. Rights of Users in the EEA, the UK, and Switzerland (GDPR / UK GDPR)</h2>
+<h3>6. 廣告與第三方服務</h3>
+<p>
+免費版 App 會顯示第三方廣告。廣告內容由廣告服務提供，不代表我們的立場；您與廣告主之間的往來由雙方自行負責。
+</p>
+
+<h3>7. 智慧財產權</h3>
+<p>
+本服務及其程式、介面設計、圖像、角色、音效、題庫與文字內容之權利，屬於我們或授權人所有。本條款未明示授予的權利，均予保留。
+</p>
+
+<h3>8. 免責聲明</h3>
+<p>
+在法律允許的最大範圍內，本服務以「現狀」及「現有」方式提供。我們會盡力維持正常運作，但不保證本服務不會中斷、沒有錯誤或符合您的特定需求。部分功能（例如廣告、購買驗證、遠端設定、YouTube 匯入）仰賴第三方服務，可能因第三方變更而無法使用。
+</p>
+
+<h3>9. 責任限制</h3>
+<p>
+在法律允許的最大範圍內，我們不就因使用或無法使用本服務所生的間接、附帶、特殊或衍生性損害（包括資料遺失）負責；我們對您的總賠償責任，以您在損害發生前十二個月內為該 App 實際支付的金額為上限。但因我們的故意或重大過失所致之損害，或依適用法律不得排除或限制的責任，不在此限。
+</p>
+
+<h3>10. 服務與條款的變更、終止</h3>
+<p>
+我們可能新增、修改或停止部分功能，或停止提供某個 App；也可能更新本條款並修改本頁的更新日期，若變更會實質影響您的權益，我們會在 App 內或本頁明顯通知。更新後繼續使用，即表示您同意更新後的條款。您可以隨時刪除 App 以停止使用；若您違反本條款，授權將自動終止。
+</p>
+
+<h3>11. 準據法與管轄</h3>
+<p>
+本條款以中華民國（臺灣）法律為準據法。因本條款所生之爭議，雙方應先以誠意協商；協商不成時，以臺灣臺北地方法院為第一審管轄法院。若您是消費者，您所在地法律賦予您的強制性保護（例如歐盟消費者權益）不因本條款而受影響。若本條款任何條文無效，其餘條文仍然有效。中英文版本如有歧異，以繁體中文版為準，但您所在地法律另有規定者除外。
+</p>
+
+<!-- ---------- 支援 ---------- -->
+<h2 id="support">支援</h2>
+
+<div class="card">
+  <p>回報問題時，請附上以下資訊，否則很多問題無法重現與修正：</p>
+  <ul>
+    <li>App 名稱與版本（在 App 的設定頁）</li>
+    <li>裝置型號與系統版本（iOS：設定 → 一般 → 關於本機）</li>
+    <li>問題發生的步驟，以及您預期會發生什麼</li>
+    <li>畫面截圖或錄影（如果問題看得見）</li>
+  </ul>
+  <a class="button" href="mailto:support.hc7@gmail.com">來信回報問題</a>
+</div>
+
+<h3>常見問題</h3>
+
+<details>
+  <summary>我買了付費版，但廣告還在／功能沒解鎖</summary>
+  <p>請先確認網路連線正常，然後在 App 內點選「恢復購買」。購買紀錄綁定您的 Apple 或 Google 帳號，換手機或重裝 App 後都可以用同一個帳號恢復，不需要重新付費。若仍未解鎖，請來信並附上購買收據。</p>
+</details>
+
+<details>
+  <summary>要怎麼取消訂閱？</summary>
+  <p>iOS：「設定 → [您的名稱] → 訂閱」。Android：Google Play「付款與訂閱」。刪除 App 不會自動取消訂閱。</p>
+</details>
+
+<details>
+  <summary>要怎麼更改 App 的語言？</summary>
+  <p>App 預設跟隨裝置語言，也可以在 App 的設定中另外指定語言。</p>
+</details>
+
+<details>
+  <summary>我想變更或撤回廣告同意（歐洲經濟區、英國、瑞士）</summary>
+  <p>點選 App 內的「廣告設定」即可重新開啟同意表單。這個入口只會在適用同意規範的地區顯示。iOS 的追蹤授權（ATT）請到「設定 → 隱私權與安全性 → 追蹤」管理。</p>
+</details>
+
+<details>
+  <summary>要怎麼刪除我的資料？</summary>
+  <p>這些 App 不需要帳號，資料儲存在您的裝置上，刪除 App 即會一併移除。若您在歐洲經濟區、英國或瑞士，另有法定的資料權利，請見<a href="#gdpr">隱私權政策第 8 點</a>。</p>
+</details>
+
+<details>
+  <summary>App 當掉、卡住或畫面顯示不正常</summary>
+  <p>請先完全關閉 App 再重新開啟，並確認 App 與系統都已更新到最新版本。若問題持續，請依上方說明來信。</p>
+</details>
+
+<details>
+  <summary>可以提供建議或要求新功能嗎？</summary>
+  <p>歡迎直接來信。部分 App 的設定頁也有「意見回饋」入口。</p>
+</details>
+
+<p class="footer">© Momoxie · <a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a></p>
+
+</main>
+
+<!-- ============================== English ============================== -->
+<main data-block="en" id="en" lang="en">
+
+<nav class="tabs" aria-label="Sections">
+  <a href="#en-privacy">Privacy</a>
+  <a href="#en-terms">Terms</a>
+  <a href="#en-support">Support</a>
+</nav>
+
+<div class="card">
+  <p>
+    This is the Privacy Policy, Terms of Use, and Support page for all apps by the individual developer Momoxie. Questions are welcome by email and are usually answered within a few business days.
+  </p>
+  <a class="button" href="mailto:support.hc7@gmail.com">Email: support.hc7@gmail.com</a>
+</div>
+
+<p class="muted small">Last updated: 2026-09-30</p>
+
+<h3>Apps Covered</h3>
+<ul class="list">
+  <li><strong>SyncMirror</strong><span class="meta">Camera, microphone, photos, tracking (ATT)</span>Import and play videos, record along, compare and merge; Apple Watch remote and YouTube-link import; subscription and one-time plans.</li>
+  <li><strong>MeowWheel</strong><span class="meta">Tracking (ATT)</span>Wheels and options are stored on device and synced to your paired Apple Watch.</li>
+  <li><strong>Who's the Spy? (Undercover)</strong><span class="meta">Tracking (ATT)</span>Offline party game; player names and settings are stored on device.</li>
+  <li><strong>Charades</strong><span class="meta">Camera, microphone, photos (add only), motion sensors, tracking (ATT)</span>Tilt the phone to answer; optionally record the round and save it to your photo library.</li>
+  <li><strong>Draw &amp; Guess</strong><span class="meta">Tracking (ATT)</span>Drawings and custom prompts are stored on device and only leave it when you share them.</li>
+  <li><strong>Truth or Dare</strong><span class="meta">Tracking (ATT)</span>Offline party game; custom questions and settings are stored on device.</li>
+  <li><strong>Cleaner</strong><span class="meta">Photos (read, add, delete)</span>Photos and videos are analyzed and edited on device only and never uploaded; no tracking permission. See also the <a href="cleaner-privacy.html">supplemental policy</a>.</li>
+</ul>
+
+<!-- ---------- Privacy ---------- -->
+<h2 id="en-privacy">Privacy Policy</h2>
+
+<div class="card">
+  <p>
+    <strong>In short:</strong> none of our apps require an account, and your videos, photos, drawings, and game content stay on your device and are never uploaded to our servers. To show ads, process purchases, measure usage, and fix crashes, the apps use services from Google (AdMob, Firebase) and RevenueCat. We do not sell your data.
+  </p>
+</div>
 
 <p>
-若您位於歐洲經濟區（EEA）、英國或瑞士，本節適用於您，並優先於本政策其他章節中相衝突的內容。
+This Privacy Policy applies to the apps listed above developed by the individual developer Momoxie ("we", "us"), collectively the "Services". By using the Services you acknowledge that you have read and understood this Policy.
 </p>
 
-<p class="en">
-If you are located in the European Economic Area (EEA), the United Kingdom, or Switzerland, this section applies to you and prevails over any conflicting provisions elsewhere in this Policy.
+<h3>1. Information We Process</h3>
+<p>
+We do not require an account and do not ask for your name, phone number, email address, postal address, or identity documents. We do not operate servers that receive your data; the data below is processed locally on your device or by the third-party services in point 3 under their own privacy policies.
+</p>
+<ul>
+  <li><strong>Data on your device:</strong> settings, language preference, game settings, player names, custom prompts, wheel content, drawings, video lists, playback and recording settings, Cleaner's deletion list, and purchase status. This data is not uploaded to us and is removed when you delete the app.</li>
+  <li><strong>Camera, microphone, and photos:</strong> accessed only when you actively use recording, import, save, or clean-up features. Recordings, imported media, and edits stay on your device (or in the album or share destination you choose) and are never sent to us or to any third-party service.</li>
+  <li><strong>Apple Watch:</strong> SyncMirror and MeowWheel exchange data directly between your iPhone and Apple Watch through Apple's WatchConnectivity, never through our servers.</li>
+  <li><strong>Data you choose to send:</strong> when you email us or use "Feedback" (which may open email or a Google Form), we receive only what you write and your sender address, used only to reply and improve the apps.</li>
+</ul>
+<p>
+Camera, microphone, and photo permissions are requested only when you first use a feature that needs them; tracking permission is requested on first launch. If you decline, only the features that need that permission are unavailable.
 </p>
 
-<h3>（1）資料控管者</h3>
-<h3 class="en">(1) Data Controller</h3>
+<h3>2. Advertising and Tracking</h3>
+<p>
+The free versions show ads through Google AdMob and measure ad performance. Ads are removed once you purchase ad removal or a paid plan; some apps also offer optional rewarded ads to unlock features temporarily.
+</p>
+<p>
+On iOS, every app except Cleaner asks for permission to track under Apple's App Tracking Transparency (ATT). Only if you allow it can the ad service access the advertising identifier (IDFA) to show personalized ads; if you decline, ads are still shown but the IDFA is not used. You can change this at any time under Settings → Privacy &amp; Security → Tracking.
+</p>
+
+<h3 id="en-third-parties">3. Third-Party Services</h3>
+<p>
+The services below may process device identifiers (such as the IDFV, and the IDFA if you allow tracking), approximate location derived from IP address, device model, OS version, language, app usage (such as screens viewed, features used, and ad interactions), and crash logs. They never receive your videos, photos, drawings, or game content.
+</p>
+<ul class="list">
+  <li><strong>Google AdMob / User Messaging Platform</strong>Show and measure ads; collect ad consent where required.</li>
+  <li><strong>Firebase Analytics</strong>Usage statistics used to improve the apps.</li>
+  <li><strong>Firebase Crashlytics</strong>Crash logs and device info sent on crashes, used to fix problems.</li>
+  <li><strong>Firebase Remote Config</strong>Downloads feature, ad, and version settings, sending country, language, time zone, and OS and app version.</li>
+  <li><strong>RevenueCat</strong>Manages purchases, subscriptions, and restores, receiving an anonymous user ID, product IDs, and transaction records.</li>
+  <li><strong>Apple App Store / Google Play</strong>Downloads, payments, renewals, and refunds.</li>
+</ul>
+<p class="small">
+Privacy policies: <a href="https://policies.google.com/privacy" rel="noopener">Google</a>, <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase</a>, <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a>, <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple</a>
+</p>
+<p>
+SyncMirror's YouTube import connects directly to YouTube using the link you enter, so YouTube receives connection data such as your IP address; the link and video are not sent to us. External websites you open from the apps process data under their own policies.
+</p>
+
+<h3>4. Purchases and Payment Data</h3>
+<p>
+Payments, renewals, cancellations, and refunds are handled by Apple or Google. Neither we nor RevenueCat receive your card number, bank account, billing address, or payment authentication details. Some apps run an on-device integrity check (such as jailbreak detection) to prevent tampering with paid features; the result is not uploaded to us.
+</p>
+
+<h3>5. What We Do Not Do</h3>
+<ul>
+  <li>Require an account or ask for directly identifying information such as your name or email</li>
+  <li>Upload your videos, photos, audio, drawings, wheels, or game content</li>
+  <li>Sell or rent your personal data</li>
+  <li>Use the advertising identifier (IDFA) unless you allow tracking</li>
+</ul>
+
+<h3>6. Children's Privacy</h3>
+<p>
+The Services are not directed to children under 13, and we do not knowingly collect personal information from children under 13. Minors should use the Services with the consent and supervision of a parent or guardian. If you believe a child has provided personal information through the Services, please contact us.
+</p>
+
+<h3>7. Data Retention and Your Controls</h3>
+<ul>
+  <li>Data on your device is kept until you delete or reset it in the app or delete the app; data processed by third-party services follows each service's retention rules.</li>
+  <li>Camera, microphone, photo, and tracking permissions: iOS Settings → Privacy &amp; Security.</li>
+  <li>Subscriptions: iOS Settings → [your name] → Subscriptions, or Google Play → Payments &amp; subscriptions.</li>
+  <li>Purchasing ad removal or a paid plan stops ads.</li>
+</ul>
+
+<h3 id="en-gdpr">8. Users in the EEA, the UK, and Switzerland (GDPR / UK GDPR)</h3>
+<p>
+If you are located in the European Economic Area (EEA), the United Kingdom, or Switzerland, this point applies to you and prevails over anything else in this Policy.
+</p>
+<ul>
+  <li><strong>Data controller:</strong> the individual developer Momoxie, <a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a>.</li>
+  <li><strong>Legal bases:</strong> personalized advertising and ad measurement — your consent (Art. 6(1)(a)); non-personalized advertising — legitimate interest in funding a free service (Art. 6(1)(f)); usage analytics, crash reporting, and remote configuration — legitimate interest in improving the Services (Art. 6(1)(f)); verifying and restoring purchases and subscriptions — performance of a contract (Art. 6(1)(b)); replying to your messages — legitimate interest in responding to your request (Art. 6(1)(f)).</li>
+  <li><strong>Your rights:</strong> you may request access to, rectification or erasure of your personal data, restrict or object to processing, and request data portability; you may withdraw consent at any time without affecting prior lawful processing; and you may lodge a complaint with your local data protection authority. Email us to exercise these rights; because there are no accounts, we may need the app name, version, and device model to locate relevant data.</li>
+  <li id="en-ad-consent"><strong>Changing or withdrawing ad consent:</strong> in regions where consent requirements apply, the app displays an advertising consent message on first launch. To change or withdraw your decision afterwards, tap "Ad Settings" in the app to reopen the consent form. This entry only appears in regions where consent requirements apply. Apple's App Tracking Transparency (ATT) is a separate mechanism, managed under Settings → Privacy &amp; Security → Tracking.</li>
+  <li><strong>International transfers:</strong> third-party services may transfer data outside the EEA (including to the United States), under Standard Contractual Clauses or other appropriate safeguards provided by those services.</li>
+</ul>
+
+<h3>9. Security</h3>
+<p>
+Connections between the apps and third-party services are encrypted (HTTPS). Because your content stays on your device, your device's screen lock and backup settings are an important part of protecting it.
+</p>
+
+<h3>10. Changes to This Policy</h3>
+<p>
+We may update this Policy due to changes in app features, third-party services, legal requirements, or operations, and will change the date on this page; if a change materially affects your rights, we will give prominent notice in the app or on this page.
+</p>
+
+<!-- ---------- Terms ---------- -->
+<h2 id="en-terms">Terms of Use</h2>
 
 <p>
-本服務的資料控管者為個人開發者 Momoxie。聯絡方式：
-<a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a>。
+By downloading, installing, or using the Services, you agree to these Terms of Use (the "Terms") and to the Privacy Policy above. If you do not agree, do not use the Services.
 </p>
 
-<p class="en">
-The data controller for the Services is the individual developer Momoxie. Contact:
-<a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a>.
-</p>
-
-<h3>（2）處理的法律依據</h3>
-<h3 class="en">(2) Legal Bases for Processing</h3>
-
-<table class="legal">
-  <thead>
-    <tr>
-      <th>處理目的<br /><span class="en">Purpose</span></th>
-      <th>法律依據<br /><span class="en">Legal basis</span></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>個人化廣告與廣告成效衡量<br /><span class="en">Personalized advertising and ad measurement</span></td>
-      <td>您的同意（GDPR 第 6(1)(a) 條），透過 App 內的同意訊息取得<br /><span class="en">Your consent (Art. 6(1)(a) GDPR), collected via the in-app consent message</span></td>
-    </tr>
-    <tr>
-      <td>非個人化廣告<br /><span class="en">Non-personalized advertising</span></td>
-      <td>維持免費服務營運的正當利益（第 6(1)(f) 條）<br /><span class="en">Legitimate interest in funding a free service (Art. 6(1)(f))</span></td>
-    </tr>
-    <tr>
-      <td>當機回報、穩定性與效能分析<br /><span class="en">Crash reporting, stability and performance analytics</span></td>
-      <td>維護與改善服務品質的正當利益（第 6(1)(f) 條）<br /><span class="en">Legitimate interest in maintaining and improving the Services (Art. 6(1)(f))</span></td>
-    </tr>
-    <tr>
-      <td>App 內購買與訂閱狀態的驗證與恢復<br /><span class="en">Verifying and restoring in-app purchases and subscriptions</span></td>
-      <td>履行契約所必需（第 6(1)(b) 條）<br /><span class="en">Necessary for performance of a contract (Art. 6(1)(b))</span></td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>（3）您的權利</h3>
-<h3 class="en">(3) Your Rights</h3>
-
+<h3>1. Relationship to App Store and Google Play Terms</h3>
 <p>
-您有權要求存取、更正、刪除您的個人資料，限制或反對處理，以及要求資料可攜。若處理是基於您的同意，您可以隨時撤回同意，撤回不影響撤回前依同意所為處理的合法性。您也有權向所在地的資料保護主管機關提出申訴。
+Apps obtained from the Apple App Store are governed by Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Licensed Application End User License Agreement (Standard EULA)</a>, which these Terms supplement; if they conflict, the Standard EULA prevails. Apps obtained from Google Play are also subject to the <a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play Terms of Service</a>. Apple and Google are not parties to these Terms and are not responsible for maintaining or supporting the Services.
 </p>
 
+<h3>2. License</h3>
 <p>
-行使上述任一權利，請寄信至 <a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a>。
-由於我們不要求註冊帳號，也不儲存可直接識別您的資料，我們可能需要您提供足以定位相關資料的資訊（例如裝置與 App 版本），才能處理您的請求。
+We grant you a personal, non-exclusive, non-transferable, revocable license to use the Services on devices you own or control. You may not:
 </p>
+<ul>
+  <li>Copy, modify, reverse engineer, decompile, or distribute the Services (except as expressly permitted by law)</li>
+  <li>Circumvent or crack paid features, ads, or other technical protection measures</li>
+  <li>Use the Services for any unlawful purpose or to infringe the rights of others</li>
+  <li>Extract, reproduce, or sell the prompt lists, assets, or other content in the apps</li>
+</ul>
 
-<p class="en">
-You have the right to request access to, rectification of, or erasure of your personal data; to restrict or object to processing; and to data portability. Where processing is based on your consent, you may withdraw that consent at any time; withdrawal does not affect the lawfulness of processing carried out before the withdrawal. You also have the right to lodge a complaint with your local data protection supervisory authority.
-</p>
+<h3>3. Purchases, Subscriptions, and Refunds</h3>
+<ul>
+  <li>Some apps offer one-time purchases (such as ad removal, prompt packs, or Pro); SyncMirror also offers auto-renewable subscriptions. Prices are as shown in the app and store at the time of purchase.</li>
+  <li>Payment is charged to your Apple or Google account. Auto-renewable subscriptions renew and are charged within 24 hours before the end of each period unless cancelled beforehand; after cancelling, you keep access until the end of the current period.</li>
+  <li>Any unused portion of a free trial, if offered, is forfeited when you purchase a subscription.</li>
+  <li>Deleting the app does not cancel a subscription; cancel it in your store's subscription settings.</li>
+  <li>Refunds are handled by Apple or Google under their policies; we cannot issue refunds directly.</li>
+  <li>Purchases are tied to your store account and can be restored on other devices via "Restore purchases".</li>
+</ul>
 
-<p class="en">
-To exercise any of these rights, email <a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a>. Because we do not require account registration and do not store directly identifying data, we may need additional information from you (such as your device and app version) in order to locate any relevant data.
-</p>
-
-<h3>（4）如何變更或撤回廣告同意</h3>
-<h3 class="en">(4) How to Change or Withdraw Advertising Consent</h3>
-
+<h3>4. Your Content</h3>
 <p>
-在適用同意規範的地區，App 會在首次啟動時顯示廣告同意訊息。之後若要變更決定，請開啟該 App 的<strong>設定頁面</strong>，點選底部的<strong>「隱私選項」</strong>，即可重新開啟同意表單。此入口只會在適用的地區顯示。
+Content you create or import in the Services (such as recordings, videos, drawings, custom prompts, wheel options, and player names) remains yours or the original rights holder's; we claim no rights to it and never receive it. You are responsible for having the right to use such content; please obtain consent from anyone who appears in it before sharing or publishing it.
 </p>
-
 <p>
-在 iOS 上，Apple 的追蹤授權（ATT）是另一套獨立機制，可於「設定 → 隱私權與安全性 → 追蹤」中管理。
+SyncMirror's video and YouTube-link import is for your personal practice only. You may only import videos you have the right to use and must comply with the YouTube Terms of Service and applicable copyright laws. You may not reproduce, publicly distribute, or commercially use imported, compared, or merged videos without the rights holder's permission. You are solely responsible for any dispute arising from your import or use of third-party content.
 </p>
 
-<p class="en">
-In regions where consent requirements apply, the app displays an advertising consent message on first launch. To change your decision afterwards, open the app's <strong>Settings</strong> page and tap <strong>"Privacy options"</strong> at the bottom to reopen the consent form. This entry point only appears in applicable regions.
-</p>
+<h3>5. Safety and Appropriate Use</h3>
+<ul>
+  <li><strong>Party games</strong> (Who's the Spy?, Charades, Draw &amp; Guess, Truth or Dare): play in a safe environment and respect other players' wishes and boundaries; anyone may refuse any question or dare. Do not do anything dangerous, unlawful, harmful to yourself or others, or non-consensual, and do not attempt risky dares after drinking alcohol.</li>
+  <li><strong>Charades:</strong> you hold up and move your phone while playing; mind your surroundings to avoid dropping the phone or bumping into others.</li>
+  <li><strong>SyncMirror:</strong> warm up and practice within your limits; the app does not provide medical, fitness, or professional instruction.</li>
+  <li><strong>MeowWheel:</strong> results are random and for entertainment only; do not use them for gambling or for important decisions involving health, finances, or legal matters.</li>
+  <li><strong>Cleaner:</strong> photos and videos are deleted only after you confirm, and are first moved to the system "Recently Deleted" album, where iOS permanently removes them after a period of time. Back up important data before cleaning; we cannot recover data lost because you confirmed a deletion.</li>
+</ul>
 
-<p class="en">
-On iOS, Apple's App Tracking Transparency (ATT) is a separate mechanism and can be managed under Settings → Privacy &amp; Security → Tracking.
-</p>
-
-<h3>（5）國際傳輸</h3>
-<h3 class="en">(5) International Transfers</h3>
-
+<h3>6. Ads and Third-Party Services</h3>
 <p>
-我們使用的第三方服務（廣告、分析、當機回報、購買管理）可能將資料傳輸至歐洲經濟區以外的地區處理，包括美國。該等傳輸由各服務提供者依其隱私權政策，透過歐盟標準契約條款或其他適當保護措施進行。
+The free versions display third-party ads. Ad content is provided by the ad service and does not represent our views; any dealings between you and an advertiser are solely between you and that advertiser.
 </p>
 
-<p class="en">
-The third-party services we use (advertising, analytics, crash reporting, purchase management) may transfer data outside the EEA for processing, including to the United States. Such transfers are carried out by those providers under Standard Contractual Clauses or other appropriate safeguards, as described in their respective privacy policies.
-</p>
-
-<hr />
-
-<h2>10. 隱私權政策更新</h2>
-<h2 class="en">10. Changes to This Privacy Policy</h2>
-
+<h3>7. Intellectual Property</h3>
 <p>
-我們可能會因 App 功能、第三方服務、法規或營運需求而更新本隱私權政策。更新時，我們會修改本頁的更新日期。
+All rights in the Services, including their code, interface design, graphics, characters, sounds, prompt lists, and text, belong to us or our licensors. All rights not expressly granted in these Terms are reserved.
 </p>
 
-<p class="en">
-We may update this Privacy Policy due to changes in app features, third-party services, legal requirements, or operational needs. When updated, the date on this page will be changed.
-</p>
-
-<hr />
-
-<h2>11. 聯絡方式</h2>
-<h2 class="en">11. Contact</h2>
-
+<h3>8. Disclaimer</h3>
 <p>
-如有任何隱私權相關問題，請聯繫：
+To the maximum extent permitted by law, the Services are provided "as is" and "as available". We make reasonable efforts to keep them working but do not warrant that they will be uninterrupted, error-free, or fit for your particular needs. Some features (such as ads, purchase validation, remote configuration, and YouTube import) depend on third-party services and may stop working if those services change.
 </p>
 
+<h3>9. Limitation of Liability</h3>
 <p>
-Email：<a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a>
+To the maximum extent permitted by law, we are not liable for any indirect, incidental, special, or consequential damages (including loss of data) arising from your use of or inability to use the Services, and our total liability to you is limited to the amount you actually paid for the relevant app in the twelve months before the damage occurred. This does not apply to damage caused by our intentional misconduct or gross negligence, or to any liability that cannot be excluded or limited under applicable law.
 </p>
 
-<p class="en">
-If you have any questions about this Privacy Policy, please contact:
+<h3>10. Changes and Termination</h3>
+<p>
+We may add, change, or discontinue features, or discontinue an app. We may also update these Terms and change the date on this page; if a change materially affects your rights, we will give prominent notice in the app or on this page. Continuing to use the Services after an update means you accept the updated Terms. You may stop using the Services at any time by deleting the app; if you violate these Terms, your license terminates automatically.
 </p>
 
-<p class="en">
-Email: <a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a>
+<h3>11. Governing Law and Jurisdiction</h3>
+<p>
+These Terms are governed by the laws of the Republic of China (Taiwan). The parties will first try to resolve any dispute in good faith; failing that, the Taipei District Court shall have jurisdiction as the court of first instance. If you are a consumer, nothing in these Terms affects the mandatory protections granted by the law of your place of residence (such as EU consumer rights). If any provision is held invalid, the rest remain in effect. If the Chinese and English versions differ, the Traditional Chinese version prevails, unless the law of your place of residence requires otherwise.
 </p>
 
-<hr />
+<!-- ---------- Support ---------- -->
+<h2 id="en-support">Support</h2>
 
-<p class="footer">
-<a href="support.html">支援 / Support</a>
-</p>
+<div class="card">
+  <p>When reporting an issue, please include the following — without it many issues cannot be reproduced or fixed:</p>
+  <ul>
+    <li>App name and version (in the app's Settings)</li>
+    <li>Device model and OS version (iOS: Settings → General → About)</li>
+    <li>The steps that led to the problem and what you expected instead</li>
+    <li>A screenshot or screen recording, if the problem is visible</li>
+  </ul>
+  <a class="button" href="mailto:support.hc7@gmail.com">Email us</a>
+</div>
+
+<h3>FAQ</h3>
+
+<details>
+  <summary>I paid, but ads still show or features are locked</summary>
+  <p>Make sure you are online, then tap "Restore purchases" in the app. Purchases are tied to your Apple or Google account, so you can restore them on a new device or after reinstalling without paying again. If it still does not unlock, email us with your purchase receipt.</p>
+</details>
+
+<details>
+  <summary>How do I cancel a subscription?</summary>
+  <p>iOS: Settings → [your name] → Subscriptions. Android: Google Play → Payments &amp; subscriptions. Deleting the app does not cancel a subscription.</p>
+</details>
+
+<details>
+  <summary>How do I change the app's language?</summary>
+  <p>The apps follow your device language by default, and you can also choose a language in the app's settings.</p>
+</details>
+
+<details>
+  <summary>I want to change or withdraw my ad consent (EEA, UK, Switzerland)</summary>
+  <p>Tap "Ad Settings" in the app to reopen the consent form. This entry only appears in regions where consent requirements apply. Apple's tracking permission (ATT) is managed under Settings → Privacy &amp; Security → Tracking.</p>
+</details>
+
+<details>
+  <summary>How do I delete my data?</summary>
+  <p>The apps have no accounts and store data on your device; deleting the app removes it. If you are in the EEA, the UK, or Switzerland, you have additional statutory rights — see <a href="#en-gdpr">point 8 of the Privacy Policy</a>.</p>
+</details>
+
+<details>
+  <summary>The app crashes, freezes, or displays incorrectly</summary>
+  <p>Force-quit and reopen the app, and make sure both the app and your OS are up to date. If the problem persists, email us with the details above.</p>
+</details>
+
+<details>
+  <summary>Can I suggest a feature?</summary>
+  <p>Yes — please email us. Some apps also have a "Feedback" entry in Settings.</p>
+</details>
+
+<p class="footer">© Momoxie · <a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a></p>
+
+</main>
 
 </body>
 </html>

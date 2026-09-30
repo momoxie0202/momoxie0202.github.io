@@ -1,183 +1,168 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" data-lang="zh">
 <head>
   <meta charset="UTF-8" />
   <title>支援｜Support — Momoxie Apps</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="color-scheme" content="light dark" />
-  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Momoxie 所有 App 的支援與常見問題：恢復購買、取消訂閱、廣告設定、資料刪除與問題回報。Support and FAQ for Momoxie apps." />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#121212" />
   <link rel="stylesheet" href="assets/site.css" />
-  <script>
-    // 在畫面繪製前套用已儲存的主題，避免閃爍
-    (function () {
-      document.documentElement.className += " js";
-      try {
-        var t = localStorage.getItem("theme");
-        if (t === "light" || t === "dark") {
-          document.documentElement.setAttribute("data-theme", t);
-        }
-      } catch (e) {}
-    })();
-  </script>
-  <script src="assets/theme.js" defer></script>
+  <script src="assets/lang.js"></script>
 </head>
 
 <body>
 
-<div class="theme-switch">
-  <div class="group" role="group" aria-label="主題 / Theme">
-    <button type="button" data-mode="auto" aria-pressed="true">系統 Auto</button>
-    <button type="button" data-mode="light" aria-pressed="false">淺色 Light</button>
-    <button type="button" data-mode="dark" aria-pressed="false">深色 Dark</button>
-  </div>
+<header class="page-header">
+  <h1>Momoxie Apps</h1>
+  <nav class="lang-switch" aria-label="語言 / Language">
+    <a href="#zh" data-lang="zh" hreflang="zh-Hant">中文</a>
+    <a href="#en" data-lang="en" hreflang="en">English</a>
+  </nav>
+</header>
+
+<!-- 內容與 index.html 的「支援」段落相同，修改時請兩邊一起改 -->
+<main data-block="zh" id="zh" lang="zh-Hant">
+
+<nav class="tabs" aria-label="頁面章節">
+  <a href="index.html#privacy">隱私權政策</a>
+  <a href="index.html#terms">使用條款</a>
+  <a href="#support">支援</a>
+</nav>
+
+<div class="card">
+  <p>
+    這是個人開發者 Momoxie 所有 App 的共用支援頁面。有任何問題，歡迎來信，通常會在數個工作天內回覆。
+  </p>
+  <a class="button" href="mailto:support.hc7@gmail.com">來信：support.hc7@gmail.com</a>
 </div>
 
-<h1>支援</h1>
-<p class="en">Support for Apps Developed by Momoxie</p>
+<p class="muted small">更新日期：2026-09-30</p>
 
-<p class="notice">
-聯絡我們：<a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a><br />
-<span class="en">Contact us: <a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a></span>
-</p>
+<h2 id="support">支援</h2>
 
-<p>
-這是個人開發者 Momoxie 所有 App 的共用支援頁面。來信通常會在數個工作天內回覆。
-</p>
+<div class="card">
+  <p>回報問題時，請附上以下資訊，否則很多問題無法重現與修正：</p>
+  <ul>
+    <li>App 名稱與版本（在 App 的設定頁）</li>
+    <li>裝置型號與系統版本（iOS：設定 → 一般 → 關於本機）</li>
+    <li>問題發生的步驟，以及您預期會發生什麼</li>
+    <li>畫面截圖或錄影（如果問題看得見）</li>
+  </ul>
+  <a class="button" href="mailto:support.hc7@gmail.com">來信回報問題</a>
+</div>
 
-<p class="en">
-This is the shared support page for all apps developed by the individual developer Momoxie. Emails are usually answered within a few business days.
-</p>
+<h3>常見問題</h3>
 
-<hr />
+<details>
+  <summary>我買了付費版，但廣告還在／功能沒解鎖</summary>
+  <p>請先確認網路連線正常，然後在 App 內點選「恢復購買」。購買紀錄綁定您的 Apple 或 Google 帳號，換手機或重裝 App 後都可以用同一個帳號恢復，不需要重新付費。若仍未解鎖，請來信並附上購買收據。</p>
+</details>
 
-<h2>支援的 App</h2>
-<h2 class="en">Supported Apps</h2>
+<details>
+  <summary>要怎麼取消訂閱？</summary>
+  <p>iOS：「設定 → [您的名稱] → 訂閱」。Android：Google Play「付款與訂閱」。刪除 App 不會自動取消訂閱。</p>
+</details>
 
-<ul>
-  <li>SyncMirror - 練舞神器<span class="en"> / SyncMirror</span></li>
-  <li>喵轉盤<span class="en"> / MeowWheel</span></li>
-  <li>誰是臥底？<span class="en"> / Who's the Spy?</span></li>
-  <li>你演我猜<span class="en"> / Charades</span></li>
-  <li>真心話大冒險<span class="en"> / Truth or Dare</span></li>
-  <li>循環計時器<span class="en"> / Loop Timer</span></li>
-  <li>Cleaner 照片清理<span class="en"> / Cleaner</span>（<a href="cleaner-privacy.html">隱私權政策<span class="en"> / Privacy Policy</span></a>）</li>
-</ul>
+<details>
+  <summary>要怎麼更改 App 的語言？</summary>
+  <p>App 預設跟隨裝置語言，也可以在 App 的設定中另外指定語言。</p>
+</details>
 
-<hr />
+<details>
+  <summary>我想變更或撤回廣告同意（歐洲經濟區、英國、瑞士）</summary>
+  <p>點選 App 內的「廣告設定」即可重新開啟同意表單。這個入口只會在適用同意規範的地區顯示。iOS 的追蹤授權（ATT）請到「設定 → 隱私權與安全性 → 追蹤」管理。</p>
+</details>
 
-<h2>回報問題時請附上這些資訊</h2>
-<h2 class="en">What to Include When Reporting an Issue</h2>
+<details>
+  <summary>要怎麼刪除我的資料？</summary>
+  <p>這些 App 不需要帳號，資料儲存在您的裝置上，刪除 App 即會一併移除。若您在歐洲經濟區、英國或瑞士，另有法定的資料權利，請見<a href="index.html#gdpr">隱私權政策第 8 點</a>。</p>
+</details>
 
-<p>
-沒有這些資訊，很多問題無法重現，也就無法修正。請盡量提供：
-</p>
+<details>
+  <summary>App 當掉、卡住或畫面顯示不正常</summary>
+  <p>請先完全關閉 App 再重新開啟，並確認 App 與系統都已更新到最新版本。若問題持續，請依上方說明來信。</p>
+</details>
 
-<ul>
-  <li>App 名稱與版本（版本號在 App 的設定頁底部）</li>
-  <li>裝置型號與 iOS 版本（設定 → 一般 → 關於本機）</li>
-  <li>問題發生的步驟，以及您預期會發生什麼</li>
-  <li>畫面截圖或錄影（如果問題看得見）</li>
-</ul>
+<details>
+  <summary>可以提供建議或要求新功能嗎？</summary>
+  <p>歡迎直接來信。部分 App 的設定頁也有「意見回饋」入口。</p>
+</details>
 
-<p class="en">
-Without this information many issues cannot be reproduced, and therefore cannot be fixed. Please include: the app name and version (shown at the bottom of the app's Settings page), your device model and iOS version (Settings → General → About), the steps that led to the problem and what you expected instead, and a screenshot or screen recording if the problem is visible.
-</p>
+<p class="footer">© Momoxie · <a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a></p>
 
-<hr />
+</main>
 
-<h2>常見問題</h2>
-<h2 class="en">Frequently Asked Questions</h2>
+<main data-block="en" id="en" lang="en">
 
-<h3>我買了付費版，但廣告還在／付費功能沒解鎖</h3>
-<h3 class="en">I purchased the paid version, but ads are still showing or paid features are locked</h3>
+<nav class="tabs" aria-label="Sections">
+  <a href="index.html#en-privacy">Privacy</a>
+  <a href="index.html#en-terms">Terms</a>
+  <a href="#en-support">Support</a>
+</nav>
 
-<p>
-請先確認網路連線正常，然後開啟 App 的設定頁，點選「恢復購買」。購買紀錄綁定的是您的 Apple 帳號，
-換手機或重裝 App 之後都可以用同一個帳號恢復，不需要重新付費。
-若恢復後仍未解鎖，請來信並附上購買時的 App Store 收據。
-</p>
+<div class="card">
+  <p>
+    This is the shared Support page for all apps by the individual developer Momoxie. Questions are welcome by email and are usually answered within a few business days.
+  </p>
+  <a class="button" href="mailto:support.hc7@gmail.com">Email: support.hc7@gmail.com</a>
+</div>
 
-<p class="en">
-First make sure you have a working network connection, then open the app's Settings page and tap "Restore purchases". Purchases are tied to your Apple Account, so you can restore them on a new device or after reinstalling without paying again. If it still does not unlock, email us and include your App Store receipt.
-</p>
+<p class="muted small">Last updated: 2026-09-30</p>
 
-<h3>要怎麼更改 App 的語言？</h3>
-<h3 class="en">How do I change the app's language?</h3>
+<h2 id="en-support">Support</h2>
 
-<p>
-App 預設會跟隨您的裝置語言。若要單獨指定，請開啟設定頁，點選底部的地球圖示，再選擇語言。
-</p>
+<div class="card">
+  <p>When reporting an issue, please include the following — without it many issues cannot be reproduced or fixed:</p>
+  <ul>
+    <li>App name and version (in the app's Settings)</li>
+    <li>Device model and OS version (iOS: Settings → General → About)</li>
+    <li>The steps that led to the problem and what you expected instead</li>
+    <li>A screenshot or screen recording, if the problem is visible</li>
+  </ul>
+  <a class="button" href="mailto:support.hc7@gmail.com">Email us</a>
+</div>
 
-<p class="en">
-The apps follow your device language by default. To choose a specific language, open the Settings page, tap the globe icon at the bottom, and pick a language.
-</p>
+<h3>FAQ</h3>
 
-<h3>我想變更或撤回廣告同意（歐洲經濟區、英國、瑞士）</h3>
-<h3 class="en">I want to change or withdraw my advertising consent (EEA, UK, Switzerland)</h3>
+<details>
+  <summary>I paid, but ads still show or features are locked</summary>
+  <p>Make sure you are online, then tap "Restore purchases" in the app. Purchases are tied to your Apple or Google account, so you can restore them on a new device or after reinstalling without paying again. If it still does not unlock, email us with your purchase receipt.</p>
+</details>
 
-<p>
-開啟 App 的設定頁，點選底部的「隱私選項」即可重新開啟同意表單。這個入口只會在適用同意規範的地區顯示。
-iOS 的追蹤授權（ATT）是另一套獨立機制，請到「設定 → 隱私權與安全性 → 追蹤」管理。
-</p>
+<details>
+  <summary>How do I cancel a subscription?</summary>
+  <p>iOS: Settings → [your name] → Subscriptions. Android: Google Play → Payments &amp; subscriptions. Deleting the app does not cancel a subscription.</p>
+</details>
 
-<p class="en">
-Open the app's Settings page and tap "Privacy options" at the bottom to reopen the consent form. This entry point only appears in regions where consent requirements apply. Apple's App Tracking Transparency (ATT) is a separate mechanism, managed under Settings → Privacy &amp; Security → Tracking.
-</p>
+<details>
+  <summary>How do I change the app's language?</summary>
+  <p>The apps follow your device language by default, and you can also choose a language in the app's settings.</p>
+</details>
 
-<h3>要怎麼刪除我的資料？</h3>
-<h3 class="en">How do I delete my data?</h3>
+<details>
+  <summary>I want to change or withdraw my ad consent (EEA, UK, Switzerland)</summary>
+  <p>Tap "Ad Settings" in the app to reopen the consent form. This entry only appears in regions where consent requirements apply. Apple's tracking permission (ATT) is managed under Settings → Privacy &amp; Security → Tracking.</p>
+</details>
 
-<p>
-這些 App 不需要註冊帳號，資料儲存在您的裝置本地端。刪除 App 即會一併移除這些資料。
-若您在歐洲經濟區、英國或瑞士，另有法定的資料權利，詳見<a href="index.html">隱私權政策</a>第 9 節。
-</p>
+<details>
+  <summary>How do I delete my data?</summary>
+  <p>The apps have no accounts and store data on your device; deleting the app removes it. If you are in the EEA, the UK, or Switzerland, you have additional statutory rights — see <a href="index.html#en-gdpr">point 8 of the Privacy Policy</a>.</p>
+</details>
 
-<p class="en">
-These apps do not require an account, and data is stored locally on your device. Deleting the app removes that data. If you are in the EEA, the UK, or Switzerland, you have additional statutory rights — see section 9 of the <a href="index.html">Privacy Policy</a>.
-</p>
+<details>
+  <summary>The app crashes, freezes, or displays incorrectly</summary>
+  <p>Force-quit and reopen the app, and make sure both the app and your OS are up to date. If the problem persists, email us with the details above.</p>
+</details>
 
-<h3>App 當掉、卡住或畫面顯示不正常</h3>
-<h3 class="en">The app crashes, freezes, or displays incorrectly</h3>
+<details>
+  <summary>Can I suggest a feature?</summary>
+  <p>Yes — please email us. Some apps also have a "Feedback" entry in Settings.</p>
+</details>
 
-<p>
-請先完全關閉 App 再重新開啟，並確認 App 與 iOS 都已更新到最新版本。若問題持續，請依上方「回報問題時請附上這些資訊」來信。
-</p>
+<p class="footer">© Momoxie · <a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a></p>
 
-<p class="en">
-Please force-quit and reopen the app, and make sure both the app and iOS are up to date. If the problem persists, email us with the details listed under "What to Include When Reporting an Issue" above.
-</p>
-
-<h3>可以提供建議或要求新功能嗎？</h3>
-<h3 class="en">Can I suggest a feature?</h3>
-
-<p>
-歡迎，請直接來信。部分 App 的設定頁也內建「意見回饋」入口，可以直接送出。
-</p>
-
-<p class="en">
-Yes — please email us. Some apps also have a "Feedback" entry on the Settings page that you can use directly.
-</p>
-
-<hr />
-
-<h2>隱私權</h2>
-<h2 class="en">Privacy</h2>
-
-<p>
-資料處理方式、第三方服務與使用者權利，詳見<a href="index.html">隱私權政策</a>。
-</p>
-
-<p class="en">
-For details on data processing, third-party services, and user rights, see the <a href="index.html">Privacy Policy</a>.
-</p>
-
-<hr />
-
-<p class="footer">
-更新日期 / Last updated: 2026-08-01 ·
-<a href="index.html">隱私權政策 / Privacy Policy</a>
-</p>
+</main>
 
 </body>
 </html>

@@ -3,36 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <title>Cleaner 相簿清理 隱私權政策｜Privacy Policy — Momoxie Apps</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Cleaner 照片清理的隱私權政策：所有照片都在手機上處理，不上傳、不收集任何個人資料，沒有廣告與追蹤。" />
-  <meta name="color-scheme" content="light dark" />
-  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Cleaner 相簿清理的隱私權政策：照片與影片只在手機上處理，不會上傳；免費版使用 AdMob 廣告與 Firebase 分析，不要求追蹤權限。" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#121212" />
   <link rel="stylesheet" href="assets/site.css" />
-  <script>
-    // 在畫面繪製前套用已儲存的主題，避免閃爍
-    (function () {
-      document.documentElement.className += " js";
-      try {
-        var t = localStorage.getItem("theme");
-        if (t === "light" || t === "dark") {
-          document.documentElement.setAttribute("data-theme", t);
-        }
-      } catch (e) {}
-    })();
-  </script>
-  <script src="assets/theme.js" defer></script>
 </head>
 
 <body>
+<main class="legacy">
 
-<div class="theme-switch">
-  <div class="group" role="group" aria-label="主題 / Theme">
-    <button type="button" data-mode="auto" aria-pressed="true">系統 Auto</button>
-    <button type="button" data-mode="light" aria-pressed="false">淺色 Light</button>
-    <button type="button" data-mode="dark" aria-pressed="false">深色 Dark</button>
-  </div>
-</div>
 
 <h1>Cleaner 相簿清理 隱私權政策</h1>
 <p class="en">Privacy Policy for Cleaner</p>
@@ -223,5 +203,6 @@ If you have any questions about this Privacy Policy, please contact: <a href="ma
 <a href="support.html">支援 / Support</a>
 </p>
 
+</main>
 </body>
 </html>
