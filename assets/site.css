@@ -265,3 +265,8 @@ details > :not(summary) {
   }
 }
 
+
+/* 沒有 JS 時標題兩種語言並列，加上分隔 */
+html:not(.js) h1 span + span::before {
+  content: " / ";
+}
