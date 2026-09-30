@@ -265,36 +265,3 @@ details > :not(summary) {
   }
 }
 
-/* cleaner-privacy.html：中英對照排版 */
-.legacy {
-  padding-top: 20px;
-}
-
-.legacy h1 {
-  margin-bottom: 4px;
-}
-
-.legacy h2 {
-  margin-bottom: 0;
-}
-
-.legacy h2.en,
-.legacy h3.en {
-  margin-top: 0;
-  padding-top: 0;
-  border-top: 0;
-}
-
-.legacy .en {
-  color: var(--muted);
-}
-
-.legacy .notice {
-  background: var(--panel);
-  border-radius: 14px;
-  padding: 14px 16px;
-}
-
-.legacy hr {
-  display: none;
-}
