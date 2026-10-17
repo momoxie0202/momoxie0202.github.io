@@ -3,312 +3,174 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>H.C 的 App｜練舞、派對遊戲、生活小工具</title>
-  <meta name="description" content="一個人開發的 7 款 App：練舞神器 SyncMirror、誰是臥底、你畫我猜、真心話大冒險、比手畫腳、喵轉盤、Cleaner 相簿清理。全部免費下載。">
-  <link rel="canonical" href="https://momoxie0202.github.io/apps/">
-  <meta name="theme-color" content="#0A0A0A">
+  <meta name="theme-color" content="#101114">
   <meta name="color-scheme" content="dark">
-
+  <meta name="robots" content="index, follow">
+  <title>H.C 的 App 作品集｜練舞、派對遊戲與生活工具</title>
+  <meta name="description" content="我是 H.C，獨立開發者。這裡收集我做的 7 款 App：SyncMirror 練舞神器、誰是臥底、真心話大冒險、你畫我猜、比手畫腳、喵轉盤與 Cleaner 相簿清理。看作品介紹，或直接前往 App Store、Google Play。">
+  <link rel="canonical" href="https://momoxie0202.github.io/apps/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="H.C 的 App 作品集">
-  <meta property="og:description" content="練舞神器、派對遊戲、生活小工具，7 款 App 全部免費下載。">
+  <meta property="og:site_name" content="H.C 的 App">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:title" content="H.C 的 App｜把靈感做成真的會打開的 App">
+  <meta property="og:description" content="獨立開發的 7 款 App：練舞、派對遊戲與生活小工具。從作品介紹直接找到下載入口。">
   <meta property="og:url" content="https://momoxie0202.github.io/apps/">
   <meta property="og:image" content="https://momoxie0202.github.io/apps/img/og-hc.png">
   <meta property="og:image:width" content="1731">
   <meta property="og:image:height" content="909">
+  <meta property="og:image:alt" content="H.C 的七款 App 作品集">
   <meta name="twitter:card" content="summary_large_image">
-
-  <link rel="icon" type="image/png" href="/apps/img/hc-favicon.png">
-  <link rel="apple-touch-icon" href="/apps/img/hc-favicon.png">
-
-  <style>
-    :root {
-      --bg: #0A0A0A;
-      --card: #1C1C1E;
-      --card-press: #2C2C2E;
-      --text: #FFFFFF;
-      --sub: #98989F;
-      --border: #38383A;
-      --accent: #FFD117;
-      --radius: 18px;
+  <meta name="twitter:title" content="H.C 的 App 作品集">
+  <meta name="twitter:description" content="練舞、派對遊戲與生活小工具，一個人做的 7 款 App。">
+  <meta name="twitter:image" content="https://momoxie0202.github.io/apps/img/og-hc.png">
+  <link rel="icon" type="image/png" href="img/hc-favicon.png">
+  <link rel="apple-touch-icon" href="img/hc-favicon.png">
+  <link rel="stylesheet" href="portfolio.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "H.C 的 App 作品集",
+    "description": "H.C 獨立開發的練舞、派對遊戲與生活工具 App 作品集。",
+    "url": "https://momoxie0202.github.io/apps/",
+    "inLanguage": "zh-Hant",
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 7,
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"SyncMirror 練舞神器","url":"https://momoxie0202.github.io/apps/syncmirror/zh-tw/"},
+        {"@type":"ListItem","position":2,"name":"誰是臥底","url":"https://momoxie0202.github.io/apps/undercover/"},
+        {"@type":"ListItem","position":3,"name":"真心話大冒險","url":"https://apps.apple.com/app/id6777689064"},
+        {"@type":"ListItem","position":4,"name":"你畫我猜","url":"https://apps.apple.com/app/id6778296953"},
+        {"@type":"ListItem","position":5,"name":"比手畫腳","url":"https://apps.apple.com/app/id6757603710"},
+        {"@type":"ListItem","position":6,"name":"喵轉盤","url":"https://apps.apple.com/app/id6755671037"},
+        {"@type":"ListItem","position":7,"name":"Cleaner 相簿清理","url":"https://apps.apple.com/app/id6816571408"}
+      ]
     }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { -webkit-text-size-adjust: 100%; }
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang TC", "Noto Sans TC", "Segoe UI", Roboto, sans-serif;
-      line-height: 1.5;
-      -webkit-font-smoothing: antialiased;
-    }
-    main {
-      max-width: 560px;
-      margin: 0 auto;
-      padding: calc(28px + env(safe-area-inset-top)) 16px calc(32px + env(safe-area-inset-bottom));
-    }
-
-    .intro { text-align: center; margin-bottom: 28px; }
-    .icons-row { display: flex; justify-content: center; margin-bottom: 16px; }
-    .icons-row img {
-      width: 44px; height: 44px; border-radius: 10px;
-      border: 2px solid var(--bg); margin-left: -10px;
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16);
-    }
-    .icons-row img:first-child { margin-left: 0; }
-    h1 { font-size: 24px; font-weight: 700; letter-spacing: 0.01em; }
-    .lead { color: var(--sub); font-size: 15px; margin-top: 6px; }
-    .lang {
-      display: inline-flex; gap: 4px; margin-top: 14px;
-      background: var(--card); border-radius: 999px; padding: 3px;
-    }
-    .lang button {
-      font: inherit; font-size: 13px; color: var(--sub);
-      background: none; border: 0; border-radius: 999px; padding: 4px 12px; cursor: pointer;
-    }
-    .lang button[aria-pressed="true"] { background: var(--card-press); color: var(--text); }
-
-    h2 {
-      font-size: 13px; font-weight: 600; color: var(--sub);
-      text-transform: uppercase; letter-spacing: 0.06em;
-      margin: 26px 4px 10px;
-    }
-
-    .app {
-      display: flex; gap: 14px; align-items: flex-start;
-      background: var(--card); border-radius: var(--radius);
-      padding: 14px; margin-bottom: 10px;
-      color: inherit; text-decoration: none;
-      transition: background-color .15s;
-      -webkit-tap-highlight-color: transparent;
-    }
-    .app:active { background: var(--card-press); }
-    .app.featured { border: 1px solid rgba(255, 209, 23, 0.35); }
-    .app img {
-      width: 64px; height: 64px; border-radius: 14px; flex: none;
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
-    }
-    .app .body { flex: 1; min-width: 0; }
-    .app .name { font-size: 16px; font-weight: 600; }
-    .app .desc { font-size: 14px; color: var(--sub); margin-top: 2px; }
-    .app .meta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-    .tag {
-      font-size: 12px; color: var(--sub);
-      border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px;
-    }
-    .get {
-      align-self: center; flex: none;
-      font-size: 14px; font-weight: 600; color: var(--accent);
-      background: var(--card-press); border-radius: 999px; padding: 6px 14px;
-    }
-    .download-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
-    .download-link {
-      display: inline-flex; align-items: center; justify-content: center;
-      min-height: 38px; padding: 7px 14px; border-radius: 999px;
-      background: var(--card-press); border: 1px solid var(--border);
-      color: var(--text); font-size: 13px; font-weight: 600; text-decoration: none;
-    }
-    .download-link:hover, .download-link:focus-visible { border-color: var(--accent); color: var(--accent); }
-
-    footer { text-align: center; margin-top: 30px; font-size: 13px; color: var(--sub); }
-    footer a { color: var(--sub); }
-    footer p + p { margin-top: 6px; }
-
-    [data-lang-only="en"] { display: none; }
-    html[lang="en"] [data-lang-only="zh"] { display: none; }
-    html[lang="en"] [data-lang-only="en"] { display: revert; }
-  </style>
+  }
+  </script>
 </head>
-<body>
-<main>
-
-  <header class="intro">
-    <div class="icons-row" aria-hidden="true">
-      <img src="/apps/img/syncmirror.png" alt="">
-      <img src="/apps/img/undercover.png" alt="">
-      <img src="/apps/img/drawguess.png" alt="">
-      <img src="/apps/img/truthordare.png" alt="">
-      <img src="/apps/img/charades.png" alt="">
-      <img src="/apps/img/meowwheel.png" alt="">
-      <img src="/apps/img/cleaner.png" alt="">
-    </div>
-    <h1 data-i18n="title">H.C 的 App</h1>
-    <p class="lead" data-i18n="lead">一個人開發的 7 款 App，全部免費下載</p>
-    <div class="lang" role="group" aria-label="Language">
-      <button type="button" data-set-lang="zh" aria-pressed="true">中文</button>
-      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
-    </div>
-  </header>
-
-  <h2 data-i18n="sec_practice">練習工具</h2>
-
-  <article class="app featured" data-app="6755509268" data-play="com.syncmirror.syncmirror_plus_android">
-    <img src="/apps/img/syncmirror.png" alt="" width="64" height="64">
-    <div class="body">
-      <p class="name" data-i18n="syncmirror_name">SyncMirror 練舞神器</p>
-      <p class="desc" data-i18n="syncmirror_desc">鏡像翻轉、慢速 AB 循環，邊看邊錄、並排比對，看見自己哪裡沒跟上。</p>
-      <div class="meta"><span class="tag">iOS</span><span class="tag">Android</span></div>
-      <div class="download-actions">
-        <a class="download-link" data-store="ios" href="https://apps.apple.com/app/id6755509268" data-i18n="ios_download">iOS · App Store</a>
-        <a class="download-link" data-store="android" href="https://play.google.com/store/apps/details?id=com.syncmirror.syncmirror_plus_android" data-i18n="android_download">Android · Google Play</a>
+<body id="top">
+<svg class="svg-defs" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><symbol id="apple-mark" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></symbol></svg>
+<div class="site-shell">
+  <header class="site-header"><a class="identity" href="./"><img src="img/hc-favicon.png" alt="" width="42" height="42"><strong>H.C</strong></a><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="zh" aria-pressed="true">中文</button><button type="button" data-set-lang="en" aria-pressed="false">EN</button></div></header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title"><span data-i18n="hero_title_1">把靈感，做成</span><br><em data-i18n="hero_title_2">真的會打開的 App。</em></h1>
+        <p data-i18n="hero_lead">我是 H.C，獨立開發者。我做練舞工具、聚會遊戲，也做讓生活輕鬆一點的小工具。</p>
       </div>
-    </div>
-  </article>
-
-  <h2 data-i18n="sec_party">聚會遊戲</h2>
-
-  <a class="app" data-app="6757357535" href="https://apps.apple.com/app/id6757357535">
-    <img src="/apps/img/undercover.png" alt="" width="64" height="64">
-    <div class="body">
-      <p class="name" data-i18n="undercover_name">誰是臥底</p>
-      <p class="desc" data-i18n="undercover_desc">2,000+ 組題目，輪流描述、不准說破，投票找出拿到不同詞的臥底。</p>
-      <div class="meta"><span class="tag">iOS</span></div>
-    </div>
-    <span class="get" data-i18n="get">取得</span>
-  </a>
-
-  <a class="app" data-app="6778296953" href="https://apps.apple.com/app/id6778296953">
-    <img src="/apps/img/drawguess.png" alt="" width="64" height="64">
-    <div class="body">
-      <p class="name" data-i18n="drawguess_name">你畫我猜</p>
-      <p class="desc" data-i18n="drawguess_desc">輪流畫、大家搶著猜，想畫貓被猜成外星人才是精華。</p>
-      <div class="meta"><span class="tag">iOS</span></div>
-    </div>
-    <span class="get" data-i18n="get">取得</span>
-  </a>
-
-  <a class="app" data-app="6777689064" href="https://apps.apple.com/app/id6777689064">
-    <img src="/apps/img/truthordare.png" alt="" width="64" height="64">
-    <div class="body">
-      <p class="name" data-i18n="truthordare_name">真心話大冒險</p>
-      <p class="desc" data-i18n="truthordare_desc">轉瓶子或命運輪盤決定輪到誰，從破冰暖場到深夜局都有題庫。</p>
-      <div class="meta"><span class="tag">iOS</span></div>
-    </div>
-    <span class="get" data-i18n="get">取得</span>
-  </a>
-
-  <a class="app" data-app="6757603710" href="https://apps.apple.com/app/id6757603710">
-    <img src="/apps/img/charades.png" alt="" width="64" height="64">
-    <div class="body">
-      <p class="name" data-i18n="charades_name">比手畫腳</p>
-      <p class="desc" data-i18n="charades_desc">手機蓋下答對、抬起跳過，限時挑戰、生存模式，考驗默契。</p>
-      <div class="meta"><span class="tag">iOS</span></div>
-    </div>
-    <span class="get" data-i18n="get">取得</span>
-  </a>
-
-  <h2 data-i18n="sec_tools">生活小工具</h2>
-
-  <article class="app" data-app="6755671037" data-play="com.momoxie.meowwheel">
-    <img src="/apps/img/meowwheel.png" alt="" width="64" height="64">
-    <div class="body">
-      <p class="name" data-i18n="meowwheel_name">喵轉盤</p>
-      <p class="desc" data-i18n="meowwheel_desc">午餐吃什麼、懲罰抽誰，選擇障礙就交給貓咪轉盤決定。</p>
-      <div class="meta"><span class="tag">iOS</span><span class="tag">Android</span></div>
-      <div class="download-actions">
-        <a class="download-link" data-store="ios" href="https://apps.apple.com/app/id6755671037" data-i18n="ios_download">iOS · App Store</a>
-        <a class="download-link" data-store="android" href="https://play.google.com/store/apps/details?id=com.momoxie.meowwheel" data-i18n="android_download">Android · Google Play</a>
+      <div class="hero-art" aria-label="H.C 開發的 App 圖示">
+        <span class="art-ring" aria-hidden="true"></span>
+        <img class="art-icon art-icon-one" src="img/syncmirror.png" width="256" height="256" alt="SyncMirror">
+        <img class="art-icon art-icon-two" src="img/undercover.png" width="256" height="256" alt="誰是臥底">
+        <img class="art-icon art-icon-three" src="img/drawguess.png" width="256" height="256" alt="你畫我猜">
+        <img class="art-icon art-icon-four" src="img/meowwheel.png" width="256" height="256" alt="喵轉盤">
       </div>
-    </div>
-  </article>
+    </section>
 
-  <a class="app" data-app="6816571408" href="https://apps.apple.com/app/id6816571408">
-    <img src="/apps/img/cleaner.png" alt="" width="64" height="64">
-    <div class="body">
-      <p class="name" data-i18n="cleaner_name">Cleaner 相簿清理</p>
-      <p class="desc" data-i18n="cleaner_desc">往上滑就刪照片，長影片當場剪短，買斷制不用訂閱。</p>
-      <div class="meta"><span class="tag">iOS</span></div>
-    </div>
-    <span class="get" data-i18n="get">取得</span>
-  </a>
+    <section class="work-section" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><h2 id="work-title" data-i18n="work_title">先從 SyncMirror 開始。</h2><p data-i18n="work_intro">想跟影片學舞？把看不清楚的動作，一個一個練熟。</p></div>
+      <article class="featured-app" data-app="6755509268" data-play="com.syncmirror.syncmirror_plus_android">
+        <div class="featured-copy">
+          <div class="featured-identity"><img src="img/syncmirror.png" width="66" height="66" alt=""><h3>SyncMirror</h3></div>
+          <p class="featured-subtitle" data-i18n="syncmirror_subtitle">想跟影片學舞，就把每個動作看清楚。</p>
+          <p class="featured-desc" data-i18n="syncmirror_desc">鏡像對方向、慢速拆細節、AB 循環反覆練。錄下自己後，和原影片並排比對。</p>
+          <a class="detail-link" href="syncmirror/zh-tw/" data-detail="syncmirror"><span data-i18n="about">看介紹</span><span aria-hidden="true">↗</span></a>
+          <div class="store-actions"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6755509268" aria-label="SyncMirror App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="store-button store-google" data-store="android" href="https://play.google.com/store/apps/details?id=com.syncmirror.syncmirror_plus_android" aria-label="SyncMirror Google Play"><img src="syncmirror/img/zh-tw/google-play.svg" width="22" height="22" alt=""><span>Google Play</span></a></div>
+        </div>
+        <div class="featured-visual"><span class="featured-halo" aria-hidden="true"></span><img class="feature-shot feature-shot-back" src="syncmirror/img/zh-tw/02_player.jpg" width="760" height="1014" alt="SyncMirror 影片播放器畫面" loading="lazy"><img class="feature-shot feature-shot-front" src="syncmirror/img/zh-tw/07_compare.jpg" width="760" height="1014" alt="SyncMirror 並排比對舞蹈影片畫面" loading="lazy"></div>
+      </article>
+    </section>
 
-  <footer>
-    <p><a href="/#privacy" data-i18n="privacy">隱私權政策與使用條款</a> · <a href="/#support" data-i18n="support">聯絡支援</a></p>
-  </footer>
+    <section class="collection-section" aria-labelledby="party-title">
+      <div class="section-heading"><h2 id="party-title" data-i18n="party_title">聚會遊戲</h2><p data-i18n="party_intro">一支手機，就能讓整桌人玩起來。</p></div>
+      <div class="party-stack">
+        <article class="party-feature card-undercover" data-app="6757357535">
+          <div class="party-copy"><img src="img/undercover.png" width="72" height="72" alt=""><h3 data-i18n="undercover_name">誰是臥底</h3><p data-i18n="undercover_desc">每個人看自己的詞，輪流描述、投票，找出拿到不同答案的人。</p><div class="card-actions"><a class="detail-link" href="undercover/" data-detail="undercover"><span data-i18n="about">看介紹</span><span aria-hidden="true">↗</span></a><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6757357535" aria-label="誰是臥底 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></div>
+          <div class="party-visual"><img class="party-shot party-shot-back" src="undercover/zh_01_home.jpg" data-zh-src="undercover/zh_01_home.jpg" data-en-src="undercover/en/en_01_home.jpg" data-zh-alt="誰是臥底遊戲首頁" data-en-alt="Who's the Spy game home screen" width="507" height="1101" alt="誰是臥底遊戲首頁" loading="lazy"><img class="party-shot party-shot-front" src="undercover/zh_02_identity.jpg" data-zh-src="undercover/zh_02_identity.jpg" data-en-src="undercover/en/en_02_identity.jpg" data-zh-alt="誰是臥底玩家身分畫面" data-en-alt="Who's the Spy player role screen" width="507" height="1101" alt="誰是臥底玩家身分畫面" loading="lazy"></div>
+        </article>
+        <article class="party-feature card-truth" data-app="6777689064">
+          <div class="party-copy"><img src="img/truthordare.png" width="72" height="72" alt=""><h3 data-i18n="truthordare_name">真心話大冒險</h3><p data-i18n="truthordare_desc">轉瓶子、轉輪盤決定誰先來。從破冰暖場到深夜局都有題目。</p><div class="card-actions"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6777689064" aria-label="真心話大冒險 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></div>
+          <div class="party-visual"><img class="party-shot party-shot-back" src="img/portfolio/truth-home-zh.jpg" data-zh-src="img/portfolio/truth-home-zh.jpg" data-en-src="img/portfolio/truth-home-en.jpg" data-zh-alt="真心話大冒險選擇玩法畫面" data-en-alt="Truth or Dare mode selection screen" width="507" height="1101" alt="真心話大冒險選擇玩法畫面" loading="lazy"><img class="party-shot party-shot-front" src="img/portfolio/truth-play-zh.jpg" data-zh-src="img/portfolio/truth-play-zh.jpg" data-en-src="img/portfolio/truth-play-en.jpg" data-zh-alt="真心話大冒險轉瓶子畫面" data-en-alt="Truth or Dare spin the bottle screen" width="507" height="1101" alt="真心話大冒險轉瓶子畫面" loading="lazy"></div>
+        </article>
+        <article class="party-feature card-draw" data-app="6778296953">
+          <div class="party-copy"><img src="img/drawguess.png" width="72" height="72" alt=""><h3 data-i18n="drawguess_name">你畫我猜</h3><p data-i18n="drawguess_desc">輪流畫、大家猜。你以為畫的是貓，朋友可能覺得是外星人。</p><div class="card-actions"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6778296953" aria-label="你畫我猜 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></div>
+          <div class="party-visual"><img class="party-shot party-shot-back" src="img/portfolio/draw-home-zh.jpg" data-zh-src="img/portfolio/draw-home-zh.jpg" data-en-src="img/portfolio/draw-home-en.jpg" data-zh-alt="你畫我猜遊戲首頁" data-en-alt="Draw & Guess game home screen" width="507" height="1101" alt="你畫我猜遊戲首頁" loading="lazy"><img class="party-shot party-shot-front" src="img/portfolio/draw-play-zh.jpg" data-zh-src="img/portfolio/draw-play-zh.jpg" data-en-src="img/portfolio/draw-play-en.jpg" data-zh-alt="你畫我猜畫圖遊戲畫面" data-en-alt="Draw & Guess drawing game screen" width="507" height="1101" alt="你畫我猜畫圖遊戲畫面" loading="lazy"></div>
+        </article>
+        <article class="app-card card-charades party-compact" data-app="6757603710"><img src="img/charades.png" width="72" height="72" alt=""><div><h3 data-i18n="charades_name">比手畫腳</h3><p data-i18n="charades_desc">把手機放額頭，朋友負責演。猜對就蓋下手機，想跳過就抬起。</p></div><div class="card-actions"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6757603710" aria-label="比手畫腳 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></article>
+      </div>
+    </section>
 
-</main>
-
+    <section class="collection-section tools-section" aria-labelledby="tools-title">
+      <div class="section-heading"><h2 id="tools-title" data-i18n="tools_title">生活小工具</h2><p data-i18n="tools_intro">選不出答案、照片堆滿時，幫你省點事。</p></div>
+      <div class="app-grid">
+        <article class="app-card card-meow" data-app="6755671037" data-play="com.momoxie.meowwheel"><img src="img/meowwheel.png" width="72" height="72" alt=""><h3 data-i18n="meowwheel_name">喵轉盤</h3><p data-i18n="meowwheel_desc">午餐吃什麼、今天誰先做？選擇障礙，讓貓咪轉盤幫你決定。</p><div class="card-actions"><div class="store-actions"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6755671037" aria-label="喵轉盤 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="store-button store-google" data-store="android" href="https://play.google.com/store/apps/details?id=com.momoxie.meowwheel" aria-label="喵轉盤 Google Play"><img src="syncmirror/img/zh-tw/google-play.svg" width="22" height="22" alt=""><span>Google Play</span></a></div></div></article>
+        <article class="app-card card-cleaner" data-app="6816571408"><img src="img/cleaner.png" width="72" height="72" alt=""><h3 data-i18n="cleaner_name">Cleaner 相簿清理</h3><p data-i18n="cleaner_desc">往上滑刪照片、長影片當場剪短。買斷制，不用訂閱。</p><div class="card-actions"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6816571408" aria-label="Cleaner App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© 2026 H.C</span><a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a></footer>
+</div>
 <script>
-  (function () {
-    var STRINGS = {
-      en: {
-        title: "Apps by H.C",
-        lead: "7 apps made by one indie developer — all free to download",
-        sec_practice: "Practice",
-        sec_party: "Party games",
-        sec_tools: "Everyday tools",
-        get: "Get",
-        ios_download: "iOS · App Store",
-        android_download: "Android · Google Play",
-        syncmirror_name: "SyncMirror – Dance Practice",
-        syncmirror_desc: "Mirror, slow-mo A-B loop, record along and compare side by side to see where you're off.",
-        undercover_name: "Who's the Spy?",
-        undercover_desc: "2,000+ word pairs. Describe your word without saying it, then vote out the spy.",
-        drawguess_name: "Draw & Guess",
-        drawguess_desc: "Take turns drawing while everyone guesses. Your cat becoming an alien is the best part.",
-        truthordare_name: "Truth or Dare",
-        truthordare_desc: "Spin the bottle or the wheel to pick who's next — from icebreakers to late-night rounds.",
-        charades_name: "Charades",
-        charades_desc: "Tilt down when you get it, tilt up to skip. Timed and survival modes for the whole group.",
-        meowwheel_name: "MeowWheel",
-        meowwheel_desc: "Can't decide what to eat or who gets the dare? Let the cat wheel pick for you.",
-        cleaner_name: "Cleaner – Photo Cleanup",
-        cleaner_desc: "Swipe up to delete photos, trim long videos on the spot. One-time purchase, no subscription.",
-        privacy: "Privacy Policy & Terms",
-        support: "Support"
-      }
-    };
-    var zh = {};
-    var nodes = document.querySelectorAll("[data-i18n]");
-    for (var i = 0; i < nodes.length; i++) zh[nodes[i].getAttribute("data-i18n")] = nodes[i].textContent;
-    STRINGS.zh = zh;
-
-    function setLang(lang) {
-      var s = STRINGS[lang] || STRINGS.zh;
-      document.documentElement.lang = lang === "en" ? "en" : "zh-Hant";
-      for (var i = 0; i < nodes.length; i++) {
-        var k = nodes[i].getAttribute("data-i18n");
-        if (s[k]) nodes[i].textContent = s[k];
-      }
-      var btns = document.querySelectorAll("[data-set-lang]");
-      for (var j = 0; j < btns.length; j++) {
-        btns[j].setAttribute("aria-pressed", btns[j].getAttribute("data-set-lang") === lang ? "true" : "false");
-      }
-      document.title = lang === "en"
-        ? "Apps by H.C | Dance practice, party games, tools"
-        : "H.C 的 App｜練舞、派對遊戲、生活小工具";
-      document.querySelector('[data-i18n="privacy"]').href = lang === "en" ? "/#en-privacy" : "/#privacy";
-      document.querySelector('[data-i18n="support"]').href = lang === "en" ? "/#en-support" : "/#support";
+(function () {
+  var en = {
+    hero_title_1: "Turning small ideas into",
+    hero_title_2: "apps worth opening.",
+    hero_lead: "I'm H.C, an indie developer. I make tools for dance practice, games for getting together and small helpers for everyday life.",
+    work_title: "Start with SyncMirror.",
+    work_intro: "Learning a dance from video? Practice the moves you can't quite catch, one by one.",
+    syncmirror_subtitle: "Learn a dance by seeing every move clearly.",
+    syncmirror_desc: "Mirror the direction, slow down the details and loop the tricky part. Record yourself and compare side by side.",
+    about: "About this app",
+    party_title: "Party games",
+    party_intro: "One phone is enough to get the whole table playing.",
+    undercover_name: "Who's the Spy?",
+    undercover_desc: "Everyone gets a word. Describe yours, vote, and find the player with the different answer.",
+    drawguess_name: "Draw & Guess",
+    drawguess_desc: "Take turns drawing and guessing. Your cat might look like an alien to your friends.",
+    truthordare_name: "Truth or Dare",
+    truthordare_desc: "Spin the bottle or the wheel to choose who's next, from icebreakers to late-night rounds.",
+    charades_name: "Charades",
+    charades_desc: "Hold the phone to your forehead while friends act. Tilt down when you get it, tilt up to skip.",
+    tools_title: "Everyday tools",
+    tools_intro: "Small helpers for the choices and chores that pile up.",
+    meowwheel_name: "MeowWheel",
+    meowwheel_desc: "Lunch or chores? Let the cat wheel make the choice for you.",
+    cleaner_name: "Cleaner Photo Cleanup",
+    cleaner_desc: "Swipe up to delete photos and trim long videos on the spot. One-time purchase, no subscription."
+  };
+  var nodes = Array.prototype.slice.call(document.querySelectorAll("[data-i18n]"));
+  var zh = {};
+  nodes.forEach(function (node) { zh[node.dataset.i18n] = node.textContent; });
+  function setLang(lang) {
+    var copy = lang === "en" ? en : zh;
+    document.documentElement.lang = lang === "en" ? "en" : "zh-Hant";
+    nodes.forEach(function (node) { if (copy[node.dataset.i18n]) node.textContent = copy[node.dataset.i18n]; });
+    document.querySelectorAll("[data-set-lang]").forEach(function (button) { button.setAttribute("aria-pressed", String(button.dataset.setLang === lang)); });
+    document.title = lang === "en" ? "Apps by H.C | Dance, party games and everyday tools" : "H.C 的 App 作品集｜練舞、派對遊戲與生活工具";
+    document.querySelector('[data-detail="syncmirror"]').href = lang === "en" ? "syncmirror/" : "syncmirror/zh-tw/";
+    document.querySelector('[data-detail="undercover"]').href = lang === "en" ? "undercover/en/" : "undercover/";
+    document.querySelectorAll('[data-en-src]').forEach(function (shot) {
+      shot.src = lang === "en" ? shot.dataset.enSrc : shot.dataset.zhSrc;
+      shot.alt = lang === "en" ? shot.dataset.enAlt : shot.dataset.zhAlt;
+    });
+  }
+  document.querySelectorAll("[data-set-lang]").forEach(function (button) { button.addEventListener("click", function () { setLang(button.dataset.setLang); }); });
+  var params = new URLSearchParams(location.search);
+  var forced = params.get("lang");
+  var browserLang = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+  if (forced === "en" || (forced !== "zh" && !/^zh/i.test(browserLang))) setLang("en");
+  var source = (params.get("s") || "web").toLowerCase().replace(/[^a-z0-9_]/g, "").slice(0, 20) || "web";
+  document.querySelectorAll("[data-store]").forEach(function (link) {
+    var card = link.closest("[data-app]");
+    if (link.dataset.store === "ios") {
+      link.href = "https://apps.apple.com/app/apple-store/id" + card.dataset.app + "?pt=128309367&ct=" + encodeURIComponent("portfolio_" + source) + "&mt=8";
+    } else {
+      link.href = "https://play.google.com/store/apps/details?id=" + card.dataset.play + "&referrer=" + encodeURIComponent("utm_source=portfolio&utm_medium=" + source + "&utm_campaign=portfolio_" + source);
     }
-    var btns = document.querySelectorAll("[data-set-lang]");
-    for (var b = 0; b < btns.length; b++) {
-      btns[b].addEventListener("click", function () { setLang(this.getAttribute("data-set-lang")); });
-    }
-    var params = new URLSearchParams(location.search);
-    var nav = (navigator.languages && navigator.languages[0]) || navigator.language || "";
-    var forced = params.get("lang");
-    if (forced === "en" || (forced !== "zh" && !/^zh/i.test(nav))) setLang("en");
-
-    // 下載來源：簡介連結帶 ?s=ig 或 ?s=threads，App Store Connect 行銷活動看得到 portfolio_ig／portfolio_threads
-    var src = (params.get("s") || "web").toLowerCase().replace(/[^a-z0-9_]/g, "").slice(0, 20) || "web";
-    var apps = document.querySelectorAll("a.app");
-    for (var a = 0; a < apps.length; a++) {
-      var el = apps[a];
-      el.href = "https://apps.apple.com/app/apple-store/id" + el.getAttribute("data-app") +
-        "?pt=128309367&ct=" + encodeURIComponent("portfolio_" + src) + "&mt=8";
-    }
-    var downloads = document.querySelectorAll(".download-link");
-    for (var d = 0; d < downloads.length; d++) {
-      var link = downloads[d];
-      var card = link.closest(".app");
-      if (link.getAttribute("data-store") === "ios") {
-        link.href = "https://apps.apple.com/app/apple-store/id" + card.getAttribute("data-app") +
-          "?pt=128309367&ct=" + encodeURIComponent("portfolio_" + src) + "&mt=8";
-      } else {
-        link.href = "https://play.google.com/store/apps/details?id=" + card.getAttribute("data-play") +
-          "&referrer=" + encodeURIComponent("utm_source=portfolio&utm_medium=" + src + "&utm_campaign=portfolio_" + src);
-      }
-    }
-  })();
+  });
+})();
 </script>
 </body>
 </html>
