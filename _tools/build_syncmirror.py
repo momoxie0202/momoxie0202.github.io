@@ -352,15 +352,15 @@ PLAY_SVG = '<svg width="{s}" height="{s}" viewBox="0 0 24 24" fill="currentColor
 
 STEP_ICONS = [
     '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFD117" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>',
-    '<img src="/abloop.png" alt="" width="22" height="22">',
+    '<img src="/apps/syncmirror/img/abloop.png" alt="" width="22" height="22">',
     '<svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="7" stroke="#FFD117" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="#FF3B30"/></svg>',
 ]
 FEATURE_ICONS = [
-    '<img src="/play.png" alt="" width="22" height="22">',
-    '<img src="/abloop.png" alt="" width="22" height="22">',
+    '<img src="/apps/syncmirror/img/play.png" alt="" width="22" height="22">',
+    '<img src="/apps/syncmirror/img/abloop.png" alt="" width="22" height="22">',
     '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFD117" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/><circle cx="17" cy="5" r="3" fill="#FF3B30" stroke="none"/></svg>',
     '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFD117" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="9" height="18" rx="1"/><rect x="14" y="3" width="9" height="18" rx="1"/></svg>',
-    '<img src="/mirror.png" alt="" width="22" height="22">',
+    '<img src="/apps/syncmirror/img/mirror.png" alt="" width="22" height="22">',
     '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFD117" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="22" height="18" rx="2"/><rect x="12" y="11" width="10" height="9" rx="1" fill="var(--gold-dim)"/></svg>',
 ]
 
@@ -467,6 +467,8 @@ def build(slug, lang, hreflang, menu_name):
     suggest_map = {h: {"url": BASE + s, "text": T[s]["suggest"], "name": n} for s, _, h, n in LOCALES}
     suggest_js = json.dumps(suggest_map, ensure_ascii=False)
 
+    legal_anchor = "" if slug in ("zh-tw/", "zh-hk/") else "en-"
+    support_label = {"": "Support", "zh-tw/": "支援", "zh-hk/": "支援", "ko/": "지원", "ja/": "サポート"}[slug]
     return f'''<!DOCTYPE html>
 <html lang="{lang}">
 <head>
@@ -486,17 +488,17 @@ def build(slug, lang, hreflang, menu_name):
   <meta property="og:title" content="{e(t["og_title"])}">
   <meta property="og:description" content="{e(t["desc"])}">
   <meta property="og:url" content="{url}">
-  <meta property="og:image" content="{BASE}og-image.png">
+  <meta property="og:image" content="{BASE}img/og-image.png">
   <meta property="og:image:width" content="1024">
   <meta property="og:image:height" content="500">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{e(t["og_title"])}">
   <meta name="twitter:description" content="{e(t["desc"])}">
-  <meta name="twitter:image" content="{BASE}og-image.png">
+  <meta name="twitter:image" content="{BASE}img/og-image.png">
 
   <meta name="apple-itunes-app" content="app-id=6755509268">
-  <link rel="apple-touch-icon" href="/icon.png">
-  <link rel="icon" type="image/png" href="/icon.png">
+  <link rel="apple-touch-icon" href="/apps/syncmirror/img/icon.png">
+  <link rel="icon" type="image/png" href="/apps/syncmirror/img/icon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -515,7 +517,7 @@ def build(slug, lang, hreflang, menu_name):
   <header>
     <div class="container header-inner">
       <a href="{url}" class="logo" aria-label="{e(t["home_label"])}">
-        <img src="/icon.png" alt="SyncMirror" class="logo-icon" width="34" height="34">
+        <img src="/apps/syncmirror/img/icon.png" alt="SyncMirror" class="logo-icon" width="34" height="34">
         <span class="logo-text">SyncMirror</span>
       </a>
       <div class="header-right">
@@ -617,8 +619,9 @@ def build(slug, lang, hreflang, menu_name):
     <div class="container footer-inner">
       <div class="footer-left">&copy; 2026 SyncMirror</div>
       <nav class="footer-links" aria-label="Footer">
-        <a href="https://momoxie0202.github.io/">{e(t["privacy"])}</a>
-        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">{e(t["terms"])}</a>
+        <a href="https://momoxie0202.github.io/#{legal_anchor}privacy">{e(t["privacy"])}</a>
+        <a href="https://momoxie0202.github.io/#{legal_anchor}terms">{e(t["terms"])}</a>
+        <a href="https://momoxie0202.github.io/#{legal_anchor}support">{e(support_label)}</a>
       </nav>
     </div>
   </footer>

@@ -100,6 +100,14 @@
       font-size: 14px; font-weight: 600; color: var(--accent);
       background: var(--card-press); border-radius: 999px; padding: 6px 14px;
     }
+    .download-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .download-link {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 38px; padding: 7px 14px; border-radius: 999px;
+      background: var(--card-press); border: 1px solid var(--border);
+      color: var(--text); font-size: 13px; font-weight: 600; text-decoration: none;
+    }
+    .download-link:hover, .download-link:focus-visible { border-color: var(--accent); color: var(--accent); }
 
     footer { text-align: center; margin-top: 30px; font-size: 13px; color: var(--sub); }
     footer a { color: var(--sub); }
@@ -133,15 +141,18 @@
 
   <h2 data-i18n="sec_practice">練習工具</h2>
 
-  <a class="app featured" data-app="6755509268" data-play="com.syncmirror.syncmirror_plus_android" href="https://apps.apple.com/app/id6755509268">
+  <article class="app featured" data-app="6755509268" data-play="com.syncmirror.syncmirror_plus_android">
     <img src="/apps/img/syncmirror.png" alt="" width="64" height="64">
     <div class="body">
       <p class="name" data-i18n="syncmirror_name">SyncMirror 練舞神器</p>
       <p class="desc" data-i18n="syncmirror_desc">鏡像翻轉、慢速 AB 循環，邊看邊錄、並排比對，看見自己哪裡沒跟上。</p>
       <div class="meta"><span class="tag">iOS</span><span class="tag">Android</span></div>
+      <div class="download-actions">
+        <a class="download-link" data-store="ios" href="https://apps.apple.com/app/id6755509268" data-i18n="ios_download">iOS · App Store</a>
+        <a class="download-link" data-store="android" href="https://play.google.com/store/apps/details?id=com.syncmirror.syncmirror_plus_android" data-i18n="android_download">Android · Google Play</a>
+      </div>
     </div>
-    <span class="get" data-i18n="get">取得</span>
-  </a>
+  </article>
 
   <h2 data-i18n="sec_party">聚會遊戲</h2>
 
@@ -187,15 +198,18 @@
 
   <h2 data-i18n="sec_tools">生活小工具</h2>
 
-  <a class="app" data-app="6755671037" data-play="com.momoxie.meowwheel" href="https://apps.apple.com/app/id6755671037">
+  <article class="app" data-app="6755671037" data-play="com.momoxie.meowwheel">
     <img src="/apps/img/meowwheel.png" alt="" width="64" height="64">
     <div class="body">
       <p class="name" data-i18n="meowwheel_name">喵轉盤</p>
       <p class="desc" data-i18n="meowwheel_desc">午餐吃什麼、懲罰抽誰，選擇障礙就交給貓咪轉盤決定。</p>
       <div class="meta"><span class="tag">iOS</span><span class="tag">Android</span></div>
+      <div class="download-actions">
+        <a class="download-link" data-store="ios" href="https://apps.apple.com/app/id6755671037" data-i18n="ios_download">iOS · App Store</a>
+        <a class="download-link" data-store="android" href="https://play.google.com/store/apps/details?id=com.momoxie.meowwheel" data-i18n="android_download">Android · Google Play</a>
+      </div>
     </div>
-    <span class="get" data-i18n="get">取得</span>
-  </a>
+  </article>
 
   <a class="app" data-app="6816571408" href="https://apps.apple.com/app/id6816571408">
     <img src="/apps/img/cleaner.png" alt="" width="64" height="64">
@@ -208,7 +222,7 @@
   </a>
 
   <footer>
-    <p><a href="/" data-i18n="privacy">隱私權政策與使用條款</a> · <a href="/support.html" data-i18n="support">聯絡支援</a></p>
+    <p><a href="/#privacy" data-i18n="privacy">隱私權政策與使用條款</a> · <a href="/#support" data-i18n="support">聯絡支援</a></p>
   </footer>
 
 </main>
@@ -223,6 +237,8 @@
         sec_party: "Party games",
         sec_tools: "Everyday tools",
         get: "Get",
+        ios_download: "iOS · App Store",
+        android_download: "Android · Google Play",
         syncmirror_name: "SyncMirror – Dance Practice",
         syncmirror_desc: "Mirror, slow-mo A-B loop, record along and compare side by side to see where you're off.",
         undercover_name: "Who's the Spy?",
@@ -260,6 +276,8 @@
       document.title = lang === "en"
         ? "Apps by H.C | Dance practice, party games, tools"
         : "H.C 的 App｜練舞、派對遊戲、生活小工具";
+      document.querySelector('[data-i18n="privacy"]').href = lang === "en" ? "/#en-privacy" : "/#privacy";
+      document.querySelector('[data-i18n="support"]').href = lang === "en" ? "/#en-support" : "/#support";
     }
     var btns = document.querySelectorAll("[data-set-lang]");
     for (var b = 0; b < btns.length; b++) {
@@ -272,17 +290,22 @@
 
     // 下載來源：簡介連結帶 ?s=ig 或 ?s=threads，App Store Connect 行銷活動看得到 portfolio_ig／portfolio_threads
     var src = (params.get("s") || "web").toLowerCase().replace(/[^a-z0-9_]/g, "").slice(0, 20) || "web";
-    var isAndroid = /Android/i.test(navigator.userAgent);
     var apps = document.querySelectorAll("a.app");
     for (var a = 0; a < apps.length; a++) {
       var el = apps[a];
-      var play = el.getAttribute("data-play");
-      if (isAndroid && play) {
-        el.href = "https://play.google.com/store/apps/details?id=" + play +
-          "&referrer=" + encodeURIComponent("utm_source=portfolio&utm_medium=" + src + "&utm_campaign=portfolio_" + src);
-      } else {
-        el.href = "https://apps.apple.com/app/apple-store/id" + el.getAttribute("data-app") +
+      el.href = "https://apps.apple.com/app/apple-store/id" + el.getAttribute("data-app") +
+        "?pt=128309367&ct=" + encodeURIComponent("portfolio_" + src) + "&mt=8";
+    }
+    var downloads = document.querySelectorAll(".download-link");
+    for (var d = 0; d < downloads.length; d++) {
+      var link = downloads[d];
+      var card = link.closest(".app");
+      if (link.getAttribute("data-store") === "ios") {
+        link.href = "https://apps.apple.com/app/apple-store/id" + card.getAttribute("data-app") +
           "?pt=128309367&ct=" + encodeURIComponent("portfolio_" + src) + "&mt=8";
+      } else {
+        link.href = "https://play.google.com/store/apps/details?id=" + card.getAttribute("data-play") +
+          "&referrer=" + encodeURIComponent("utm_source=portfolio&utm_medium=" + src + "&utm_campaign=portfolio_" + src);
       }
     }
   })();
