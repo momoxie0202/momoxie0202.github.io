@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c0d0e">
+  <meta name="robots" content="index, follow">
   <title>誰是臥底 App：規則、怎麼玩、人數配置｜一支手機輪流傳的派對遊戲</title>
   <meta name="description" content="誰是臥底怎麼玩？3 到 20 人傳一支手機，平民和臥底拿到相似但不同的詞，輪流描述、投票找出臥底。完整規則、白板玩法、人數配置建議與 2,034 組題目的誰是臥底 App。">
   <link rel="canonical" href="https://momoxie0202.github.io/apps/undercover/">
@@ -16,12 +18,19 @@
   <meta property="og:description" content="3 到 20 人、不用連網，輪流描述詞語、投票找出臥底。2,034 組題目，聚餐、尾牙、團康破冰都好玩。">
   <meta property="og:url" content="https://momoxie0202.github.io/apps/undercover/">
   <meta property="og:image" content="https://momoxie0202.github.io/apps/undercover/zh_01_home.jpg">
+  <meta property="og:image:alt" content="誰是臥底 App：設定人數、臥底與題目難度">
   <meta property="og:locale" content="zh_TW">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="誰是臥底｜一支手機輪流傳的派對遊戲">
+  <meta name="twitter:description" content="3–20 人輪流看詞、描述、投票。完整規則與 App 教學，聚會破冰打開就能玩。">
+  <meta name="twitter:image" content="https://momoxie0202.github.io/apps/undercover/zh_01_home.jpg">
 
   <!-- Safari 的 Smart App Banner -->
   <meta name="apple-itunes-app" content="app-id=6757357535">
-  <link rel="icon" type="image/png" href="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9d/b5/61/9db5611f-8066-b710-6cbb-b7b78a391e79/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/64x64bb.png">
+  <link rel="icon" type="image/png" href="app-icon.png">
+  <link rel="apple-touch-icon" href="app-icon.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="redesign.css">
 
   <!-- 不放評分：Google 規定評分要來自本頁看得到的使用者評論，不能搬 App Store 的星等 -->
   <script type="application/ld+json">
@@ -32,7 +41,8 @@
     "alternateName": ["誰是臥底", "Who's the Spy? Party Game", "Ai là gián điệp?"],
     "description": "多人猜詞派對遊戲。所有人拿到相似的詞，只有臥底拿到不同的詞；輪流描述、投票找出臥底。3 到 20 人傳一支手機就能玩，不用連網，內建 2,034 組題目，支援 21 種語言。",
     "url": "https://momoxie0202.github.io/apps/undercover/",
-    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9d/b5/61/9db5611f-8066-b710-6cbb-b7b78a391e79/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+    "image": "https://momoxie0202.github.io/apps/undercover/app-icon.png",
+    "screenshot": ["https://momoxie0202.github.io/apps/undercover/zh_01_home.jpg", "https://momoxie0202.github.io/apps/undercover/zh_02_identity.jpg", "https://momoxie0202.github.io/apps/undercover/zh_03_result.jpg"],
     "operatingSystem": "iOS 15.0 以上",
     "applicationCategory": "GameApplication",
     "genre": ["派對遊戲", "猜詞遊戲"],
@@ -44,21 +54,50 @@
     "author": { "@type": "Person", "name": "momoxie", "url": "https://momoxie0202.github.io/" }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "誰是臥底怎麼玩？",
+    "description": "3 到 20 人用一支手機輪流看詞、描述並投票找出臥底。",
+    "step": [
+      {"@type": "HowToStep", "name": "設定遊戲", "text": "設定總人數、臥底與白板人數，選擇題目難度後按開始遊戲。"},
+      {"@type": "HowToStep", "name": "輪流看詞", "text": "手機輪流交給每位玩家，點開自己的詞語，看完隱藏後交給下一位。"},
+      {"@type": "HowToStep", "name": "描述與投票", "text": "每人用一句話描述自己的詞，不能直接說出答案。每輪發言後投票，淘汰最可疑的人，直到一方獲勝。"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "誰是臥底幾個人可以玩？", "acceptedAnswer": {"@type": "Answer", "text": "App 支援 3 到 20 人，臥底人數必須少於總人數的一半，白板最多 2 人。"}},
+      {"@type": "Question", "name": "每個人都要下載 App 嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不用。只要一支手機，輪流傳給每個人看自己的詞就可以。"}},
+      {"@type": "Question", "name": "白板被淘汰會怎樣？", "acceptedAnswer": {"@type": "Answer", "text": "主持人投票模式下，白板被投出時可以打字猜一次平民的詞，猜中就獨自獲勝；輪流投票模式沒有猜詞，白板直接出局。"}},
+      {"@type": "Question", "name": "誰是臥底免費嗎？", "acceptedAnswer": {"@type": "Answer", "text": "下載免費，每個難度可以先玩 30 題，自訂題庫不用付費。完整版是一次買斷，解鎖全部題目並移除廣告。"}},
+      {"@type": "Question", "name": "有 Android 版嗎？", "acceptedAnswer": {"@type": "Answer", "text": "Android 版準備中，上架後會在這裡放 Google Play 連結。"}}
+    ]
+  }
+  </script>
 </head>
 <body>
 <div class="container">
 
 <header class="top">
   <a class="brand" href="./">
-    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9d/b5/61/9db5611f-8066-b710-6cbb-b7b78a391e79/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/64x64bb.png" alt="" width="32" height="32">
+    <img src="app-icon.png" alt="" width="32" height="32">
     誰是臥底
   </a>
   <nav aria-label="頁面導覽">
+    <a href="#how-to-play">怎麼玩</a>
+    <a href="#features">特色</a>
     <a href="#rules">規則</a>
     <a href="#faq">常見問題</a>
   </nav>
+  <a class="header-download" href="https://apps.apple.com/app/apple-store/id6757357535?pt=128309367&amp;ct=website_undercover_header&amp;mt=8">下載 App <span aria-hidden="true">↗</span></a>
   <details class="lang-menu">
-    <summary aria-label="語言">🌐 繁體中文</summary>
+    <summary aria-label="選擇語言" title="選擇語言"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c3 3 4.2 6 4.2 9s-1.2 6-4.2 9c-3-3-4.2-6-4.2-9S9 6 12 3Z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></summary>
     <ul>
       <li><a href="./" hreflang="zh-Hant" lang="zh-Hant" aria-current="page">繁體中文</a></li>
       <li><a href="en/" hreflang="en" lang="en">English</a></li>
@@ -69,26 +108,64 @@
 
 <main>
 <div class="hero">
-  <div class="hero-badge">一支手機，所有人一起玩</div>
-  <img class="icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9d/b5/61/9db5611f-8066-b710-6cbb-b7b78a391e79/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/192x192bb.png" alt="誰是臥底 App 圖示" width="96" height="96">
-  <h1>誰是臥底<br><span class="gold">一支手機輪流傳的派對遊戲</span></h1>
-  <p class="lead">大家拿到相似的詞，只有臥底的詞不一樣。輪流用一句話描述、投票找出臥底——3 到 20 人、不用連網，聚餐、尾牙、團康破冰都能馬上開一局。</p>
-  <a class="store-btn" href="https://apps.apple.com/app/apple-store/id6757357535?pt=128309367&amp;ct=website_undercover&amp;mt=8">在 App Store 下載</a>
-  <div class="badges">
-    <span>3–20 人</span>
-    <span>2,034 組題目</span>
-    <span>不用連網、不用帳號</span>
-    <span>21 種語言</span>
+  <div class="hero-copy">
+    <p class="hero-badge"><span class="live-dot"></span> 3–20 人的猜詞派對遊戲</p>
+    <h1>誰是臥底？<br><span>一句話，抓出那個<br>不一樣的人。</span></h1>
+    <p class="lead">大家輪流看自己的詞，只有臥底拿到不同答案。描述得太清楚會露餡，太模糊又會被懷疑。把手機傳下去，現在就開局。</p>
+    <div class="hero-actions">
+      <a class="store-btn" href="https://apps.apple.com/app/apple-store/id6757357535?pt=128309367&amp;ct=website_undercover&amp;mt=8" aria-label="在 App Store 下載誰是臥底">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M16.7 12.9c0-2 1.7-3 1.8-3.1-1-1.5-2.5-1.7-3-1.7-1.3-.1-2.4.7-3 .7s-1.6-.7-2.7-.7c-1.4 0-2.8.8-3.5 2-1.5 2.5-.4 6.3 1 8.3.7 1 1.4 2.1 2.5 2 1-.1 1.4-.6 2.7-.6s1.7.6 2.8.6c1.2 0 1.9-1 2.5-2a8 8 0 0 0 1.1-2.2c-2.4-.9-2.3-3.2-2.3-3.3ZM14.6 6.7c.5-.7.9-1.7.8-2.7-.8 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6.9.1 2-.5 2.6-1.2Z"/></svg>
+        <span><small>免費下載</small><strong>App Store</strong></span>
+      </a>
+      <span class="platform-note">iPhone・iPad<br>Android 版準備中</span>
+    </div>
+    <div class="badges"><span>一支手機就夠</span><span>離線可玩</span><span>不用帳號</span></div>
+  </div>
+  <div class="hero-art">
+    <div class="art-ring"></div>
+    <div class="clue-card clue-card-top"><i></i><span>平民詞</span><strong>海豹</strong></div>
+    <img src="zh_01_home.jpg" alt="誰是臥底 App 首頁，可設定 3 到 20 位玩家、臥底與白板人數" width="507" height="1101" fetchpriority="high">
+    <div class="clue-card clue-card-bottom"><i></i><span>臥底詞</span><strong>海狗</strong></div>
+    <div class="hero-stamp">你會投誰？ <span aria-hidden="true">↗</span></div>
   </div>
 </div>
 
-<div class="shots">
-  <img src="zh_01_home.jpg" alt="首頁：設定人數、臥底與白板人數，選擇難度" width="507" height="1101" loading="lazy">
-  <img src="zh_02_identity.jpg" alt="輪流傳手機，點一下查看自己的詞語" width="507" height="1101" loading="lazy">
-  <img src="zh_03_result.jpg" alt="結算畫面：揭曉平民詞、臥底詞與每個人的身分" width="507" height="1101" loading="lazy">
-</div>
+<div class="proof-strip" aria-label="遊戲重點"><div><strong>3–20</strong><span>人一起玩</span></div><div><strong>2,034</strong><span>組內建題目</span></div><div><strong>21</strong><span>種語言</span></div><div><strong>1</strong><span>支手機開局</span></div></div>
+
+<section id="how-to-play" class="how-to">
+  <p class="section-kicker">HOW TO PLAY / 玩法</p>
+  <h2>不用主持人講半天。<br><span>三步就能開局。</span></h2>
+  <p class="section-lead">第一次玩誰是臥底？先從 4–6 人、1 位臥底、不放白板開始。每輪的重點是聽出「誰講的詞跟大家不太一樣」。</p>
+  <div class="steps">
+    <article><span>01</span><div><h3>選人數與題目</h3><p>設定玩家、臥底、白板人數，挑選難度或自己的題庫。</p></div></article>
+    <article><span>02</span><div><h3>傳手機，偷偷看詞</h3><p>每位玩家只看自己的詞，看完隱藏畫面再傳下一位。</p></div></article>
+    <article><span>03</span><div><h3>輪流描述，投票抓人</h3><p>不能直接說答案。每輪發言後，投票淘汰最可疑的人。</p></div></article>
+  </div>
+</section>
+
+<section class="screen-section">
+  <p class="section-kicker">IN THE GAME / 實際畫面</p>
+  <h2>從開局到揭曉，<br><span>整桌都跟得上。</span></h2>
+  <div class="shots">
+    <figure><img src="zh_01_home.jpg" alt="首頁：設定人數、臥底與白板人數，選擇難度" width="507" height="1101" loading="lazy"><figcaption><strong>設定一局</strong><span>選難度、玩家與臥底人數</span></figcaption></figure>
+    <figure><img src="zh_02_identity.jpg" alt="輪流傳手機，點一下查看自己的詞語" width="507" height="1101" loading="lazy"><figcaption><strong>秘密看詞</strong><span>輪流傳手機，不讓別人偷看</span></figcaption></figure>
+    <figure><img src="zh_03_result.jpg" alt="結算畫面：揭曉平民詞、臥底詞與每個人的身分" width="507" height="1101" loading="lazy"><figcaption><strong>揭曉答案</strong><span>看誰藏到最後，馬上再來一局</span></figcaption></figure>
+  </div>
+</section>
+
+<section id="features" class="feature-section">
+  <p class="section-kicker">WHY THIS APP / 遊戲特色</p>
+  <h2>不用準備道具，<br><span>只要準備好懷疑朋友。</span></h2>
+  <div class="feature-grid">
+    <article><span aria-hidden="true">◎</span><h3>一支手機就能玩</h3><p>手機輪流傳，3–20 人都能加入。聚餐、尾牙、迎新或露營，打開就能開局。</p></article>
+    <article><span aria-hidden="true">↗</span><h3>2,034 組精選題目</h3><p>簡單、中等、困難、地獄四種難度。詞語相近又好描述，每局都有新線索。</p></article>
+    <article><span aria-hidden="true">✦</span><h3>把朋友的梗放進去</h3><p>自訂題庫可加入朋友、公司或班級的梗。選自訂題庫開局，就只會用你出的題。</p></article>
+    <article><span aria-hidden="true">◌</span><h3>你們決定怎麼投</h3><p>選主持人當面統計，或輪流傳手機秘密投票；發言順序也能依座位或全隨機。</p></article>
+  </div>
+</section>
 
 <section id="rules">
+  <p class="section-kicker">THE RULES / 完整規則</p>
   <h2>誰是臥底怎麼玩</h2>
   <p>每個人都會拿到一個詞，其中少數人的詞和其他人很相似，但不一樣。拿到相同詞的是「平民」，拿到不同詞的是「臥底」。大家輪流描述自己的詞，從彼此的描述中找出藏在裡面的臥底。</p>
   <ol>
@@ -115,6 +192,7 @@
 </section>
 
 <section>
+  <p class="section-kicker">START HERE / 開局建議</p>
   <h2>幾個人玩？臥底要放幾個</h2>
   <p>App 支援 3 到 20 人，臥底人數必須少於總人數的一半，白板最多 2 人。下面是常見的配置，第一次玩可以照這個開：</p>
   <div class="table-wrap">
@@ -132,6 +210,7 @@
 </section>
 
 <section>
+  <p class="section-kicker">WORD PAIRS / 題目難度</p>
   <h2>題目難度與範例</h2>
   <p>內建 2,034 組題目，分四種難度，也可以自己出題：</p>
   <div class="table-wrap">
@@ -173,7 +252,12 @@
 </section>
 
 <section id="faq">
+  <p class="section-kicker">FAQ / 常見問題</p>
   <h2>常見問題</h2>
+  <details>
+    <summary>誰是臥底幾個人可以玩？</summary>
+    <p>App 支援 3 到 20 人，臥底人數必須少於總人數的一半，白板最多 2 人。</p>
+  </details>
   <details>
     <summary>描述時有什麼規則？</summary>
     <p>不能直接說出詞語。建議也不要說出詞裡的字或直接翻譯成外語，否則太容易被猜到。</p>
@@ -195,6 +279,10 @@
     <p>可以選「順序」或「全隨機」。「順序」依座位輪流發言，每局隨機決定往哪個方向；「全隨機」每局把發言順序完全打亂。</p>
   </details>
   <details>
+    <summary>誰是臥底免費嗎？</summary>
+    <p>下載免費，每個難度可以先玩 30 題，自訂題庫不用付費。完整版是一次買斷，解鎖全部題目並移除廣告。</p>
+  </details>
+  <details>
     <summary>有 Android 版嗎？</summary>
     <p>Android 版準備中，上架後會在這裡放 Google Play 連結。</p>
   </details>
@@ -202,7 +290,7 @@
 <section class="final-cta">
   <h2>準備好找出臥底了嗎？</h2>
   <p>傳一支手機，就能開始下一局。</p>
-  <a class="store-btn" href="https://apps.apple.com/app/apple-store/id6757357535?pt=128309367&amp;ct=website_undercover_final&amp;mt=8">在 App Store 下載</a>
+  <a class="store-btn" href="https://apps.apple.com/app/apple-store/id6757357535?pt=128309367&amp;ct=website_undercover_final&amp;mt=8" aria-label="在 App Store 下載誰是臥底"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M16.7 12.9c0-2 1.7-3 1.8-3.1-1-1.5-2.5-1.7-3-1.7-1.3-.1-2.4.7-3 .7s-1.6-.7-2.7-.7c-1.4 0-2.8.8-3.5 2-1.5 2.5-.4 6.3 1 8.3.7 1.4 2.1 2.5 2 1-.1 1.4-.6 2.7-.6s1.7.6 2.8.6c1.2 0 1.9-1 2.5-2a8 8 0 0 0 1.1-2.2c-2.4-.9-2.3-3.2-2.3-3.3ZM14.6 6.7c.5-.7.9-1.7.8-2.7-.8 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6.9.1 2-.5 2.6-1.2Z"/></svg><span><small>免費下載</small><strong>App Store</strong></span></a>
 </section>
 </main>
 
