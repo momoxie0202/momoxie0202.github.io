@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>momoxie 的 App｜練舞、派對遊戲、生活小工具</title>
+  <meta name="description" content="一個人開發的 7 款 App：練舞神器 SyncMirror、誰是臥底、你畫我猜、真心話大冒險、比手畫腳、喵轉盤、Cleaner 相簿清理。全部免費下載。">
+  <link rel="canonical" href="https://momoxie0202.github.io/apps/">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta name="color-scheme" content="dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="momoxie 的 App 作品集">
+  <meta property="og:description" content="練舞神器、派對遊戲、生活小工具，7 款 App 全部免費下載。">
+  <meta property="og:url" content="https://momoxie0202.github.io/apps/">
+  <meta property="og:image" content="https://momoxie0202.github.io/apps/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="/apps/img/syncmirror.png">
+  <link rel="apple-touch-icon" href="/apps/img/syncmirror.png">
+
+  <style>
+    :root {
+      --bg: #0A0A0A;
+      --card: #1C1C1E;
+      --card-press: #2C2C2E;
+      --text: #FFFFFF;
+      --sub: #98989F;
+      --border: #38383A;
+      --accent: #FFD117;
+      --radius: 18px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang TC", "Noto Sans TC", "Segoe UI", Roboto, sans-serif;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 560px;
+      margin: 0 auto;
+      padding: calc(28px + env(safe-area-inset-top)) 16px calc(32px + env(safe-area-inset-bottom));
+    }
+
+    .intro { text-align: center; margin-bottom: 28px; }
+    .icons-row { display: flex; justify-content: center; margin-bottom: 16px; }
+    .icons-row img {
+      width: 44px; height: 44px; border-radius: 10px;
+      border: 2px solid var(--bg); margin-left: -10px;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16);
+    }
+    .icons-row img:first-child { margin-left: 0; }
+    h1 { font-size: 24px; font-weight: 700; letter-spacing: 0.01em; }
+    .lead { color: var(--sub); font-size: 15px; margin-top: 6px; }
+    .lang {
+      display: inline-flex; gap: 4px; margin-top: 14px;
+      background: var(--card); border-radius: 999px; padding: 3px;
+    }
+    .lang button {
+      font: inherit; font-size: 13px; color: var(--sub);
+      background: none; border: 0; border-radius: 999px; padding: 4px 12px; cursor: pointer;
+    }
+    .lang button[aria-pressed="true"] { background: var(--card-press); color: var(--text); }
+
+    h2 {
+      font-size: 13px; font-weight: 600; color: var(--sub);
+      text-transform: uppercase; letter-spacing: 0.06em;
+      margin: 26px 4px 10px;
+    }
+
+    .app {
+      display: flex; gap: 14px; align-items: flex-start;
+      background: var(--card); border-radius: var(--radius);
+      padding: 14px; margin-bottom: 10px;
+      color: inherit; text-decoration: none;
+      transition: background-color .15s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .app:active { background: var(--card-press); }
+    .app.featured { border: 1px solid rgba(255, 209, 23, 0.35); }
+    .app img {
+      width: 64px; height: 64px; border-radius: 14px; flex: none;
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
+    }
+    .app .body { flex: 1; min-width: 0; }
+    .app .name { font-size: 16px; font-weight: 600; }
+    .app .desc { font-size: 14px; color: var(--sub); margin-top: 2px; }
+    .app .meta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .tag {
+      font-size: 12px; color: var(--sub);
+      border: 1px solid var(--border); border-radius: 999px; padding: 1px 8px;
+    }
+    .get {
+      align-self: center; flex: none;
+      font-size: 14px; font-weight: 600; color: var(--accent);
+      background: var(--card-press); border-radius: 999px; padding: 6px 14px;
+    }
+
+    footer { text-align: center; margin-top: 30px; font-size: 13px; color: var(--sub); }
+    footer a { color: var(--sub); }
+    footer p + p { margin-top: 6px; }
+
+    [data-lang-only="en"] { display: none; }
+    html[lang="en"] [data-lang-only="zh"] { display: none; }
+    html[lang="en"] [data-lang-only="en"] { display: revert; }
+  </style>
+</head>
+<body>
+<main>
+
+  <header class="intro">
+    <div class="icons-row" aria-hidden="true">
+      <img src="/apps/img/syncmirror.png" alt="">
+      <img src="/apps/img/undercover.png" alt="">
+      <img src="/apps/img/drawguess.png" alt="">
+      <img src="/apps/img/truthordare.png" alt="">
+      <img src="/apps/img/charades.png" alt="">
+      <img src="/apps/img/meowwheel.png" alt="">
+      <img src="/apps/img/cleaner.png" alt="">
+    </div>
+    <h1 data-i18n="title">momoxie 的 App</h1>
+    <p class="lead" data-i18n="lead">一個人開發的 7 款 App，全部免費下載</p>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set-lang="zh" aria-pressed="true">中文</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <h2 data-i18n="sec_practice">練習工具</h2>
+
+  <a class="app featured" data-app="6755509268" data-play="com.syncmirror.syncmirror_plus_android" href="https://apps.apple.com/app/id6755509268">
+    <img src="/apps/img/syncmirror.png" alt="" width="64" height="64">
+    <div class="body">
+      <p class="name" data-i18n="syncmirror_name">SyncMirror 練舞神器</p>
+      <p class="desc" data-i18n="syncmirror_desc">鏡像翻轉、慢速 AB 循環，邊看邊錄、並排比對，看見自己哪裡沒跟上。</p>
+      <div class="meta"><span class="tag">iPhone</span><span class="tag">Android</span></div>
+    </div>
+    <span class="get" data-i18n="get">取得</span>
+  </a>
+
+  <h2 data-i18n="sec_party">聚會遊戲</h2>
+
+  <a class="app" data-app="6757357535" href="https://apps.apple.com/app/id6757357535">
+    <img src="/apps/img/undercover.png" alt="" width="64" height="64">
+    <div class="body">
+      <p class="name" data-i18n="undercover_name">誰是臥底</p>
+      <p class="desc" data-i18n="undercover_desc">2,000+ 組題目，輪流描述、不准說破，投票找出拿到不同詞的臥底。</p>
+      <div class="meta"><span class="tag">iPhone</span><span class="tag" data-i18n="offline">可離線</span></div>
+    </div>
+    <span class="get" data-i18n="get">取得</span>
+  </a>
+
+  <a class="app" data-app="6778296953" href="https://apps.apple.com/app/id6778296953">
+    <img src="/apps/img/drawguess.png" alt="" width="64" height="64">
+    <div class="body">
+      <p class="name" data-i18n="drawguess_name">你畫我猜</p>
+      <p class="desc" data-i18n="drawguess_desc">輪流畫、大家搶著猜，想畫貓被猜成外星人才是精華。</p>
+      <div class="meta"><span class="tag">iPhone</span></div>
+    </div>
+    <span class="get" data-i18n="get">取得</span>
+  </a>
+
+  <a class="app" data-app="6777689064" href="https://apps.apple.com/app/id6777689064">
+    <img src="/apps/img/truthordare.png" alt="" width="64" height="64">
+    <div class="body">
+      <p class="name" data-i18n="truthordare_name">真心話大冒險</p>
+      <p class="desc" data-i18n="truthordare_desc">轉瓶子或命運輪盤決定輪到誰，從破冰暖場到深夜局都有題庫。</p>
+      <div class="meta"><span class="tag">iPhone</span></div>
+    </div>
+    <span class="get" data-i18n="get">取得</span>
+  </a>
+
+  <a class="app" data-app="6757603710" href="https://apps.apple.com/app/id6757603710">
+    <img src="/apps/img/charades.png" alt="" width="64" height="64">
+    <div class="body">
+      <p class="name" data-i18n="charades_name">比手畫腳</p>
+      <p class="desc" data-i18n="charades_desc">手機蓋下答對、抬起跳過，限時挑戰、生存模式，考驗默契。</p>
+      <div class="meta"><span class="tag">iPhone</span></div>
+    </div>
+    <span class="get" data-i18n="get">取得</span>
+  </a>
+
+  <h2 data-i18n="sec_tools">生活小工具</h2>
+
+  <a class="app" data-app="6755671037" data-play="com.momoxie.meowwheel" href="https://apps.apple.com/app/id6755671037">
+    <img src="/apps/img/meowwheel.png" alt="" width="64" height="64">
+    <div class="body">
+      <p class="name" data-i18n="meowwheel_name">喵轉盤</p>
+      <p class="desc" data-i18n="meowwheel_desc">午餐吃什麼、懲罰抽誰，選擇障礙就交給貓咪轉盤決定。</p>
+      <div class="meta"><span class="tag">iPhone</span><span class="tag">Android</span></div>
+    </div>
+    <span class="get" data-i18n="get">取得</span>
+  </a>
+
+  <a class="app" data-app="6816571408" href="https://apps.apple.com/app/id6816571408">
+    <img src="/apps/img/cleaner.png" alt="" width="64" height="64">
+    <div class="body">
+      <p class="name" data-i18n="cleaner_name">Cleaner 相簿清理</p>
+      <p class="desc" data-i18n="cleaner_desc">往上滑就刪照片，長影片當場剪短，買斷制不用訂閱。</p>
+      <div class="meta"><span class="tag">iPhone</span><span class="tag" data-i18n="zh_only">中文介面</span></div>
+    </div>
+    <span class="get" data-i18n="get">取得</span>
+  </a>
+
+  <footer>
+    <p><a href="/" data-i18n="privacy">隱私權政策與使用條款</a> · <a href="/support.html" data-i18n="support">聯絡支援</a></p>
+  </footer>
+
+</main>
+
+<script>
+  (function () {
+    var STRINGS = {
+      en: {
+        title: "Apps by momoxie",
+        lead: "7 apps made by one indie developer — all free to download",
+        sec_practice: "Practice",
+        sec_party: "Party games",
+        sec_tools: "Everyday tools",
+        get: "Get",
+        offline: "Works offline",
+        zh_only: "Chinese only",
+        syncmirror_name: "SyncMirror – Dance Practice",
+        syncmirror_desc: "Mirror, slow-mo A-B loop, record along and compare side by side to see where you're off.",
+        undercover_name: "Who's the Spy?",
+        undercover_desc: "2,000+ word pairs. Describe your word without saying it, then vote out the spy.",
+        drawguess_name: "Draw & Guess",
+        drawguess_desc: "Take turns drawing while everyone guesses. Your cat becoming an alien is the best part.",
+        truthordare_name: "Truth or Dare",
+        truthordare_desc: "Spin the bottle or the wheel to pick who's next — from icebreakers to late-night rounds.",
+        charades_name: "Charades",
+        charades_desc: "Tilt down when you get it, tilt up to skip. Timed and survival modes for the whole group.",
+        meowwheel_name: "MeowWheel",
+        meowwheel_desc: "Can't decide what to eat or who gets the dare? Let the cat wheel pick for you.",
+        cleaner_name: "Cleaner – Photo Cleanup",
+        cleaner_desc: "Swipe up to delete photos, trim long videos on the spot. One-time purchase, no subscription.",
+        privacy: "Privacy Policy & Terms",
+        support: "Support"
+      }
+    };
+    var zh = {};
+    var nodes = document.querySelectorAll("[data-i18n]");
+    for (var i = 0; i < nodes.length; i++) zh[nodes[i].getAttribute("data-i18n")] = nodes[i].textContent;
+    STRINGS.zh = zh;
+
+    function setLang(lang) {
+      var s = STRINGS[lang] || STRINGS.zh;
+      document.documentElement.lang = lang === "en" ? "en" : "zh-Hant";
+      for (var i = 0; i < nodes.length; i++) {
+        var k = nodes[i].getAttribute("data-i18n");
+        if (s[k]) nodes[i].textContent = s[k];
+      }
+      var btns = document.querySelectorAll("[data-set-lang]");
+      for (var j = 0; j < btns.length; j++) {
+        btns[j].setAttribute("aria-pressed", btns[j].getAttribute("data-set-lang") === lang ? "true" : "false");
+      }
+      if (lang === "en") document.title = "Apps by momoxie | Dance practice, party games, tools";
+    }
+    var btns = document.querySelectorAll("[data-set-lang]");
+    for (var b = 0; b < btns.length; b++) {
+      btns[b].addEventListener("click", function () { setLang(this.getAttribute("data-set-lang")); });
+    }
+    var params = new URLSearchParams(location.search);
+    var nav = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+    var forced = params.get("lang");
+    if (forced === "en" || (forced !== "zh" && !/^zh/i.test(nav))) setLang("en");
+
+    // 下載來源：簡介連結帶 ?s=ig 或 ?s=threads，App Store Connect 行銷活動看得到 portfolio_ig／portfolio_threads
+    var src = (params.get("s") || "web").toLowerCase().replace(/[^a-z0-9_]/g, "").slice(0, 20) || "web";
+    var isAndroid = /Android/i.test(navigator.userAgent);
+    var apps = document.querySelectorAll("a.app");
+    for (var a = 0; a < apps.length; a++) {
+      var el = apps[a];
+      var play = el.getAttribute("data-play");
+      if (isAndroid && play) {
+        el.href = "https://play.google.com/store/apps/details?id=" + play +
+          "&referrer=" + encodeURIComponent("utm_source=portfolio&utm_medium=" + src + "&utm_campaign=portfolio_" + src);
+      } else {
+        el.href = "https://apps.apple.com/app/apple-store/id" + el.getAttribute("data-app") +
+          "?pt=128309367&ct=" + encodeURIComponent("portfolio_" + src) + "&mt=8";
+      }
+    }
+  })();
+</script>
+</body>
+</html>
