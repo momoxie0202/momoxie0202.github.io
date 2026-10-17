@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>momoxie 的 App｜練舞、派對遊戲、生活小工具</title>
+  <title>H.C 的 App｜練舞、派對遊戲、生活小工具</title>
   <meta name="description" content="一個人開發的 7 款 App：練舞神器 SyncMirror、誰是臥底、你畫我猜、真心話大冒險、比手畫腳、喵轉盤、Cleaner 相簿清理。全部免費下載。">
   <link rel="canonical" href="https://momoxie0202.github.io/apps/">
   <meta name="theme-color" content="#0A0A0A">
   <meta name="color-scheme" content="dark">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="momoxie 的 App 作品集">
+  <meta property="og:title" content="H.C 的 App 作品集">
   <meta property="og:description" content="練舞神器、派對遊戲、生活小工具，7 款 App 全部免費下載。">
   <meta property="og:url" content="https://momoxie0202.github.io/apps/">
-  <meta property="og:image" content="https://momoxie0202.github.io/apps/img/og.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image" content="https://momoxie0202.github.io/apps/img/og-hc.png">
+  <meta property="og:image:width" content="1731">
+  <meta property="og:image:height" content="909">
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="icon" type="image/png" href="/apps/img/syncmirror.png">
-  <link rel="apple-touch-icon" href="/apps/img/syncmirror.png">
+  <link rel="icon" type="image/png" href="/apps/img/hc-favicon.png">
+  <link rel="apple-touch-icon" href="/apps/img/hc-favicon.png">
 
   <style>
     :root {
@@ -123,7 +123,7 @@
       <img src="/apps/img/meowwheel.png" alt="">
       <img src="/apps/img/cleaner.png" alt="">
     </div>
-    <h1 data-i18n="title">momoxie 的 App</h1>
+    <h1 data-i18n="title">H.C 的 App</h1>
     <p class="lead" data-i18n="lead">一個人開發的 7 款 App，全部免費下載</p>
     <div class="lang" role="group" aria-label="Language">
       <button type="button" data-set-lang="zh" aria-pressed="true">中文</button>
@@ -217,7 +217,7 @@
   (function () {
     var STRINGS = {
       en: {
-        title: "Apps by momoxie",
+        title: "Apps by H.C",
         lead: "7 apps made by one indie developer — all free to download",
         sec_practice: "Practice",
         sec_party: "Party games",
@@ -259,7 +259,9 @@
       for (var j = 0; j < btns.length; j++) {
         btns[j].setAttribute("aria-pressed", btns[j].getAttribute("data-set-lang") === lang ? "true" : "false");
       }
-      if (lang === "en") document.title = "Apps by momoxie | Dance practice, party games, tools";
+      document.title = lang === "en"
+        ? "Apps by H.C | Dance practice, party games, tools"
+        : "H.C 的 App｜練舞、派對遊戲、生活小工具";
     }
     var btns = document.querySelectorAll("[data-set-lang]");
     for (var b = 0; b < btns.length; b++) {
