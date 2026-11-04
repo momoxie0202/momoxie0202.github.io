@@ -1,15 +1,15 @@
 {
   "schema": 1,
-  "generatedAt": "2026-10-07",
+  "generatedAt": "2026-11-04",
   "apps": [
     {
       "appStoreId": "6757357535",
       "bundleId": "com.momoxie.undercoverGame",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e1/30/0b/e1300bee-c626-2e9d-2e34-5d837a0dd766/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/10/d3/49/10d349d5-ec19-4829-a3ac-f3a9b21ddb04/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "i18n": {
         "en": {
           "name": "Who's the Spy? Party Game",
-          "subtitle": "Describe, bluff, find the spy"
+          "subtitle": "Imposter word game for groups"
         },
         "fr": {
           "name": "Qui est l'infiltré ? Jeu fête",
@@ -23,185 +23,237 @@
           "name": "Wer ist hier der Spion?",
           "subtitle": "Beschreibe, bluffe, finde ihn"
         },
-        "id": {
-          "name": "Siapa Penyusupnya? Game Pesta",
-          "subtitle": "Deskripsikan, tebak, temukan"
-        },
-        "zh_Hans": {
-          "name": "谁是卧底? - 破冰聚会游戏",
-          "subtitle": "轮流描述题目不准直接说答案，找出「谁是卧底」"
+        "zh_Hant": {
+          "name": "誰是臥底? - 破冰聚會遊戲",
+          "subtitle": "輪流描述題目不准直接說答案，找出「誰是臥底」"
         },
         "nb": {
           "name": "Hvem er infiltratøren?",
           "subtitle": "Beskriv, bløff, finn ham"
         },
-        "da": {
-          "name": "Hvem er infiltratoren?",
-          "subtitle": "Beskriv, bluff, find ham"
-        },
-        "sv": {
-          "name": "Vem är infiltratören?",
-          "subtitle": "Beskriv, bluffa, hitta hen"
-        },
-        "nl": {
-          "name": "Wie is de infiltrant?",
-          "subtitle": "Omschrijf, bluf, ontmasker"
-        },
-        "ru": {
-          "name": "Кто шпион? Игра для компании",
-          "subtitle": "Опиши, блефуй, найди шпиона"
-        },
-        "ms": {
-          "name": "Siapa Penyusup? Game Pesta",
-          "subtitle": "Terangkan, tipu, cari penyusup"
-        },
         "vi": {
           "name": "Ai là gián điệp? Game tiệc",
           "subtitle": "Mô tả, giả vờ, tìm gián điệp"
+        },
+        "tr": {
+          "name": "Casus Kim? Grup Imposter Oyunu",
+          "subtitle": "Anlat, blöf yap, ajanı bul"
         },
         "ko": {
           "name": "스파이는 누구? 파티 게임",
           "subtitle": "설명하고 속이고 스파이를 찾아라"
         },
+        "sv": {
+          "name": "Vem är infiltratören?",
+          "subtitle": "Beskriv, bluffa, hitta hen"
+        },
+        "da": {
+          "name": "Hvem er infiltratoren?",
+          "subtitle": "Beskriv, bluff, find ham"
+        },
         "ja": {
-          "name": "スパイは誰？ パーティーゲーム",
-          "subtitle": "お題を説明してインサイダーを探せ"
+          "name": "ワードウルフ：スパイは誰？",
+          "subtitle": "お題を説明してウルフを探せ"
         },
-        "th": {
-          "name": "ใครคือสายลับ? เกมปาร์ตี้",
-          "subtitle": "อธิบาย เนียน แล้วจับสายลับ"
+        "es": {
+          "name": "¿Quién es el infiltrado?",
+          "subtitle": "Describe, miente y descúbrelo"
         },
-        "zh_Hant": {
-          "name": "誰是臥底? - 破冰聚會遊戲",
-          "subtitle": "輪流描述題目不准直接說答案，找出「誰是臥底」"
+        "ru": {
+          "name": "Кто шпион? Игра для компании",
+          "subtitle": "Опиши, блефуй, найди шпиона"
+        },
+        "nl": {
+          "name": "Wie is de infiltrant?",
+          "subtitle": "Omschrijf, bluf, ontmasker"
         },
         "pl": {
           "name": "Kto jest agentem?",
           "subtitle": "Opisuj, ściemniaj, znajdź go"
         },
-        "tr": {
-          "name": "Ajan kim? Parti oyunu",
-          "subtitle": "Anlat, blöf yap, ajanı bul"
+        "th": {
+          "name": "ใครคือสายลับ? เกมปาร์ตี้",
+          "subtitle": "อธิบาย เนียน แล้วจับสายลับ"
+        },
+        "ms": {
+          "name": "Siapa Penyusup? Game Pesta",
+          "subtitle": "Terangkan, tipu, cari penyusup"
+        },
+        "zh_Hans": {
+          "name": "谁是卧底? - 破冰聚会游戏",
+          "subtitle": "轮流描述题目不准直接说答案，找出「谁是卧底」"
         },
         "it": {
           "name": "Chi è l'infiltrato? Party game",
           "subtitle": "Descrivi, bluffa, smaschera"
         },
-        "es": {
-          "name": "¿Quién es el infiltrado?",
-          "subtitle": "Describe, miente y descúbrelo"
+        "id": {
+          "name": "Siapa Mata-mata? Game Imposter",
+          "subtitle": "Deskripsikan, tebak, temukan"
         }
       }
     },
     {
       "appStoreId": "6778296953",
       "bundleId": "com.momoxie.drawguess",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/27/53/b82753bb-9fd9-1c91-b8ec-b8c703a90c96/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ea/4d/d5/ea4dd593-07f3-9048-f590-ee8a2cec6f69/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "i18n": {
         "en": {
           "name": "Draw & Guess - Party Game",
-          "subtitle": "Sketch, guess, laugh together"
+          "subtitle": "Telephone & relay, one phone"
         },
-        "ko": {
-          "name": "그림 맞히기 - 파티 그림 퀴즈",
-          "subtitle": "그리고 맞히고, 다 같이 웃기"
+        "es": {
+          "name": "Dibuja y Adivina: Fiestas",
+          "subtitle": "Juego en grupo sin internet"
         },
-        "zh_Hans": {
-          "name": "你画我猜 - 派对涂鸦猜谜游戏",
-          "subtitle": "画到崩坏，猜到怀疑人生"
+        "fr": {
+          "name": "Dessine & Devine – Jeu soirée",
+          "subtitle": "Téléphone dessiné entre amis"
         },
-        "th": {
-          "name": "วาดแล้วทาย - เกมปาร์ตี้วาดภาพ",
-          "subtitle": "วาดให้เพี้ยน ทายให้ฮา"
+        "pt": {
+          "name": "Desenhe e Adivinhe: Festa",
+          "subtitle": "Telefone sem fio desenhado"
         },
-        "vi": {
-          "name": "Vẽ & Đoán - Game tiệc vẽ hình",
-          "subtitle": "Vẽ, đoán và cười cùng bạn bè"
-        },
-        "zh_Hant": {
-          "name": "你畫我猜 - 派對塗鴉猜謎遊戲",
-          "subtitle": "畫到崩壞，猜到懷疑人生"
+        "de": {
+          "name": "Zeichnen & Raten – Partyspiel",
+          "subtitle": "Stille Post mit Bildern"
         },
         "id": {
           "name": "Gambar & Tebak - Game Pesta",
-          "subtitle": "Gambar, tebak, tertawa bareng"
+          "subtitle": "Tebak kata & estafet, offline"
+        },
+        "it": {
+          "name": "Disegna e Indovina: In gruppo",
+          "subtitle": "Telefono senza fili disegnato"
+        },
+        "zh_Hans": {
+          "name": "你画我猜 - 派对涂鸦猜谜游戏",
+          "subtitle": "聚会团建必玩・画图传话・一部手机离线玩"
         },
         "ja": {
           "name": "お絵かき当て - みんなでお絵描きクイズ",
-          "subtitle": "描いて当てる、笑いが止まらない"
+          "subtitle": "お絵かき伝言ゲーム・スマホ1台でオフライン"
+        },
+        "vi": {
+          "name": "Vẽ & Đoán - Game tiệc vẽ hình",
+          "subtitle": "Vẽ đoán chữ, chơi nhóm offline"
+        },
+        "ko": {
+          "name": "그림 맞히기 - 파티 그림 퀴즈",
+          "subtitle": "그림 전달·이어그리기·오프라인 게임"
+        },
+        "th": {
+          "name": "วาดแล้วทาย - เกมปาร์ตี้วาดภาพ",
+          "subtitle": "ทายคำจากภาพ เล่นกับเพื่อน"
+        },
+        "zh_Hant": {
+          "name": "你畫我猜 - 派對塗鴉猜謎遊戲",
+          "subtitle": "聚會團康必玩・畫圖傳話・一支手機離線玩"
         }
       }
     },
     {
       "appStoreId": "6777689064",
       "bundleId": "com.momoxie.truthOrDare",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/12/d6/d2/12d6d2a0-ccd6-57bc-d3d3-781fecb16383/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b8/aa/59/b8aa590e-cf64-25b2-9cb8-2995de491abe/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "i18n": {
         "en": {
           "name": "Truth or Dare - Spin & Party",
           "subtitle": "Bottle, Wheel & Couples Game"
         },
+        "es": {
+          "name": "Verdad o Reto - Juego Fiesta",
+          "subtitle": "Gira la botella y la ruleta"
+        },
+        "ko": {
+          "name": "진실 혹은 도전 - 파티 게임",
+          "subtitle": "병 돌리기·룰렛·커플 게임"
+        },
+        "vi": {
+          "name": "Thật hay Thách - Trò chơi nhóm",
+          "subtitle": "Quay chai, vòng quay, cặp đôi"
+        },
+        "th": {
+          "name": "จริงหรือกล้า - เกมปาร์ตี้",
+          "subtitle": "หมุนขวด วงล้อ เกมคู่รัก"
+        },
+        "id": {
+          "name": "Truth or Dare: Game Pesta Seru",
+          "subtitle": "Putar Botol, Roda & Pasangan"
+        },
+        "ja": {
+          "name": "真実か挑戦か－パーティーゲーム",
+          "subtitle": "ボトル回し＆ルーレットで盛り上がる"
+        },
         "zh_Hant": {
           "name": "真心話大冒險－派對聚會轉盤遊戲",
-          "subtitle": "轉瓶破冰・情侶朋友喝酒遊戲"
+          "subtitle": "轉瓶破冰・情侶朋友聚會遊戲"
+        },
+        "zh_Hans": {
+          "name": "真心话大冒险－派对聚会转盘游戏",
+          "subtitle": "转瓶破冰・情侣朋友聚会游戏"
         }
       }
     },
     {
       "appStoreId": "6757603710",
       "bundleId": "com.momoxie.charades",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b3/2b/bc/b32bbcf2-85ee-212f-9818-9378828deca5/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/03/5f/bc/035fbc80-5fae-411d-aee7-0bccdf06d46e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "i18n": {
         "en": {
-          "name": "Charades - Act and Guess",
-          "subtitle": "Party game for groups"
+          "name": "Charades - Forehead Guessing",
+          "subtitle": "Act it out party word game"
         },
         "fr": {
-          "name": "Charades - Mime et Devine",
-          "subtitle": "Jeu de mime en groupe"
+          "name": "Jeu de Mime : Devine Tête",
+          "subtitle": "Charades & ambiance entre amis"
         },
         "pt": {
-          "name": "Charadas - Mímica e Festa",
-          "subtitle": "Jogo de mímica em grupo"
+          "name": "Mímica: Jogo da Testa",
+          "subtitle": "Charadas e jogos com amigos"
         },
         "de": {
-          "name": "Scharade - Pantomime-Spiel",
-          "subtitle": "Partyspiel für Gruppen"
-        },
-        "ja": {
-          "name": "ジェスチャーゲーム - お題当て",
-          "subtitle": "みんなで遊ぶパーティーゲーム"
-        },
-        "th": {
-          "name": "เกมใบ้คำ - ทายคำปาร์ตี้",
-          "subtitle": "เกมปาร์ตี้เล่นเป็นกลุ่ม"
+          "name": "Stirnraten - Pantomime Spiel",
+          "subtitle": "Scharade & Partyspiel für alle"
         },
         "ko": {
           "name": "몸으로 말해요 - 제스처 게임",
-          "subtitle": "다 함께 즐기는 파티 게임"
+          "subtitle": "스피드퀴즈 단어 맞추기 파티게임"
+        },
+        "th": {
+          "name": "เกมใบ้คำ - ทายคำปาร์ตี้",
+          "subtitle": "ทายคำบนหัว ใบ้ท่าทางกับเพื่อน"
         },
         "zh_Hant": {
-          "name": "比手畫腳 - 猜字遊戲",
-          "subtitle": "你演我猜派對遊戲"
+          "name": "比手畫腳 - 你演我猜・猜詞遊戲",
+          "subtitle": "派對團康必玩，2600 題在地題庫"
+        },
+        "vi": {
+          "name": "Đoán Chữ Cùng Nhau: Game Nhóm",
+          "subtitle": "Trò chơi đoán từ cho tiệc tùng"
+        },
+        "zh_Hans": {
+          "name": "你演我猜 - 比划猜词聚会游戏",
+          "subtitle": "团建派对必玩，2600 题海量题库"
+        },
+        "ja": {
+          "name": "ジェスチャーゲーム - お題当て",
+          "subtitle": "おでこで当てる宴会パーティーゲーム"
         },
         "id": {
           "name": "Tebak Gaya - Game Pesta",
-          "subtitle": "Game tebak kata bersama"
-        },
-        "zh_Hans": {
-          "name": "比手画脚 - 猜字游戏",
-          "subtitle": "你演我猜派对游戏"
+          "subtitle": "Tebak Kata di Kepala, Seru!"
         },
         "es": {
-          "name": "Charadas - Mímica y Fiesta",
-          "subtitle": "Juego de mímica en grupo"
+          "name": "Charadas: Juego de la Frente",
+          "subtitle": "Mímica y juegos de fiesta"
         }
       }
     },
     {
       "appStoreId": "6755671037",
       "bundleId": "com.momoxie.meowwheel",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a1/ee/fc/a1eefcc3-6789-f287-9ddd-429d9898b797/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3c/c4/4a/3cc44a2a-56a0-1ca1-7a3a-0ca1919a76c4/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "i18n": {
         "en": {
           "name": "MeowWheel - Decision Spinner",
@@ -223,101 +275,125 @@
           "name": "Miau-Glücksrad",
           "subtitle": "Die Katze entscheidet"
         },
-        "hi": {
-          "name": "म्याऊ व्हील - बिल्ली चुने",
-          "subtitle": "बिल्ली आपके लिए चुनेगी"
+        "te": {
+          "name": "మ్యావ్ చక్రం - పిల్లి ఎంపిక",
+          "subtitle": "పిల్లి ఎంచుకుంటుంది"
+        },
+        "bn": {
+          "name": "মিয়াও হুইল - বিড়াল বাছে",
+          "subtitle": "বিড়াল বেছে নেবে"
         },
         "gu": {
           "name": "મ્યાઉં વ્હીલ - બિલાડી પસંદ",
           "subtitle": "બિલાડી પસંદ કરશે"
         },
-        "vi": {
-          "name": "Vòng quay Mèo - Mèo chọn",
-          "subtitle": "Để mèo chọn giúp bạn"
-        },
-        "he": {
-          "name": "גלגל מיאו - החתול בוחר",
-          "subtitle": "תן לחתול לבחור"
-        },
-        "ur": {
-          "name": "میاؤ وہیل - بلی چنے گی",
-          "subtitle": "بلی آپ کے لیے چنے گی"
-        },
-        "th": {
-          "name": "วงล้อเหมียว - แมวช่วยเลือก",
-          "subtitle": "ให้แมวช่วยเลือกให้"
-        },
-        "ja": {
-          "name": "ニャンルーレット - 猫が決める",
-          "subtitle": "猫が決めてくれるルーレット"
-        },
-        "sv": {
-          "name": "Mjauhjulet - Katten väljer",
-          "subtitle": "Låt katten välja"
+        "fi": {
+          "name": "Miaupyörä - Kissa valitsee",
+          "subtitle": "Anna kissan valita"
         },
         "da": {
           "name": "Mjavhjulet - Katten vælger",
           "subtitle": "Lad katten vælge"
         },
-        "zh_Hant": {
-          "name": "喵轉盤 - 選擇障礙喵助手",
-          "subtitle": "把命運交給喵咪幫你決定吧！喵！"
+        "sv": {
+          "name": "Mjauhjulet - Katten väljer",
+          "subtitle": "Låt katten välja"
         },
-        "hr": {
-          "name": "Mijau Kotač - Mačka bira",
-          "subtitle": "Neka mačka odabere"
+        "th": {
+          "name": "วงล้อเหมียว - แมวช่วยเลือก",
+          "subtitle": "ให้แมวช่วยเลือกให้"
         },
-        "uk": {
-          "name": "Мяу-Рулетка - кіт обере",
-          "subtitle": "Кіт обере за тебе"
-        },
-        "sl": {
-          "name": "Mijav Kolo - Maček izbere",
-          "subtitle": "Naj izbere mačka"
-        },
-        "it": {
-          "name": "Ruota Miao - Decide il gatto",
-          "subtitle": "Il gatto sceglie per te"
-        },
-        "ar": {
-          "name": "عجلة مياو - القطة تقرر",
-          "subtitle": "دع القطة تختار لك"
-        },
-        "fi": {
-          "name": "Miaupyörä - Kissa valitsee",
-          "subtitle": "Anna kissan valita"
+        "ru": {
+          "name": "Мяу-Рулетка - кот решит",
+          "subtitle": "Кот решит за тебя"
         },
         "ro": {
           "name": "Roata Miau - Pisica alege",
           "subtitle": "Lasă pisica să aleagă"
         },
-        "tr": {
-          "name": "Miyav Çarkı - Kedi seçer",
-          "subtitle": "Kedi senin için seçsin"
+        "id": {
+          "name": "Roda Meong - Kucing pilih",
+          "subtitle": "Biar kucing yang memilih"
+        },
+        "hi": {
+          "name": "म्याऊ व्हील - बिल्ली चुने",
+          "subtitle": "बिल्ली आपके लिए चुनेगी"
+        },
+        "zh_Hant": {
+          "name": "喵轉盤 - 選擇障礙喵助手",
+          "subtitle": "把命運交給喵咪幫你決定吧！喵！"
         },
         "zh_Hans": {
           "name": "喵转盘 - 选择障碍喵助手",
           "subtitle": "把命运交给喵咪帮你决定吧！喵！"
         },
+        "he": {
+          "name": "גלגל מיאו - החתול בוחר",
+          "subtitle": "תן לחתול לבחור"
+        },
+        "it": {
+          "name": "Ruota Miao - Decide il gatto",
+          "subtitle": "Il gatto sceglie per te"
+        },
+        "tr": {
+          "name": "Miyav Çarkı - Kedi seçer",
+          "subtitle": "Kedi senin için seçsin"
+        },
+        "uk": {
+          "name": "Мяу-Рулетка - кіт обере",
+          "subtitle": "Кіт обере за тебе"
+        },
+        "hr": {
+          "name": "Mijau Kotač - Mačka bira",
+          "subtitle": "Neka mačka odabere"
+        },
+        "sl": {
+          "name": "Mijav Kolo - Maček izbere",
+          "subtitle": "Naj izbere mačka"
+        },
+        "nb": {
+          "name": "Mjauhjulet - Katten velger",
+          "subtitle": "La katten velge"
+        },
+        "ar": {
+          "name": "عجلة مياو - القطة تقرر",
+          "subtitle": "دع القطة تختار لك"
+        },
         "el": {
           "name": "Τροχός Νιάου - Η γάτα διαλέγει",
           "subtitle": "Άσε τη γάτα να διαλέξει"
+        },
+        "pa": {
+          "name": "ਮਿਆਉਂ ਵ੍ਹੀਲ - ਬਿੱਲੀ ਚੁਣੇ",
+          "subtitle": "ਬਿੱਲੀ ਤੁਹਾਡੇ ਲਈ ਚੁਣੇਗੀ"
         },
         "pl": {
           "name": "Miau Koło - Kot wybiera",
           "subtitle": "Niech kot wybierze"
         },
-        "id": {
-          "name": "Roda Meong - Kucing pilih",
-          "subtitle": "Biar kucing yang memilih"
-        },
         "ko": {
           "name": "냥룰렛 - 결정장애 도우미",
           "subtitle": "고양이가 골라주는 룰렛"
         },
-        "nb": {
-          "name": "Mjauhjulet - Katten velger",
-          "subtitle": "La katten velge"
+        "ja": {
+          "name": "ニャンルーレット - 猫が決める",
+          "subtitle": "猫が決めてくれるルーレット"
+        },
+        "vi": {
+          "name": "Vòng quay Mèo - Mèo chọn",
+          "subtitle": "Để mèo chọn giúp bạn"
+        },
+        "hu": {
+          "name": "Miau Kerék - A macska dönt",
+          "subtitle": "Döntsön a macska"
+        },
+        "sk": {
+          "name": "Mňau Koleso - Mačka vyberie",
+          "subtitle": "Nech mačka vyberie"
+        },
+        "ur": {
+          "name": "میاؤ وہیل - بلی چنے گی",
+          "subtitle": "بلی آپ کے لیے چنے گی"
         },
         "ms": {
           "name": "Roda Meong - Kucing pilih",
@@ -327,195 +403,290 @@
           "name": "म्याऊ चाक - मांजर ठरवते",
           "subtitle": "मांजर तुमच्यासाठी निवडेल"
         },
-        "sk": {
-          "name": "Mňau Koleso - Mačka vyberie",
-          "subtitle": "Nech mačka vyberie"
-        },
-        "cs": {
-          "name": "Mňau Kolo - Kočka vybere",
-          "subtitle": "Nech kočku vybrat"
-        },
-        "ru": {
-          "name": "Мяу-Рулетка - кот решит",
-          "subtitle": "Кот решит за тебя"
-        },
-        "te": {
-          "name": "మ్యావ్ చక్రం - పిల్లి ఎంపిక",
-          "subtitle": "పిల్లి ఎంచుకుంటుంది"
-        },
-        "hu": {
-          "name": "Miau Kerék - A macska dönt",
-          "subtitle": "Döntsön a macska"
-        },
-        "bn": {
-          "name": "মিয়াও হুইল - বিড়াল বাছে",
-          "subtitle": "বিড়াল বেছে নেবে"
+        "ta": {
+          "name": "மியாவ் சக்கரம் - பூனை தேர்வு",
+          "subtitle": "பூனை தேர்வு செய்யட்டும்"
         },
         "nl": {
           "name": "Miauwrad - De kat kiest",
           "subtitle": "Laat de kat kiezen"
         },
-        "pa": {
-          "name": "ਮਿਆਉਂ ਵ੍ਹੀਲ - ਬਿੱਲੀ ਚੁਣੇ",
-          "subtitle": "ਬਿੱਲੀ ਤੁਹਾਡੇ ਲਈ ਚੁਣੇਗੀ"
-        },
-        "ta": {
-          "name": "மியாவ் சக்கரம் - பூனை தேர்வு",
-          "subtitle": "பூனை தேர்வு செய்யட்டும்"
+        "cs": {
+          "name": "Mňau Kolo - Kočka vybere",
+          "subtitle": "Nech kočku vybrat"
         }
       }
     },
     {
       "appStoreId": "6755509268",
       "bundleId": "com.ms0517833.syncmirror",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/b2/dd/d6b2ddb3-3888-d804-f430-7ee6a8a5bad6/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/00/8b/31/008b3119-2c68-21b9-b126-8db019d50288/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "i18n": {
         "en": {
-          "name": "SyncMirror Player",
-          "subtitle": "Mirror, loop, Video Comparison"
+          "name": "SyncMirror: Dance Practice",
+          "subtitle": "Mirror Kpop Videos in Slow Mo"
         },
         "es": {
           "name": "SyncMirror: Baile y Práctica",
-          "subtitle": "Espejo, bucle, comparación"
+          "subtitle": "Baile en espejo y cámara lenta"
         },
         "fr": {
           "name": "SyncMirror : Danse & Pratique",
-          "subtitle": "Miroir, boucle, comparaison"
+          "subtitle": "Danse en miroir et au ralenti"
         },
         "pt": {
-          "name": "SyncMirror: Dança e Treino",
-          "subtitle": "Espelho, loop e comparação"
+          "name": "SyncMirror: Aprenda a Dançar",
+          "subtitle": "Espelhar vídeo e câmera lenta"
         },
         "de": {
           "name": "SyncMirror: Tanz & Training",
-          "subtitle": "Spiegeln, Loop, Vergleich"
-        },
-        "he": {
-          "name": "SyncMirror: תרגול ריקוד",
-          "subtitle": "מראה, לולאה והשוואה"
-        },
-        "ko": {
-          "name": "SyncMirror Player - 댄스 연습 필수 앱",
-          "subtitle": "미러 · 슬로우 반복 · 녹화 비교 플레이어"
-        },
-        "nb": {
-          "name": "SyncMirror: Dans & Trening",
-          "subtitle": "Speil, løkke, sammenligning"
-        },
-        "sk": {
-          "name": "SyncMirror: Tanec a tréning",
-          "subtitle": "Zrkadlo, slučka, porovnanie"
-        },
-        "hr": {
-          "name": "SyncMirror: Ples i vježbanje",
-          "subtitle": "Zrcalo, petlja, usporedba"
-        },
-        "ru": {
-          "name": "SyncMirror: танцы и разбор",
-          "subtitle": "Зеркало, повтор, сравнение"
-        },
-        "sl": {
-          "name": "SyncMirror: Ples in vadba",
-          "subtitle": "Zrcalo, zanka, primerjava"
-        },
-        "ro": {
-          "name": "SyncMirror: Dans și Repetiții",
-          "subtitle": "Oglindă, buclă, comparație"
-        },
-        "ar": {
-          "name": "SyncMirror: تدرّب على الرقص",
-          "subtitle": "مرآة وتكرار ومقارنة"
-        },
-        "it": {
-          "name": "SyncMirror: Danza e Pratica",
-          "subtitle": "Specchio, loop, confronto"
-        },
-        "zh_Hans": {
-          "name": "SyncMirror Player - 练舞神器",
-          "subtitle": "镜像・慢速循环・录制对比播放器"
-        },
-        "th": {
-          "name": "SyncMirror: ฝึกเต้น",
-          "subtitle": "กระจก วนซ้ำ เทียบภาพ"
-        },
-        "cs": {
-          "name": "SyncMirror: Tanec a trénink",
-          "subtitle": "Zrcadlo, smyčka, porovnání"
-        },
-        "sv": {
-          "name": "SyncMirror: Dans & Träning",
-          "subtitle": "Spegel, loop, jämförelse"
-        },
-        "pl": {
-          "name": "SyncMirror: taniec i trening",
-          "subtitle": "Lustro, pętla, porównanie"
-        },
-        "da": {
-          "name": "SyncMirror: Dans & Træning",
-          "subtitle": "Spejl, loop, sammenligning"
-        },
-        "id": {
-          "name": "SyncMirror: Latihan Menari",
-          "subtitle": "Cermin, ulang, bandingkan"
-        },
-        "ca": {
-          "name": "SyncMirror: Dansa i Assaig",
-          "subtitle": "Mirall, bucle i comparació"
-        },
-        "uk": {
-          "name": "SyncMirror: танці й розбір",
-          "subtitle": "Дзеркало, повтор, порівняння"
-        },
-        "hu": {
-          "name": "SyncMirror: Tánc és gyakorlás",
-          "subtitle": "Tükör, ismétlés, összevetés"
-        },
-        "tr": {
-          "name": "SyncMirror: Dans ve Çalışma",
-          "subtitle": "Ayna, döngü, karşılaştırma"
-        },
-        "nl": {
-          "name": "SyncMirror: Dans Oefenen",
-          "subtitle": "Spiegel, loop, vergelijken"
-        },
-        "zh_Hant": {
-          "name": "SyncMirror Player - 練舞神器",
-          "subtitle": "鏡像・慢速循環・錄影比對播放器"
-        },
-        "el": {
-          "name": "SyncMirror: Χορός & Εξάσκηση",
-          "subtitle": "Καθρέφτης, επανάληψη, σύγκριση"
-        },
-        "ms": {
-          "name": "SyncMirror: Latihan Menari",
-          "subtitle": "Cermin, ulangan, banding"
+          "subtitle": "Tanzen lernen mit Zeitlupe"
         },
         "hi": {
           "name": "SyncMirror: डांस प्रैक्टिस",
-          "subtitle": "मिरर, लूप, वीडियो तुलना"
+          "subtitle": "डांस मिरर वीडियो और स्लो मोशन"
+        },
+        "hu": {
+          "name": "SyncMirror: Tánc és gyakorlás",
+          "subtitle": "K-pop tánc: tükör és lassítás"
+        },
+        "zh_Hant": {
+          "name": "SyncMirror Player - 練舞神器",
+          "subtitle": "K-pop 翻跳必備・鏡像慢速跳舞練習"
+        },
+        "ko": {
+          "name": "SyncMirror: 댄스 연습·좌우반전 거울",
+          "subtitle": "안무 카피·구간반복·느리게·배속 재생"
+        },
+        "ca": {
+          "name": "SyncMirror: Dansa i Assaig",
+          "subtitle": "Ball K-pop: mirall i lent"
+        },
+        "it": {
+          "name": "SyncMirror: Danza e Pratica",
+          "subtitle": "Specchio e rallentatore video"
+        },
+        "vi": {
+          "name": "SyncMirror: Gương tập nhảy",
+          "subtitle": "Tua chậm video kpop, lặp AB"
+        },
+        "sl": {
+          "name": "SyncMirror: Ples in vadba",
+          "subtitle": "Zrcalo in upočasnitev videa"
+        },
+        "he": {
+          "name": "SyncMirror: תרגול ריקוד",
+          "subtitle": "ריקוד K-pop: מראה והילוך איטי"
+        },
+        "ar": {
+          "name": "SyncMirror: تدرّب على الرقص",
+          "subtitle": "رقص كيبوب: مرآة وحركة بطيئة"
+        },
+        "bn": {
+          "name": "SyncMirror: নাচের অনুশীলন",
+          "subtitle": "কে-পপ নাচ: মিরর ও স্লো মোশন"
+        },
+        "th": {
+          "name": "SyncMirror: ฝึกเต้น กระจกเงา",
+          "subtitle": "kpop สโลว์วิดีโอ วนซ้ำ AB"
         },
         "fi": {
           "name": "SyncMirror: Tanssi & Treeni",
-          "subtitle": "Peili, looppi, vertailu"
+          "subtitle": "Tanssi: peilikuva ja hidastus"
+        },
+        "nb": {
+          "name": "SyncMirror: Dans & Trening",
+          "subtitle": "Dans med speil og sakte film"
+        },
+        "ru": {
+          "name": "SyncMirror: танцы и разбор",
+          "subtitle": "Зеркало и замедление видео"
+        },
+        "sv": {
+          "name": "SyncMirror: Dans & Träning",
+          "subtitle": "Spegelvänd video & slow motion"
+        },
+        "da": {
+          "name": "SyncMirror: Dans & Træning",
+          "subtitle": "Dans: spejlvend og slowmotion"
+        },
+        "ta": {
+          "name": "SyncMirror: நடனப் பயிற்சி",
+          "subtitle": "K-pop நடனம்: மிரர், ஸ்லோ மோஷன்"
+        },
+        "pl": {
+          "name": "SyncMirror: taniec i trening",
+          "subtitle": "Lustrzane odbicie i zwolnienie"
+        },
+        "id": {
+          "name": "SyncMirror: Latihan Dance Kpop",
+          "subtitle": "Video cermin, perlambat & loop"
         },
         "ja": {
-          "name": "SyncMirror Player - ダンス練習に最適",
-          "subtitle": "ミラー・スロー再生・録画比較プレイヤー"
+          "name": "SyncMirror：ダンス練習・反転ミラー動画",
+          "subtitle": "振り付けをスロー再生・ABループ・倍速で"
         },
-        "vi": {
-          "name": "SyncMirror: Luyện Nhảy",
-          "subtitle": "Gương, lặp đoạn, đối chiếu"
+        "nl": {
+          "name": "SyncMirror: Dans Oefenen",
+          "subtitle": "Dans: spiegelen & slow motion"
+        },
+        "uk": {
+          "name": "SyncMirror: танці й розбір",
+          "subtitle": "Дзеркало та сповільнення відео"
+        },
+        "el": {
+          "name": "SyncMirror: Χορός & Εξάσκηση",
+          "subtitle": "Χορός: καθρέφτης, αργή κίνηση"
+        },
+        "hr": {
+          "name": "SyncMirror: Ples i vježbanje",
+          "subtitle": "K-pop ples: zrcalo i usporeno"
+        },
+        "ro": {
+          "name": "SyncMirror: Dans și Repetiții",
+          "subtitle": "Oglindă și încetinire video"
+        },
+        "sk": {
+          "name": "SyncMirror: Tanec a tréning",
+          "subtitle": "Zrkadlo a spomalenie videa"
+        },
+        "tr": {
+          "name": "SyncMirror: Dans ve Çalışma",
+          "subtitle": "Kpop dans: ayna ve ağır çekim"
+        },
+        "ms": {
+          "name": "SyncMirror: Kpop Dance Cover",
+          "subtitle": "Mod cermin, slow mo & loop A-B"
+        },
+        "cs": {
+          "name": "SyncMirror: Tanec a trénink",
+          "subtitle": "Tanec: zrcadlo a zpomalení"
+        },
+        "te": {
+          "name": "SyncMirror: డ్యాన్స్ సాధన",
+          "subtitle": "డ్యాన్స్: మిర్రర్, స్లో మోషన్"
+        },
+        "zh_Hans": {
+          "name": "SyncMirror Player - 练舞神器",
+          "subtitle": "K-pop 翻跳必备・镜像慢放跳舞练习"
         }
       }
     },
     {
       "appStoreId": "6816571408",
       "bundleId": "com.momoxie.cleaner",
-      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/21/47/9a/21479a9a-4c1e-6e63-5f17-fa14a6b6f6f7/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dd/ff/b7/ddffb75d-4ad0-1763-68d8-2ac77b3dc95e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "i18n": {
+        "en": {
+          "name": "Cleaner: Photo & Video Cleanup",
+          "subtitle": "Clean Duplicate & Similar Pics"
+        },
+        "es": {
+          "name": "Cleaner: Borrar fotos y vídeos",
+          "subtitle": "Fotos duplicadas y similares"
+        },
+        "fr": {
+          "name": "Cleaner : Nettoyer ses photos",
+          "subtitle": "Photos en double et similaires"
+        },
+        "pt": {
+          "name": "Cleaner: Limpar Fotos e Vídeos",
+          "subtitle": "Fotos duplicadas e semelhantes"
+        },
+        "de": {
+          "name": "Cleaner: Foto & Video löschen",
+          "subtitle": "Doppelte & ähnliche Fotos"
+        },
+        "da": {
+          "name": "Cleaner: Ryd op i foto & video",
+          "subtitle": "Dubletter & lignende billeder"
+        },
+        "ru": {
+          "name": "Cleaner: Очистка фото и видео",
+          "subtitle": "Удалить дубликаты и похожие"
+        },
+        "nl": {
+          "name": "Cleaner: Foto & video opruimen",
+          "subtitle": "Dubbele & vergelijkbare foto's"
+        },
+        "he": {
+          "name": "Cleaner: ניקוי תמונות וסרטונים",
+          "subtitle": "מחיקת תמונות כפולות ודומות"
+        },
+        "zh_Hans": {
+          "name": "Cleaner 照片清理 - 重复相似照片",
+          "subtitle": "重复视频、相似视频一键清，买断免订阅"
+        },
+        "nb": {
+          "name": "Cleaner: Rydd bilder og video",
+          "subtitle": "Duplikater og lignende bilder"
+        },
+        "ms": {
+          "name": "Cleaner: Padam Foto & Video",
+          "subtitle": "Pembersih Foto Pendua & Serupa"
+        },
+        "id": {
+          "name": "Cleaner: Hapus Foto & Video",
+          "subtitle": "Pembersih Foto Duplikat"
+        },
+        "vi": {
+          "name": "Cleaner: Dọn dẹp ảnh & video",
+          "subtitle": "Xóa ảnh trùng lặp & tương tự"
+        },
+        "ar": {
+          "name": "Cleaner: تنظيف الصور والفيديو",
+          "subtitle": "الصور المكررة والمتشابهة"
+        },
+        "th": {
+          "name": "Cleaner: ลบรูปซ้ำ ล้างเครื่อง",
+          "subtitle": "ลบรูปและวิดีโอซ้ำหรือคล้ายกัน"
+        },
+        "uk": {
+          "name": "Cleaner: Очищення фото й відео",
+          "subtitle": "Видалити дублікати та схожі"
+        },
+        "ko": {
+          "name": "Cleaner: 사진 정리, 중복·유사 사진 삭제",
+          "subtitle": "중복·유사 동영상도 한 번에 정리 · 한 번 구매"
+        },
         "zh_Hant": {
-          "name": "Cleaner 相簿清理 - 重複照片刪除",
-          "subtitle": "上滑刪照片、直接剪影片，買斷免訂閱"
+          "name": "Cleaner 照片清理 - 重複相似照片",
+          "subtitle": "重複影片、相似影片一鍵清，買斷免訂閱"
+        },
+        "tr": {
+          "name": "Cleaner: Fotoğraf Temizleme",
+          "subtitle": "Kopya & Benzer Fotoğraf Sil"
+        },
+        "pl": {
+          "name": "Cleaner: Czyszczenie zdjęć",
+          "subtitle": "Duplikaty i podobne zdjęcia"
+        },
+        "sv": {
+          "name": "Cleaner: Rensa bilder & video",
+          "subtitle": "Dubbletter & liknande bilder"
+        },
+        "ja": {
+          "name": "Cleaner 写真整理 - 重複・類似写真の削除",
+          "subtitle": "重複動画・類似動画も一括削除｜買い切り"
+        },
+        "it": {
+          "name": "Cleaner: Pulizia foto e video",
+          "subtitle": "Foto e video doppi o simili"
+        }
+      }
+    },
+    {
+      "appStoreId": "6827450635",
+      "bundleId": "com.momoxie.quickkey",
+      "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/09/93/fa/0993fad4-0adc-980e-2833-326c507a15e7/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "i18n": {
+        "en": {
+          "name": "QuickKey - Snippet Keyboard",
+          "subtitle": "Phrases, kaomoji & fancy fonts"
+        },
+        "zh_Hant": {
+          "name": "快捷鍵盤－常用句、顏文字、字體",
+          "subtitle": "常用文字一點就輸入"
         }
       }
     }
