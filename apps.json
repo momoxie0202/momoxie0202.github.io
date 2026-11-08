@@ -1,10 +1,99 @@
 {
   "schema": 1,
   "generatedAt": "2026-11-08",
+  "categories": {
+    "game": {
+      "ar": "ألعاب",
+      "bn": "গেম",
+      "ca": "Jocs",
+      "cs": "Hry",
+      "da": "Spil",
+      "de": "Spiele",
+      "el": "Παιχνίδια",
+      "en": "Games",
+      "es": "Juegos",
+      "fi": "Pelit",
+      "fr": "Jeux",
+      "gu": "ગેમ્સ",
+      "he": "משחקים",
+      "hi": "गेम",
+      "hr": "Igre",
+      "hu": "Játékok",
+      "id": "Game",
+      "it": "Giochi",
+      "ja": "ゲーム",
+      "ko": "게임",
+      "mr": "गेम्स",
+      "ms": "Permainan",
+      "nb": "Spill",
+      "nl": "Games",
+      "pa": "ਗੇਮਾਂ",
+      "pl": "Gry",
+      "pt": "Jogos",
+      "ro": "Jocuri",
+      "ru": "Игры",
+      "sk": "Hry",
+      "sl": "Igre",
+      "sv": "Spel",
+      "ta": "கேம்கள்",
+      "te": "గేమ్‌లు",
+      "th": "เกม",
+      "tr": "Oyunlar",
+      "uk": "Ігри",
+      "ur": "گیمز",
+      "vi": "Trò chơi",
+      "zh_Hans": "游戏",
+      "zh_Hant": "遊戲"
+    },
+    "tool": {
+      "ar": "أدوات",
+      "bn": "টুল",
+      "ca": "Eines",
+      "cs": "Nástroje",
+      "da": "Værktøjer",
+      "de": "Tools",
+      "el": "Εργαλεία",
+      "en": "Tools",
+      "es": "Herramientas",
+      "fi": "Työkalut",
+      "fr": "Outils",
+      "gu": "ટૂલ્સ",
+      "he": "כלים",
+      "hi": "टूल",
+      "hr": "Alati",
+      "hu": "Eszközök",
+      "id": "Alat",
+      "it": "Strumenti",
+      "ja": "ツール",
+      "ko": "도구",
+      "mr": "टूल्स",
+      "ms": "Alatan",
+      "nb": "Verktøy",
+      "nl": "Tools",
+      "pa": "ਟੂਲ",
+      "pl": "Narzędzia",
+      "pt": "Ferramentas",
+      "ro": "Instrumente",
+      "ru": "Инструменты",
+      "sk": "Nástroje",
+      "sl": "Orodja",
+      "sv": "Verktyg",
+      "ta": "கருவிகள்",
+      "te": "టూల్స్",
+      "th": "เครื่องมือ",
+      "tr": "Araçlar",
+      "uk": "Інструменти",
+      "ur": "ٹولز",
+      "vi": "Công cụ",
+      "zh_Hans": "工具",
+      "zh_Hant": "工具"
+    }
+  },
   "apps": [
     {
       "appStoreId": "6757357535",
       "bundleId": "com.momoxie.undercoverGame",
+      "category": "game",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/84/07/89/84078916-82ea-a47c-52b6-04292f7d9d41/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "i18n": {
         "en": {
@@ -96,6 +185,7 @@
     {
       "appStoreId": "6778296953",
       "bundleId": "com.momoxie.drawguess",
+      "category": "game",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/91/a7/41/91a74101-26a2-e8c3-086e-42204dd7f92e/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "i18n": {
         "en": {
@@ -155,6 +245,7 @@
     {
       "appStoreId": "6777689064",
       "bundleId": "com.momoxie.truthOrDare",
+      "category": "game",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c0/24/f7/c024f739-67f2-2a03-ce59-6de08b154901/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "i18n": {
         "en": {
@@ -218,6 +309,7 @@
     {
       "appStoreId": "6757603710",
       "bundleId": "com.momoxie.charades",
+      "category": "game",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ef/2b/44/ef2b44ae-7927-ad9f-f04d-fd5e7449552c/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "i18n": {
         "en": {
@@ -273,6 +365,7 @@
     {
       "appStoreId": "6755671037",
       "bundleId": "com.momoxie.meowwheel",
+      "category": "tool",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/14/9e/1e/149e1e59-faa9-df77-6aba-21dd0173d981/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "i18n": {
         "en": {
@@ -440,6 +533,7 @@
     {
       "appStoreId": "6755509268",
       "bundleId": "com.ms0517833.syncmirror",
+      "category": "tool",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/00/8b/31/008b3119-2c68-21b9-b126-8db019d50288/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "i18n": {
         "en": {
@@ -595,6 +689,7 @@
     {
       "appStoreId": "6816571408",
       "bundleId": "com.momoxie.cleaner",
+      "category": "tool",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/61/92/85/619285a9-021a-592a-35ba-026d6ea35b30/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "i18n": {
         "en": {
@@ -698,6 +793,7 @@
     {
       "appStoreId": "6827450635",
       "bundleId": "com.momoxie.quickkey",
+      "category": "tool",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e1/1e/e2/e11ee28f-1da0-adb2-072a-6ba6ea2eb897/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
       "i18n": {
         "en": {
@@ -853,6 +949,7 @@
     {
       "appStoreId": "6804235907",
       "bundleId": "com.momoxie.novelReader",
+      "category": "tool",
       "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d0/70/91/d07091c8-cf59-ea2a-fd0c-cedafc6f7c69/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
       "i18n": {
         "en": {
@@ -895,6 +992,10 @@
           "name": "SoftPage: Lettore EPUB e TXT",
           "subtitle": "Leggere libri e romanzi"
         },
+        "zh_Hans": {
+          "name": "SoftPage: 本地TXT小说阅读器",
+          "subtitle": "EPUB电子书 无广告 离线看书"
+        },
         "tr": {
           "name": "SoftPage: EPUB ve TXT Okuyucu",
           "subtitle": "E-kitap ve roman, reklamsız"
@@ -906,10 +1007,6 @@
         "ko": {
           "name": "SoftPage: 소설 뷰어·EPUB 리더",
           "subtitle": "TXT 전자책 오프라인, 광고 없음"
-        },
-        "zh_Hans": {
-          "name": "SoftPage: 本地TXT小说阅读器",
-          "subtitle": "EPUB电子书 无广告 离线看书"
         },
         "pl": {
           "name": "SoftPage: Czytnik EPUB i TXT",
