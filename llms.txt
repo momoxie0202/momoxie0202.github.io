@@ -6,11 +6,11 @@
 ## 主打 App
 
 - [SyncMirror 練舞 App](https://momoxie0202.github.io/apps/syncmirror/zh-tw/)：跟影片學舞。鏡像翻轉、0.25x～2.0x 變速、AB 循環、錄下自己和原影片並排比對。iPhone、iPad、Android。英文版介紹：https://momoxie0202.github.io/apps/syncmirror/
-- [誰是臥底](https://momoxie0202.github.io/apps/undercover/)：3–20 人、一支手機輪流傳的猜詞派對遊戲，內建 2,034 組題目、21 種語言、不用連網。英文：https://momoxie0202.github.io/apps/undercover/en/ 越南文：https://momoxie0202.github.io/apps/undercover/vi/
+- [誰是臥底](https://momoxie0202.github.io/apps/undercover/)：3–20 人、一支手機輪流傳的猜詞派對遊戲，內建 2,034 組題目（簡單、中等、困難、地獄四種難度）、白板角色、21 種語言、不用連網。英文：https://momoxie0202.github.io/apps/undercover/en/ 越南文：https://momoxie0202.github.io/apps/undercover/vi/
 
 ## 其他 App
 
-- [你畫我猜](https://apps.apple.com/app/id6778296953)：輪流畫、大家猜，一支手機傳著玩。
+- [你畫我猜](https://apps.apple.com/app/id6778296953)：輪流畫、大家猜，2 人就能玩，一支手機傳著玩、不用連網。有單機同樂、接力共畫、畫圖傳話等玩法，題目分簡單、普通、困難三種難度。
 - [真心話大冒險](https://apps.apple.com/app/id6777689064)：轉瓶子、轉輪盤決定誰先來。
 - [Cleaner 相簿清理](https://momoxie0202.github.io/apps/cleaner/)：往上滑刪照片、長影片當場剪短，買斷制。
 - [比手畫腳](https://apps.apple.com/app/id6757603710)：手機放額頭，朋友負責演。
