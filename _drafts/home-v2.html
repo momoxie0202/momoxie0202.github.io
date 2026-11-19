@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<!-- 首頁 V2 備用版（App 牆）。2026-11-19 使用者選定 V1 上線，這版先存放；要換上時複製到根目錄 index.html，並刪掉 robots noindex。 -->
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="google-site-verification" content="t0RtDHjiZkM-uk_4CP7sSYKRtU8eLMexcZy_3WOkXGs" />
+  <meta name="theme-color" content="#101114">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="index, follow">
+  <title>H.C 的 App 作品集｜練舞、派對遊戲與生活工具・隱私權政策與支援</title>
+  <meta name="description" content="我是 H.C，獨立開發者。這裡收集我做的 9 款 App：SyncMirror 練舞神器、誰是臥底、真心話大冒險、你畫我猜、比手畫腳、喵轉盤、Cleaner 相簿清理、快捷鍵盤與 SoftPage 小說閱讀器。看作品介紹，或直接前往 App Store、Google Play；隱私權政策、使用條款與支援也在本頁。">
+  <link rel="canonical" href="https://momoxie0202.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="H.C 的 App">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:title" content="H.C 的 App｜把靈感做成真的會打開的 App">
+  <meta property="og:description" content="獨立開發的 9 款 App：練舞、派對遊戲與生活小工具。從作品介紹直接找到下載入口。">
+  <meta property="og:url" content="https://momoxie0202.github.io/">
+  <meta property="og:image" content="https://momoxie0202.github.io/apps/img/og-hc.png">
+  <meta property="og:image:width" content="1731">
+  <meta property="og:image:height" content="909">
+  <meta property="og:image:alt" content="H.C 的七款 App 作品集">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="H.C 的 App 作品集">
+  <meta name="twitter:description" content="練舞、派對遊戲與生活小工具，一個人做的 9 款 App。">
+  <meta name="twitter:image" content="https://momoxie0202.github.io/apps/img/og-hc.png">
+  <link rel="icon" type="image/png" href="apps/img/hc-favicon.png">
+  <link rel="apple-touch-icon" href="apps/img/hc-favicon.png">
+  <link rel="stylesheet" href="apps/portfolio.css">
+  <style>
+/* ---- 首頁底部：隱私權政策、使用條款、支援 ---- */
+.site-nav { display:flex; gap:22px; margin-left:auto; margin-right:20px; font-size:14px; }
+.site-nav a { color:#c9cac5; text-decoration:none; }
+.site-nav a:hover { color:var(--text); }
+html[lang="en"] [data-block="zh"], html:not([lang="en"]) [data-block="en"] { display:none; }
+.policy-section { padding:110px 12px 0; }
+.policy-section .section-heading p { max-width:none; }
+.policy { margin:0 0 12px; border:1px solid var(--border); border-radius:19px; background:var(--panel); scroll-margin-top:24px; }
+.policy > summary { display:flex; align-items:center; gap:18px; padding:22px 26px; cursor:pointer; list-style:none; }
+.policy > summary::-webkit-details-marker { display:none; }
+.policy-title { display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 16px; }
+.policy-title h2 { margin:0; font-size:21px; letter-spacing:-.03em; }
+.policy-title small { color:#9fa09b; font-size:14px; }
+.policy-chev { flex:none; width:11px; height:11px; margin-left:auto; border-right:2px solid #9fa09b; border-bottom:2px solid #9fa09b; transform:rotate(45deg) translateY(-3px); transition:transform .2s; }
+.policy[open] .policy-chev { transform:rotate(-135deg) translateY(-3px); }
+.policy-body { max-width:860px; padding:0 26px 26px; color:#c9cac5; font-size:15px; line-height:1.85; }
+.policy-body h3 { margin:30px 0 8px; color:var(--text); font-size:17px; scroll-margin-top:24px; }
+.policy-body a { color:var(--yellow); }
+.policy-body ul { padding-left:22px; }
+.policy-body .card { margin:6px 0 20px; padding:20px 22px; border:1px solid var(--border); border-radius:14px; background:#22252a; }
+.policy-body .card p { margin-top:0; }
+.policy-body .button { display:inline-block; padding:9px 16px; border-radius:10px; background:var(--yellow); color:#171717; font-weight:700; text-decoration:none; }
+.policy-body details { margin:0 0 8px; padding:12px 16px; border:1px solid var(--border); border-radius:12px; }
+.policy-body details summary { cursor:pointer; color:var(--text); font-weight:600; }
+.policy-body details p { margin:10px 0 0; }
+.site-footer .footer-links { display:flex; flex-wrap:wrap; gap:6px 18px; }
+.site-footer .footer-links a { text-decoration:none; }
+@media (max-width:760px) {
+  .site-nav { display:none; }
+  .policy-section { padding:72px 0 0; }
+  .policy > summary { padding:18px 18px; }
+  .policy-body { padding:0 18px 20px; }
+}
+
+/* ---- V2：App 牆 ---- */
+.v2-hero { display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center; padding:80px 12px 46px; }
+.v2-hero h1 { margin:0 0 18px; font-size:clamp(42px,5vw,62px); line-height:1.1; letter-spacing:-.055em; }
+.v2-hero h1 em { color:var(--yellow); font-style:normal; }
+.v2-hero p { margin:0; color:#c9cac5; font-size:17px; line-height:1.8; max-width:560px; }
+.v2-stats { display:flex; gap:34px; margin-top:30px; }
+.v2-stats b { display:block; font-size:30px; }
+.v2-stats span { color:#9fa09b; font-size:13px; }
+.v2-icons { display:grid; grid-template-columns:repeat(3,96px); gap:22px; justify-content:end; }
+.v2-icons img { width:96px; height:96px; border-radius:24px; box-shadow:0 14px 34px rgba(0,0,0,.5); }
+.v2-icons img:nth-child(3n+2) { transform:translateY(22px); }
+.v2-apps { padding:20px 12px 0; }
+.v2-chips { display:flex; gap:10px; margin:0 0 24px; flex-wrap:wrap; }
+.v2-chips button { padding:9px 18px; border-radius:99px; border:1px solid var(--border); background:transparent; color:#c9cac5; font-size:14px; cursor:pointer; }
+.v2-chips button[aria-pressed="true"] { background:var(--text); color:#111; border-color:var(--text); }
+.v2-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.v2-card { display:flex; flex-direction:column; min-height:290px; padding:24px; border:1px solid var(--border); border-radius:22px; background:var(--panel); }
+.v2-card[hidden] { display:none; }
+.v2-top { display:flex; gap:14px; align-items:center; }
+.v2-top img { width:60px; height:60px; border-radius:15px; }
+.v2-top h3 { margin:0; font-size:20px; letter-spacing:-.03em; }
+.v2-tag { font-size:12px; }
+.v2-tag-party { color:var(--yellow); }
+.v2-tag-tools { color:#7ab8ff; }
+.v2-card p { flex:1; margin:16px 0 18px; color:#b9bab7; font-size:14.5px; line-height:1.7; }
+.v2-actions { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+.v2-actions .detail-link { margin-left:auto; }
+@media (max-width:900px) { .v2-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:760px) {
+  .v2-hero { grid-template-columns:1fr; padding:44px 0 24px; }
+  .v2-icons { justify-content:start; grid-template-columns:repeat(3,72px); gap:16px; }
+  .v2-icons img { width:72px; height:72px; border-radius:18px; }
+  .v2-apps { padding:10px 0 0; }
+  .v2-grid { grid-template-columns:1fr; }
+  .v2-card { min-height:0; }
+}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "H.C 的 App 作品集",
+    "description": "H.C 獨立開發的練舞、派對遊戲與生活工具 App 作品集。",
+    "url": "https://momoxie0202.github.io/",
+    "inLanguage": "zh-Hant",
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": 9,
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"SyncMirror 練舞神器","url":"https://momoxie0202.github.io/apps/syncmirror/zh-tw/"},
+        {"@type":"ListItem","position":2,"name":"誰是臥底","url":"https://momoxie0202.github.io/apps/undercover/"},
+        {"@type":"ListItem","position":3,"name":"真心話大冒險","url":"https://apps.apple.com/app/id6777689064"},
+        {"@type":"ListItem","position":4,"name":"你畫我猜","url":"https://apps.apple.com/app/id6778296953"},
+        {"@type":"ListItem","position":5,"name":"比手畫腳","url":"https://apps.apple.com/app/id6757603710"},
+        {"@type":"ListItem","position":6,"name":"喵轉盤","url":"https://apps.apple.com/app/id6755671037"},
+        {"@type":"ListItem","position":7,"name":"Cleaner 相簿清理","url":"https://momoxie0202.github.io/apps/cleaner/"},
+        {"@type":"ListItem","position":8,"name":"快捷鍵盤","url":"https://apps.apple.com/app/id6827450635"},
+        {"@type":"ListItem","position":9,"name":"SoftPage 小說閱讀器","url":"https://apps.apple.com/app/id6804235907"}
+      ]
+    }
+  }
+  </script>
+</head>
+<body id="top">
+<svg class="svg-defs" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><symbol id="apple-mark" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></symbol></svg>
+<div class="site-shell">
+  <header class="site-header"><a class="identity" href="./"><img src="apps/img/hc-favicon.png" alt="" width="42" height="42"><strong>H.C</strong></a><nav class="site-nav" aria-label="Site"><a href="#work" data-i18n="nav_apps">App</a><a href="#work" onclick="document.getElementById('party-title').click()" data-i18n="nav_party">聚會遊戲</a><a href="#work" onclick="document.getElementById('tools-title').click()" data-i18n="nav_tools">生活工具</a><a href="#privacy" data-zh-href="#privacy" data-en-href="#en-privacy" data-i18n="nav_privacy">隱私權政策</a><a href="#support" data-zh-href="#support" data-en-href="#en-support" data-i18n="nav_support">支援</a></nav><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="zh" aria-pressed="true">中文</button><button type="button" data-set-lang="en" aria-pressed="false">EN</button></div></header>
+  <main>
+    <section class="v2-hero" aria-labelledby="hero-title">
+      <div><h1 id="hero-title"><span data-i18n="hero_title_1">把靈感，做成</span><br><em data-i18n="hero_title_2">真的會打開的 App。</em></h1>
+      <p data-i18n="hero_lead">我是 H.C，獨立開發者。我做練舞工具、聚會遊戲，也做讓生活輕鬆一點的小工具。</p>
+      <div class="v2-stats"><div><b>9</b><span data-i18n="v2_stat_apps">款 App</span></div><div><b>4</b><span data-i18n="v2_stat_party">款聚會遊戲</span></div><div><b>5</b><span data-i18n="v2_stat_tools">款生活工具</span></div></div></div>
+      <div class="v2-icons" aria-hidden="true"><img src="apps/img/syncmirror.png" width="96" height="96" alt=""><img src="apps/img/undercover.png" width="96" height="96" alt=""><img src="apps/img/truthordare.png" width="96" height="96" alt=""><img src="apps/img/drawguess.png" width="96" height="96" alt=""><img src="apps/img/charades.png" width="96" height="96" alt=""><img src="apps/img/meowwheel.png" width="96" height="96" alt=""><img src="apps/img/cleaner.png" width="96" height="96" alt=""><img src="apps/img/quickkey.png" width="96" height="96" alt=""><img src="apps/img/softpage.png" width="96" height="96" alt=""></div>
+    </section>
+    <section class="v2-apps" id="work" aria-label="Apps">
+      <div class="v2-chips" role="tablist"><button type="button" data-filter="all" aria-pressed="true"><span data-i18n="v2_all">全部</span> 9</button><button type="button" data-filter="party" aria-pressed="false" id="party-title"><span data-i18n="v2_tag_party">聚會遊戲</span> 4</button><button type="button" data-filter="tools" aria-pressed="false" id="tools-title"><span data-i18n="v2_tag_tools">生活工具</span> 5</button></div>
+      <div class="v2-grid">
+        <article class="v2-card" data-app="6755509268" data-play="com.syncmirror.syncmirror_plus_android" data-cat="tools"><div class="v2-top"><img src="apps/img/syncmirror.png" width="60" height="60" alt=""><div><span class="v2-tag v2-tag-tools" data-i18n="v2_tag_tools">生活工具</span><h3 data-i18n="v2_syncmirror_name">SyncMirror 練舞神器</h3></div></div><p data-i18n="syncmirror_desc">鏡像對方向、慢速拆細節、AB 循環反覆練。錄下自己後，和原影片並排比對。</p><div class="v2-actions"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6755509268" aria-label="SyncMirror 練舞神器 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="store-button store-google" data-store="android" href="https://play.google.com/store/apps/details?id=com.syncmirror.syncmirror_plus_android" aria-label="SyncMirror 練舞神器 Google Play"><img src="apps/syncmirror/img/zh-tw/google-play.svg" width="22" height="22" alt=""><span>Google Play</span></a><a class="detail-link" href="apps/syncmirror/" data-detail="syncmirror"><span data-i18n="about">看介紹</span><span aria-hidden="true">↗</span></a></div></article>
+        <article class="v2-card" data-app="6757357535" data-cat="party"><div class="v2-top"><img src="apps/img/undercover.png" width="60" height="60" alt=""><div><span class="v2-tag v2-tag-party" data-i18n="v2_tag_party">聚會遊戲</span><h3 data-i18n="undercover_name">誰是臥底</h3></div></div><p data-i18n="undercover_desc">每個人看自己的詞，輪流描述、投票，找出拿到不同答案的人。</p><div class="v2-actions"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6757357535" aria-label="誰是臥底 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="detail-link" href="apps/undercover/" data-detail="undercover"><span data-i18n="about">看介紹</span><span aria-hidden="true">↗</span></a></div></article>
+        <article class="v2-card" data-app="6777689064" data-cat="party"><div class="v2-top"><img src="apps/img/truthordare.png" width="60" height="60" alt=""><div><span class="v2-tag v2-tag-party" data-i18n="v2_tag_party">聚會遊戲</span><h3 data-i18n="truthordare_name">真心話大冒險</h3></div></div><p data-i18n="truthordare_desc">轉瓶子、轉輪盤決定誰先來。從破冰暖場到深夜局都有題目。</p><div class="v2-actions"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6777689064" aria-label="真心話大冒險 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></article>
+        <article class="v2-card" data-app="6778296953" data-cat="party"><div class="v2-top"><img src="apps/img/drawguess.png" width="60" height="60" alt=""><div><span class="v2-tag v2-tag-party" data-i18n="v2_tag_party">聚會遊戲</span><h3 data-i18n="drawguess_name">你畫我猜</h3></div></div><p data-i18n="drawguess_desc">輪流畫、大家猜。你以為畫的是貓，朋友可能覺得是外星人。</p><div class="v2-actions"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6778296953" aria-label="你畫我猜 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></article>
+        <article class="v2-card" data-app="6757603710" data-cat="party"><div class="v2-top"><img src="apps/img/charades.png" width="60" height="60" alt=""><div><span class="v2-tag v2-tag-party" data-i18n="v2_tag_party">聚會遊戲</span><h3 data-i18n="charades_name">比手畫腳</h3></div></div><p data-i18n="charades_desc">把手機放額頭，朋友負責演。猜對就蓋下手機，想跳過就抬起。</p><div class="v2-actions"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6757603710" aria-label="比手畫腳 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></article>
+        <article class="v2-card" data-app="6755671037" data-play="com.momoxie.meowwheel" data-cat="tools"><div class="v2-top"><img src="apps/img/meowwheel.png" width="60" height="60" alt=""><div><span class="v2-tag v2-tag-tools" data-i18n="v2_tag_tools">生活工具</span><h3 data-i18n="meowwheel_name">喵轉盤</h3></div></div><p data-i18n="meowwheel_desc">午餐吃什麼、今天誰先做？選擇障礙，讓貓咪轉盤幫你決定。</p><div class="v2-actions"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6755671037" aria-label="喵轉盤 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="store-button store-google" data-store="android" href="https://play.google.com/store/apps/details?id=com.momoxie.meowwheel" aria-label="喵轉盤 Google Play"><img src="apps/syncmirror/img/zh-tw/google-play.svg" width="22" height="22" alt=""><span>Google Play</span></a></div></article>
+        <article class="v2-card" data-app="6816571408" data-cat="tools"><div class="v2-top"><img src="apps/img/cleaner.png" width="60" height="60" alt=""><div><span class="v2-tag v2-tag-tools" data-i18n="v2_tag_tools">生活工具</span><h3 data-i18n="cleaner_name">Cleaner 相簿清理</h3></div></div><p data-i18n="cleaner_desc">往上滑刪照片、長影片當場剪短。買斷制，不用訂閱。</p><div class="v2-actions"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6816571408" aria-label="Cleaner 相簿清理 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="detail-link" href="apps/cleaner/" data-detail="cleaner"><span data-i18n="about">看介紹</span><span aria-hidden="true">↗</span></a></div></article>
+        <article class="v2-card" data-app="6827450635" data-cat="tools"><div class="v2-top"><img src="apps/img/quickkey.png" width="60" height="60" alt=""><div><span class="v2-tag v2-tag-tools" data-i18n="v2_tag_tools">生活工具</span><h3 data-i18n="quickkey_name">快捷鍵盤</h3></div></div><p data-i18n="quickkey_desc">常用句、顏文字存一次，在任何 App 打字時一點就輸入，還有特殊字體符號。</p><div class="v2-actions"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6827450635" aria-label="快捷鍵盤 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></article>
+        <article class="v2-card" data-app="6804235907" data-cat="tools"><div class="v2-top"><img src="apps/img/softpage.png" width="60" height="60" alt=""><div><span class="v2-tag v2-tag-tools" data-i18n="v2_tag_tools">生活工具</span><h3 data-i18n="softpage_name">SoftPage 小說閱讀器</h3></div></div><p data-i18n="softpage_desc">匯入 EPUB、TXT 就能看，自動記住讀到哪。不用註冊、沒有廣告，離線也能看。</p><div class="v2-actions"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6804235907" aria-label="SoftPage 小說閱讀器 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></article>
+      </div>
+    </section>
+
+    <section class="policy-section" aria-label="Privacy Policy, Terms of Use &amp; Support">
+    <div class="policy-lang" data-block="zh" id="zh" lang="zh-Hant">
+      <div class="section-heading"><h2>隱私權政策與支援</h2><p>適用於以上所有 App・最後更新日期：2026 年 11 月 17 日</p></div>
+      <details class="policy" id="privacy">
+        <summary><span class="policy-title"><h2>隱私權政策</h2><small>收集哪些資料、使用的第三方服務、廣告同意</small></span><span class="policy-chev" aria-hidden="true"></span></summary>
+        <div class="policy-body">
+<h3>一、適用範圍</h3>
+<p>
+本隱私權政策（以下稱「本政策」）適用於開發者 HC.（以下稱「本開發者」）於 Apple App Store 及 Google Play 所發行之下列應用程式（以下合稱「本服務」）：
+</p>
+<ul>
+  <li>SyncMirror Player - 練舞神器</li>
+  <li>喵轉盤 - 選擇障礙喵助手</li>
+  <li>誰是臥底? - 破冰聚會遊戲</li>
+  <li>比手畫腳 - 猜字遊戲</li>
+  <li>你畫我猜 - 派對塗鴉猜謎遊戲</li>
+  <li>真心話大冒險－派對聚會轉盤遊戲</li>
+  <li>Cleaner 相簿清理 - 重複照片刪除</li>
+  <li>SoftPage 小說閱讀器 - EPUB、TXT</li>
+  <li>快捷鍵盤－常用句、顏文字、字體</li>
+</ul>
+<p>
+本服務無須註冊帳號，本開發者不建立會員資料，亦未設置伺服器蒐集或儲存使用者之個人資料。
+</p>
+
+<h3>二、蒐集之資料及用途</h3>
+<p>本服務所使用之第三方服務，於提供本服務之必要範圍內，得蒐集下列資料：</p>
+<ul>
+  <li><strong>裝置資訊：</strong>裝置型號、作業系統版本、語言及地區設定、應用程式版本、裝置識別碼，以及廣告識別碼（於 iOS 裝置經使用者同意後始存取）。</li>
+  <li><strong>使用及診斷資訊：</strong>功能使用紀錄、廣告互動紀錄、當機紀錄、錯誤訊息、效能資料，以及依 IP 位址推估之概略地理位置。</li>
+  <li><strong>交易資訊：</strong>匿名使用者代碼、產品識別碼及購買狀態。付款由 Apple 或 Google 處理，本開發者不取得任何付款資料。</li>
+</ul>
+<p>前開資料用於提供及改善本服務、驗證購買、顯示廣告及衡量成效、統計分析及錯誤診斷。</p>
+<p>
+快捷鍵盤之鍵盤延伸功能於使用者開啟「允許完整取用」後，僅用於讀取使用者於本應用程式內建立之常用句卡片及圖片，以及於鍵盤出現時讀取剪貼簿中的文字，以顯示「最近複製」的最近 5 筆（密碼管理器標示為機密之內容不讀取；可於應用程式設定中關閉或清除）。該鍵盤不連線網路、不記錄或傳送使用者輸入之任何內容，亦未使用任何第三方服務。卡片及圖片儲存於使用者裝置；使用者使用 iCloud 備份功能時，備份檔另存於使用者本人之 iCloud 帳戶，本開發者無法存取，使用者得於應用程式內刪除。最近複製之內容僅儲存於使用者裝置，不會上傳或納入任何備份。
+</p>
+<p>
+Cleaner 相簿清理經使用者授權存取相簿後，於使用者裝置上分析相片及影片，以找出重複、相似或占用空間之項目；分析結果僅存於使用者裝置，不會上傳或納入備份，本開發者亦無法取得任何相片或影片。刪除相片或影片均須經系統確認，並移至系統相簿之「最近刪除」或垃圾桶。
+</p>
+<p>
+SoftPage 小說閱讀器不需任何系統權限。使用者匯入之書籍檔案及其內容、閱讀進度與書籤，僅儲存於使用者裝置，不會上傳；統計分析僅記錄功能使用情形，不包含書名或內文。使用者輸入網址匯入內容時，本服務僅連線至該網址。
+</p>
+<p>
+本服務之部分功能須取得相機、麥克風、相片或其他裝置權限，僅於使用者啟用相關功能並經其同意後存取。所涉之影像、聲音、相片及使用者建立之內容，均於使用者裝置或其配對之裝置處理及儲存，不傳輸至本開發者；使用者主動分享時，由使用者所選擇之應用程式或服務處理。
+</p>
+<p>
+使用者以電子郵件或應用程式內之意見回饋功能聯繫本開發者時，本開發者將收到使用者所提供之電子郵件地址、意見內容及裝置資訊，僅用於回覆及處理該等事項。
+</p>
+
+<h3 id="third-parties">三、第三方服務</h3>
+<p>本服務使用下列第三方服務，其蒐集及處理資料之方式，依各服務供應商之隱私權政策辦理。本開發者選用之第三方服務供應商，均應提供與本政策相同或同等程度之資料保護。</p>
+<ul class="list">
+  <li><strong>Google AdMob</strong>廣告投放、成效衡量及廣告同意管理<span class="meta"><a href="https://policies.google.com/privacy" rel="noopener">隱私權政策</a></span></li>
+  <li><strong>AppLovin</strong>經由 Google AdMob 中介之廣告投放及成效衡量（僅限部分地區）<span class="meta"><a href="https://www.applovin.com/privacy/" rel="noopener">隱私權政策</a></span></li>
+  <li><strong>Google Firebase</strong>統計分析、當機回報、遠端設定及推播通知<span class="meta"><a href="https://firebase.google.com/support/privacy" rel="noopener">隱私權政策</a></span></li>
+  <li><strong>RevenueCat</strong>購買管理<span class="meta"><a href="https://www.revenuecat.com/privacy" rel="noopener">隱私權政策</a></span></li>
+  <li><strong>Google 表單</strong>意見回饋之收集<span class="meta"><a href="https://policies.google.com/privacy" rel="noopener">隱私權政策</a></span></li>
+  <li><strong>Apple／Google</strong>應用程式發行、付款及退款<span class="meta"><a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple 隱私權政策</a>・<a href="https://policies.google.com/privacy" rel="noopener">Google 隱私權政策</a></span></li>
+</ul>
+<p>
+有關 Google 如何使用其廣告及分析服務所蒐集之資料，請參閱〈<a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Google 如何使用與我們合作的網站或應用程式中的資訊</a>〉。本服務依使用者之指示連線至第三方平台或開啟外部網站時，相關資料依該第三方之政策處理。應用程式設定頁之「更多 App」會自本開發者之網站（由 GitHub Pages 代管）讀取應用程式清單，不傳送任何使用者資料，惟 GitHub 得依其政策記錄連線之 IP 位址。本開發者不出售使用者之資料。
+</p>
+
+<h3>四、廣告及追蹤</h3>
+<p>
+本服務之免費版本顯示第三方廣告，廣告服務得使用裝置識別碼及 IP 位址等技術投放廣告及衡量成效。於 iOS 裝置上，本服務依 Apple「App 追蹤透明度」規範，於存取廣告識別碼前徵得使用者同意；未同意時仍顯示廣告，惟不存取廣告識別碼。於 Android 裝置上，使用者得於裝置設定中重設或刪除廣告 ID。
+</p>
+<p id="ad-consent">
+於法令要求須取得廣告同意之地區，本服務於首次啟動時徵求使用者同意，使用者得隨時於應用程式設定中之廣告或隱私選項（如「廣告設定」、「隱私選項」）變更或撤回同意。
+</p>
+
+<h3>五、資料保留及刪除</h3>
+<ul>
+  <li><strong>裝置上之資料：</strong>保留至使用者於應用程式內刪除或解除安裝應用程式為止；存於使用者本人 iCloud 帳戶之備份不因解除安裝而刪除，請於應用程式內或 iCloud 設定中刪除；使用者另存至裝置相簿之相片或影片，不因解除安裝而刪除，請於相簿中自行刪除。</li>
+  <li><strong>第三方服務所處理之資料：</strong>依各服務供應商之保留期間辦理；使用者得依第三點所列各供應商之隱私權政策，請求存取或刪除。</li>
+  <li><strong>撤回同意：</strong>使用者得依第四點所列方式，隨時撤回追蹤授權或廣告同意。</li>
+  <li><strong>聯繫本開發者之通訊內容：</strong>保留至相關事項處理完畢；使用者得來信請求刪除。</li>
+</ul>
+
+<h3>六、資料安全</h3>
+<p>本服務與第三方服務間之資料傳輸均經加密（HTTPS）。</p>
+
+<h3>七、兒童隱私</h3>
+<p>本服務並非以未滿十三歲之兒童為對象，亦不故意蒐集其個人資料。</p>
+
+<h3>八、本政策之修訂</h3>
+<p>本政策修訂後將公告於本頁面，並自公告之日起生效。</p>
+
+<h3>九、聯絡方式</h3>
+<p>如對本政策有任何疑問，請聯繫：<a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a></p>
+        </div>
+      </details>
+      <details class="policy" id="terms">
+        <summary><span class="policy-title"><h2>使用條款</h2><small>付費與退款、使用規範、免責聲明</small></span><span class="policy-chev" aria-hidden="true"></span></summary>
+        <div class="policy-body">
+<h3>第一條　適用</h3>
+<p>
+使用者下載、安裝或使用開發者 HC.（以下稱「本開發者」）於 Apple App Store 及 Google Play 所發行之應用程式（以下稱「本服務」），即視為同意本使用條款及上方之隱私權政策。
+</p>
+
+<h3>第二條　與應用程式商店條款之關係</h3>
+<p>
+經由 Apple App Store 取得本服務者，適用 Apple 之<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">授權應用程式最終使用者授權協議</a>；經由 Google Play 取得本服務者，適用 <a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play 服務條款</a>。本條款為其補充。
+</p>
+
+<h3>第三條　付費內容及訂閱</h3>
+<ul>
+  <li>本服務得提供一次性購買、消耗性項目或自動續訂訂閱，其內容、價格及期間以購買時所示者為準，款項由 Apple 或 Google 向使用者之帳戶收取。</li>
+  <li>自動續訂訂閱除於當期屆滿前至少二十四小時取消外，將自動續訂並收取費用；取消後得使用至當期屆滿為止。使用者得於應用程式商店之帳戶設定中管理或取消訂閱，解除安裝應用程式不會取消訂閱。</li>
+  <li>退款依 Apple 或 Google 之規定辦理。訂閱期間屆滿而未續訂，或購買經退款、撤銷者，相關付費內容之使用權限即行終止。</li>
+</ul>
+
+<h3>第四條　使用規範</h3>
+<p>
+使用者不得以違反法令、侵害他人權利或規避付費機制之方式使用本服務。部分應用程式或內容僅適合特定年齡以上之使用者，並依應用程式商店之年齡分級標示，未達適用年齡者不得使用。使用者於本服務中建立或匯入之內容，由使用者自行負責。
+</p>
+
+<h3>第五條　免責及責任限制</h3>
+<p>
+於法令許可之最大範圍內，本服務依「現狀」提供，其內容僅供娛樂或一般參考之用，本開發者不擔保本服務不中斷或無錯誤，亦不就第三方提供之廣告、服務或連結負責。本開發者對因使用或無法使用本服務所生之損害，包括資料遺失，不負賠償責任；但依法令不得排除之責任，不在此限。
+</p>
+
+<h3>第六條　變更</h3>
+<p>本開發者得修改或終止本服務，並得修訂本條款；修訂後之條款公告於本頁面，並自公告之日起生效。</p>
+
+<h3>第七條　聯絡方式</h3>
+<p>如對本條款有任何疑問，請聯繫：<a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a></p>
+        </div>
+      </details>
+      <details class="policy" id="support">
+        <summary><span class="policy-title"><h2>支援與聯絡</h2><small>常見問題、回報問題、聯絡方式</small></span><span class="policy-chev" aria-hidden="true"></span></summary>
+        <div class="policy-body">
+<div class="card">
+  <p>如需協助，請以電子郵件聯繫本開發者，並提供應用程式名稱及版本、裝置型號及作業系統版本、問題發生之步驟，以及畫面截圖或錄影（如有）。</p>
+  <a class="button" href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a>
+</div>
+
+<h3>常見問題</h3>
+
+<details>
+  <summary>已購買之內容未生效</summary>
+  <p>請確認網路連線正常後，於應用程式內點選「恢復購買」。購買紀錄綁定於使用者之 Apple 或 Google 帳戶，更換裝置或重新安裝後均可恢復。如仍無法恢復，請檢附購買收據與本開發者聯繫。</p>
+</details>
+
+<details>
+  <summary>如何取消訂閱</summary>
+  <p>iOS：「設定」→［使用者名稱］→「訂閱項目」。Android：Google Play →「付款和訂閱」。解除安裝應用程式不會取消訂閱。</p>
+</details>
+
+<details>
+  <summary>如何變更或撤回廣告同意</summary>
+  <p>於適用地區，請點選應用程式設定中之廣告或隱私選項（如「廣告設定」、「隱私選項」）。iOS 之追蹤授權請於「設定」→「隱私權與安全性」→「追蹤」中管理。</p>
+</details>
+
+<details>
+  <summary>如何刪除資料</summary>
+  <p>本服務之資料儲存於使用者裝置，解除安裝應用程式即一併刪除；另存至相簿之相片或影片，請於相簿中自行刪除。第三方服務所處理之資料，請依<a href="#privacy">隱私權政策</a>第五點向各服務供應商請求；曾聯繫本開發者之通訊內容，得來信請求刪除。</p>
+</details>
+        </div>
+      </details>
+    </div>
+    <div class="policy-lang" data-block="en" id="en" lang="en">
+      <div class="section-heading"><h2>Privacy Policy &amp; Support</h2><p>Applies to all apps above・Last updated: November 17, 2026</p></div>
+      <details class="policy" id="en-privacy">
+        <summary><span class="policy-title"><h2>Privacy Policy</h2><small>What we collect, third-party services and ad consent</small></span><span class="policy-chev" aria-hidden="true"></span></summary>
+        <div class="policy-body">
+<h3>1. Scope</h3>
+<p>
+This Privacy Policy (the "Policy") applies to the following applications published on the Apple App Store and Google Play by the developer HC. (the "Developer", "we", or "us") (collectively, the "Services"):
+</p>
+<ul>
+  <li>SyncMirror Player</li>
+  <li>MeowWheel - Decision Spinner</li>
+  <li>Who's the Spy? Party Game</li>
+  <li>Charades - Act and Guess</li>
+  <li>Draw &amp; Guess - Party Game</li>
+  <li>Truth or Dare - Spin &amp; Party</li>
+  <li>Cleaner</li>
+  <li>SoftPage - EPUB &amp; TXT Reader</li>
+  <li>QuickKey - Snippet Keyboard</li>
+</ul>
+<p>
+The Services do not require account registration. We do not create user accounts and do not operate servers that collect or store users' personal data.
+</p>
+
+<h3>2. Data Collected and Purposes</h3>
+<p>To the extent necessary to provide the Services, the third-party services used by the Services may collect the following data:</p>
+<ul>
+  <li><strong>Device information:</strong> device model, operating system version, language and region settings, application version, device identifiers, and the advertising identifier (on iOS, accessed only with your consent).</li>
+  <li><strong>Usage and diagnostic information:</strong> feature usage, ad interactions, crash logs, error messages, performance data, and approximate location inferred from your IP address.</li>
+  <li><strong>Transaction information:</strong> anonymous user identifier, product identifiers, and purchase status. Payments are processed by Apple or Google; we do not receive any payment details.</li>
+</ul>
+<p>This data is used to provide and improve the Services, verify purchases, serve and measure advertising, and perform analytics and error diagnosis.</p>
+<p>
+The QuickKey keyboard extension uses "Allow Full Access" only to read the snippet cards and images you create in the app and, when the keyboard appears, the text on your clipboard so it can show your 5 most recently copied items (content that password managers mark as concealed is not read; you can turn this off or clear it in the app's Settings). The keyboard does not connect to the internet, does not record or transmit anything you type, and does not use any third-party services. Your cards and images are stored on your device; if you use the iCloud backup feature, backup files are also stored in your own iCloud account, which we cannot access, and you can delete them in the app. Recently copied items are stored only on your device and are never uploaded or included in any backup.
+</p>
+<p>
+With your permission to access your photo library, Cleaner analyzes your photos and videos on your device to find duplicate, similar, or space-consuming items. The analysis results are stored only on your device and are never uploaded or included in backups, and we cannot access any of your photos or videos. Deleting a photo or video always requires confirmation from the system and moves it to the system's "Recently Deleted" album or trash.
+</p>
+<p>
+SoftPage does not require any device permissions. Books you import, their contents, and your reading progress and bookmarks are stored only on your device and are never uploaded. Analytics records only how features are used and never includes book titles or text. When you enter a web address to import content, the app connects only to that address.
+</p>
+<p>
+Certain features require access to the camera, microphone, photos, or other device permissions, which are accessed only when you enable the relevant feature and grant consent. Images, audio, photos, and content you create are processed and stored on your device or devices paired with it and are not transmitted to us. When you choose to share content, it is handled by the application or service you select.
+</p>
+<p>
+When you contact us by email or through the in-app feedback feature, we receive the email address, feedback content, and device information you provide, which are used solely to respond to and resolve your inquiry.
+</p>
+
+<h3 id="en-third-parties">3. Third-Party Services</h3>
+<p>The Services use the third-party services listed below, which collect and process data in accordance with their own privacy policies. The service providers we select are required to provide the same or equal protection of user data as stated in this Policy.</p>
+<ul class="list">
+  <li><strong>Google AdMob</strong>Ad serving, measurement, and consent management<span class="meta"><a href="https://policies.google.com/privacy" rel="noopener">Privacy Policy</a></span></li>
+  <li><strong>AppLovin</strong>Ad serving and measurement through Google AdMob mediation (in some regions only)<span class="meta"><a href="https://www.applovin.com/privacy/" rel="noopener">Privacy Policy</a></span></li>
+  <li><strong>Google Firebase</strong>Analytics, crash reporting, remote configuration, and push notifications<span class="meta"><a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy Policy</a></span></li>
+  <li><strong>RevenueCat</strong>Purchase management<span class="meta"><a href="https://www.revenuecat.com/privacy" rel="noopener">Privacy Policy</a></span></li>
+  <li><strong>Google Forms</strong>Collection of feedback<span class="meta"><a href="https://policies.google.com/privacy" rel="noopener">Privacy Policy</a></span></li>
+  <li><strong>Apple / Google</strong>Distribution, payment, and refunds<span class="meta"><a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a> · <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></span></li>
+</ul>
+<p>
+For information on how Google uses data collected through its advertising and analytics services, see <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use our services</a>. Where the Services connect to a third-party platform or open an external website at your direction, the related data is handled in accordance with that third party's policies. The "More Apps" section in the app's settings loads a list of our apps from our website (hosted on GitHub Pages) without sending any user data; GitHub may log the connecting IP address under its own policies. We do not sell user data.
+</p>
+
+<h3>4. Advertising and Tracking</h3>
+<p>
+The free versions of the Services display third-party advertising, and ad services may use technologies such as device identifiers and IP addresses to serve and measure ads. On iOS, we request your permission under Apple's App Tracking Transparency framework before accessing the advertising identifier; if you decline, ads are still shown without access to the advertising identifier. On Android, you may reset or delete your advertising ID in your device settings.
+</p>
+<p id="en-ad-consent">
+In regions where consent for advertising is required by law, the Services request your consent on first launch, and you may change or withdraw it at any time through the advertising or privacy options in the application's settings (such as "Ad Settings" or "Privacy options").
+</p>
+
+<h3>5. Data Retention and Deletion</h3>
+<ul>
+  <li><strong>Data on your device:</strong> retained until you delete it within the application or uninstall the application. Backups stored in your own iCloud account are not deleted when you uninstall the application and can be deleted in the app or in your iCloud settings. Photos or videos you save to your device's photo library are not deleted when you uninstall the application and can be deleted from the photo library.</li>
+  <li><strong>Data processed by third-party services:</strong> retained in accordance with each provider's retention period; you may request access or deletion under the privacy policy of each provider listed in Section 3.</li>
+  <li><strong>Withdrawing consent:</strong> you may withdraw tracking permission or advertising consent at any time as described in Section 4.</li>
+  <li><strong>Communications with us:</strong> retained until the related matter is resolved; you may request deletion by email.</li>
+</ul>
+
+<h3>6. Security</h3>
+<p>Data transmitted between the Services and third-party services is encrypted (HTTPS).</p>
+
+<h3>7. Children's Privacy</h3>
+<p>The Services are not directed to children under the age of 13, and we do not knowingly collect their personal data.</p>
+
+<h3>8. Changes to This Policy</h3>
+<p>Amendments to this Policy will be posted on this page and take effect on the date of posting.</p>
+
+<h3>9. Contact</h3>
+<p>For any questions regarding this Policy, please contact: <a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a></p>
+        </div>
+      </details>
+      <details class="policy" id="en-terms">
+        <summary><span class="policy-title"><h2>Terms of Use</h2><small>Purchases, refunds, acceptable use and disclaimers</small></span><span class="policy-chev" aria-hidden="true"></span></summary>
+        <div class="policy-body">
+<h3>1. Application</h3>
+<p>
+By downloading, installing, or using the applications published on the Apple App Store and Google Play by the developer HC. (the "Developer") (the "Services"), you agree to these Terms of Use and the Privacy Policy above.
+</p>
+
+<h3>2. Relationship to App Store Terms</h3>
+<p>
+If you obtain the Services through the Apple App Store, Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Licensed Application End User License Agreement</a> applies; if you obtain the Services through Google Play, the <a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play Terms of Service</a> apply. These Terms supplement those terms.
+</p>
+
+<h3>3. Paid Content and Subscriptions</h3>
+<ul>
+  <li>The Services may offer one-time purchases, consumable items, or auto-renewable subscriptions. Their content, price, and duration are as displayed at the time of purchase, and payment is charged to your Apple or Google account.</li>
+  <li>Auto-renewable subscriptions renew automatically and are charged unless cancelled at least 24 hours before the end of the current period; after cancellation, access continues until the end of the current period. You may manage or cancel subscriptions in your app store account settings; uninstalling the application does not cancel a subscription.</li>
+  <li>Refunds are subject to the policies of Apple or Google. Access to paid content terminates when a subscription expires without renewal, or when a purchase is refunded or revoked.</li>
+</ul>
+
+<h3>4. Acceptable Use</h3>
+<p>
+You shall not use the Services in any manner that violates applicable law, infringes the rights of others, or circumvents payment mechanisms. Certain applications or content are suitable only for users above a specified age, as indicated by the app store age rating, and users below the applicable age shall not use them. You are responsible for any content you create or import in the Services.
+</p>
+
+<h3>5. Disclaimer and Limitation of Liability</h3>
+<p>
+To the maximum extent permitted by law, the Services are provided "as is", their content is for entertainment or general reference only, and the Developer does not warrant that the Services will be uninterrupted or error-free, nor is it responsible for advertising, services, or links provided by third parties. The Developer shall not be liable for any damage, including loss of data, arising from your use of or inability to use the Services, except for liability that cannot be excluded by law.
+</p>
+
+<h3>6. Changes</h3>
+<p>The Developer may modify or discontinue the Services and may amend these Terms. Amended Terms will be posted on this page and take effect on the date of posting.</p>
+
+<h3>7. Contact</h3>
+<p>For any questions regarding these Terms, please contact: <a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a></p>
+        </div>
+      </details>
+      <details class="policy" id="en-support">
+        <summary><span class="policy-title"><h2>Support</h2><small>FAQ, reporting a problem and how to reach us</small></span><span class="policy-chev" aria-hidden="true"></span></summary>
+        <div class="policy-body">
+<div class="card">
+  <p>For assistance, please contact us by email and include the application name and version, your device model and operating system version, the steps leading to the issue, and a screenshot or screen recording where applicable.</p>
+  <a class="button" href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a>
+</div>
+
+<h3>FAQ</h3>
+
+<details>
+  <summary>A purchase has not taken effect</summary>
+  <p>Please ensure you are connected to the internet and select "Restore Purchases" within the application. Purchases are linked to your Apple or Google account and can be restored after changing devices or reinstalling. If the issue persists, please contact us with your purchase receipt.</p>
+</details>
+
+<details>
+  <summary>How to cancel a subscription</summary>
+  <p>iOS: Settings → [your name] → Subscriptions. Android: Google Play → Payments &amp; subscriptions. Uninstalling the application does not cancel a subscription.</p>
+</details>
+
+<details>
+  <summary>How to change or withdraw advertising consent</summary>
+  <p>In applicable regions, select the advertising or privacy options in the application's settings (such as "Ad Settings" or "Privacy options"). Tracking permission on iOS is managed under Settings → Privacy &amp; Security → Tracking.</p>
+</details>
+
+<details>
+  <summary>How to delete data</summary>
+  <p>Data of the Services is stored on your device and is deleted when you uninstall the application; photos or videos saved to your photo library can be deleted from the photo library. For data processed by third-party services, please exercise your rights with the relevant provider as described in Section 5 of the <a href="#en-privacy">Privacy Policy</a>; you may request by email the deletion of communications you sent to us.</p>
+</details>
+        </div>
+      </details>
+    </div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© 2026 H.C</span><span class="footer-links"><a href="#privacy" data-zh-href="#privacy" data-en-href="#en-privacy" data-i18n="nav_privacy">隱私權政策</a><a href="#terms" data-zh-href="#terms" data-en-href="#en-terms" data-i18n="foot_terms">使用條款</a><a href="#support" data-zh-href="#support" data-en-href="#en-support" data-i18n="nav_support">支援</a><a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a></span></footer>
+</div>
+<script>
+(function () {
+  var en = {
+    v2_all: "All",
+    v2_tag_party: "Party games",
+    v2_tag_tools: "Tools",
+    v2_stat_apps: "apps",
+    v2_stat_party: "party games",
+    v2_stat_tools: "everyday tools",
+    v2_syncmirror_name: "SyncMirror",
+    nav_apps: "Apps",
+    nav_party: "Party games",
+    nav_tools: "Tools",
+    nav_privacy: "Privacy",
+    nav_support: "Support",
+    foot_terms: "Terms",
+    hero_title_1: "Turning small ideas into",
+    hero_title_2: "apps worth opening.",
+    hero_lead: "I'm H.C, an indie developer. I make tools for dance practice, games for getting together and small helpers for everyday life.",
+    work_title: "Start with SyncMirror.",
+    work_intro: "Learning a dance from video? Practice the moves you can't quite catch, one by one.",
+    syncmirror_subtitle: "Learn a dance by seeing every move clearly.",
+    syncmirror_desc: "Mirror the direction, slow down the details and loop the tricky part. Record yourself and compare side by side.",
+    about: "About this app",
+    party_title: "Party games",
+    party_intro: "One phone is enough to get the whole table playing.",
+    undercover_name: "Who's the Spy?",
+    undercover_desc: "Everyone gets a word. Describe yours, vote, and find the player with the different answer.",
+    drawguess_name: "Draw & Guess",
+    drawguess_desc: "Take turns drawing and guessing. Your cat might look like an alien to your friends.",
+    truthordare_name: "Truth or Dare",
+    truthordare_desc: "Spin the bottle or the wheel to choose who's next, from icebreakers to late-night rounds.",
+    charades_name: "Charades",
+    charades_desc: "Hold the phone to your forehead while friends act. Tilt down when you get it, tilt up to skip.",
+    tools_title: "Everyday tools",
+    tools_intro: "Small helpers for tough choices, full photo libraries, repetitive typing and quiet reading.",
+    meowwheel_name: "MeowWheel",
+    meowwheel_desc: "Lunch or chores? Let the cat wheel make the choice for you.",
+    cleaner_name: "Cleaner Photo Cleanup",
+    cleaner_desc: "Swipe up to delete photos and trim long videos on the spot. One-time purchase, no subscription.",
+    quickkey_name: "QuickKey",
+    quickkey_desc: "Save phrases and kaomoji once, then type them with one tap in any app. Fancy fonts and symbols included.",
+    softpage_name: "SoftPage Reader",
+    softpage_desc: "Open EPUB and TXT files and pick up where you left off. No sign-up, no ads, and it works offline."
+  };
+  var nodes = Array.prototype.slice.call(document.querySelectorAll("[data-i18n]"));
+  var zh = {};
+  nodes.forEach(function (node) { zh[node.dataset.i18n] = node.textContent; });
+  function setLang(lang) {
+    var copy = lang === "en" ? en : zh;
+    document.documentElement.lang = lang === "en" ? "en" : "zh-Hant";
+    nodes.forEach(function (node) { if (copy[node.dataset.i18n]) node.textContent = copy[node.dataset.i18n]; });
+    document.querySelectorAll("[data-set-lang]").forEach(function (button) { button.setAttribute("aria-pressed", String(button.dataset.setLang === lang)); });
+    document.title = lang === "en" ? "Apps by H.C | Dance, party games and everyday tools · Privacy & Support" : "H.C 的 App 作品集｜練舞、派對遊戲與生活工具・隱私權政策與支援";
+    document.querySelectorAll("[data-en-href]").forEach(function (link) { link.href = lang === "en" ? link.dataset.enHref : link.dataset.zhHref; });
+    document.querySelector('[data-detail="syncmirror"]').href = lang === "en" ? "apps/syncmirror/" : "apps/syncmirror/zh-tw/";
+    document.querySelector('[data-detail="undercover"]').href = lang === "en" ? "apps/undercover/en/" : "apps/undercover/";
+    document.querySelector('[data-detail="cleaner"]').href = lang === "en" ? "apps/cleaner/en/" : "apps/cleaner/";
+    document.querySelectorAll('[data-en-src]').forEach(function (shot) {
+      shot.src = lang === "en" ? shot.dataset.enSrc : shot.dataset.zhSrc;
+      shot.alt = lang === "en" ? shot.dataset.enAlt : shot.dataset.zhAlt;
+    });
+  }
+  document.querySelectorAll("[data-set-lang]").forEach(function (button) { button.addEventListener("click", function () { setLang(button.dataset.setLang); try { localStorage.setItem("lang", button.dataset.setLang); } catch (e) {} }); });
+  var params = new URLSearchParams(location.search);
+  var forced = params.get("lang");
+  var browserLang = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+
+  // 政策錨點：舊連結 /#privacy、/#en-terms… 會切到對應語言、展開那張卡並捲過去；#zh／#en 只切語言
+  var zhIds = ["zh", "privacy", "third-parties", "ad-consent", "terms", "support"];
+  function langFromHash() {
+    var id = decodeURIComponent(location.hash.slice(1));
+    if (/^en(-|$)/.test(id)) return "en";
+    if (zhIds.indexOf(id) >= 0) return "zh";
+    return null;
+  }
+  function openFromHash(scroll) {
+    var id = decodeURIComponent(location.hash.slice(1));
+    var lang = langFromHash();
+    if (lang) setLang(lang);
+    if (!id || id === "zh" || id === "en") return;
+    var el = document.getElementById(id);
+    if (!el) return;
+    var box = el.closest("details.policy");
+    if (box) box.open = true;
+    if (scroll) el.scrollIntoView({ block: "start" });
+  }
+  window.addEventListener("hashchange", function () { openFromHash(true); });
+  var saved = null;
+  try { saved = localStorage.getItem("lang"); } catch (e) {}
+  var initial = forced === "en" || forced === "zh" ? forced : (langFromHash() || (saved === "en" || saved === "zh" ? saved : (/^zh/i.test(browserLang) ? "zh" : "en")));
+  setLang(initial);
+  openFromHash(true);
+  document.querySelectorAll("[data-filter]").forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      var f = chip.dataset.filter;
+      document.querySelectorAll("[data-filter]").forEach(function (c) { c.setAttribute("aria-pressed", String(c === chip)); });
+      document.querySelectorAll(".v2-card").forEach(function (c) { c.hidden = f !== "all" && c.dataset.cat !== f; });
+    });
+  });
+  var source = (params.get("s") || "web").toLowerCase().replace(/[^a-z0-9_]/g, "").slice(0, 20) || "web";
+  document.querySelectorAll("[data-store]").forEach(function (link) {
+    var card = link.closest("[data-app]");
+    if (link.dataset.store === "ios") {
+      link.href = "https://apps.apple.com/app/apple-store/id" + card.dataset.app + "?pt=128309367&ct=" + encodeURIComponent("portfolio_" + source) + "&mt=8";
+    } else {
+      link.href = "https://play.google.com/store/apps/details?id=" + card.dataset.play + "&referrer=" + encodeURIComponent("utm_source=portfolio&utm_medium=" + source + "&utm_campaign=portfolio_" + source);
+    }
+  });
+})();
+</script>
+</body>
+</html>
