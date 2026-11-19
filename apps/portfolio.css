@@ -94,6 +94,8 @@ a:focus-visible,button:focus-visible { outline:2px solid var(--yellow); outline-
 .party-compact .card-actions { flex:none; margin:0; padding:0; }
 .card-meow { background:linear-gradient(120deg,#29261f,#1b1d21 72%); }
 .card-cleaner { background:linear-gradient(120deg,#222428,#1b1d21 72%); }
+.card-quickkey { background:linear-gradient(120deg,#1f2530,#1b1d21 72%); }
+.card-softpage { background:linear-gradient(120deg,#262320,#1b1d21 72%); }
 .tools-section { padding-bottom:95px; }
 .site-footer { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px 25px; min-height:96px; margin:0 12px; padding:28px 0; border-top:1px solid rgba(255,255,255,.18); color:#aeb0ad; font-size:14px; }
 .site-footer a { color:#d3d4cf; text-decoration:none; }
