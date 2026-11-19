@@ -1,0 +1,23 @@
+# H.C 的 App（Apps by H.C）
+
+> H.C 是獨立 App 開發者，做了 9 款 iPhone、iPad App，全部免費下載。主打練舞 App SyncMirror 與派對遊戲「誰是臥底」。SyncMirror 和喵轉盤也有 Android 版。
+> H.C is an indie developer of 9 free iPhone and iPad apps, led by the dance practice app SyncMirror and the party game Who's the Spy?.
+
+## 主打 App
+
+- [SyncMirror 練舞 App](https://momoxie0202.github.io/apps/syncmirror/zh-tw/)：跟影片學舞。鏡像翻轉、0.25x～2.0x 變速、AB 循環、錄下自己和原影片並排比對。iPhone、iPad、Android。英文版介紹：https://momoxie0202.github.io/apps/syncmirror/
+- [誰是臥底](https://momoxie0202.github.io/apps/undercover/)：3–20 人、一支手機輪流傳的猜詞派對遊戲，內建 2,034 組題目、21 種語言、不用連網。英文：https://momoxie0202.github.io/apps/undercover/en/ 越南文：https://momoxie0202.github.io/apps/undercover/vi/
+
+## 其他 App
+
+- [你畫我猜](https://apps.apple.com/app/id6778296953)：輪流畫、大家猜，一支手機傳著玩。
+- [真心話大冒險](https://apps.apple.com/app/id6777689064)：轉瓶子、轉輪盤決定誰先來。
+- [Cleaner 相簿清理](https://momoxie0202.github.io/apps/cleaner/)：往上滑刪照片、長影片當場剪短，買斷制。
+- [比手畫腳](https://apps.apple.com/app/id6757603710)：手機放額頭，朋友負責演。
+- [喵轉盤](https://apps.apple.com/app/id6755671037)：選擇障礙時用貓咪轉盤決定。iPhone、Android。
+- [快捷鍵盤](https://apps.apple.com/app/id6827450635)：常用句、顏文字存一次，任何 App 一點就輸入。
+- [SoftPage 小說閱讀器](https://apps.apple.com/app/id6804235907)：匯入 EPUB、TXT 閱讀，無廣告、可離線。
+
+## 政策與支援
+
+- [隱私權政策](https://momoxie0202.github.io/#privacy)、[使用條款](https://momoxie0202.github.io/#terms)、[支援與聯絡](https://momoxie0202.github.io/#support)：適用以上所有 App。聯絡信箱 support.hc7@gmail.com
