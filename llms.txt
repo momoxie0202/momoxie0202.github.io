@@ -18,10 +18,10 @@
 - [快捷鍵盤](https://apps.apple.com/app/id6827450635)：常用句、顏文字存一次，任何 App 一點就輸入。
 - [SoftPage 小說閱讀器](https://apps.apple.com/app/id6804235907)：匯入 EPUB、TXT 閱讀，無廣告、可離線。
 
-## 教學文章
+## 教學（在各 App 介紹頁內）
 
-- [自學跳舞怎麼練？跟著影片學舞的 6 個步驟](https://momoxie0202.github.io/guides/learn-dance.html)：鏡像、0.5 倍速拆八拍、AB 循環、錄影並排比對，附一週練習菜單。
-- [誰是臥底題目 30 組](https://momoxie0202.github.io/guides/undercover-words.html)：簡單、中等、困難、地獄四種難度，附人數與臥底配置。
+- [自學跳舞怎麼練？跟著影片學舞的 6 個步驟](https://momoxie0202.github.io/apps/syncmirror/zh-tw/#practice-guide)：鏡像、0.5 倍速拆八拍、AB 循環、錄影並排比對，附一週練習菜單。
+- [誰是臥底題目 30 組](https://momoxie0202.github.io/apps/undercover/#words)：簡單、中等、困難、地獄四種難度，附人數與臥底配置。
 
 ## 政策與支援
 

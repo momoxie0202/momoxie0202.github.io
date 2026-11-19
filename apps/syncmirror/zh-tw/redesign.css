@@ -177,3 +177,15 @@ footer { background: #101114; }
   .preview-grid span { font-size: 13px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .hero-shot { transform: none; } }
+
+.guide-more { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(40px,7vw,130px); margin-top: 72px; }
+.guide-sub { font-size: 22px; margin-bottom: 18px; }
+.guide-stuck > div { border-top: 1px solid var(--border); padding: 18px 0; }
+.guide-stuck h4 { font-size: 17px; margin-bottom: 6px; }
+.guide-stuck p { color: var(--text-sub); font-size: 15px; line-height: 1.8; }
+.guide-table table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.guide-table th, .guide-table td { text-align: left; padding: 14px 12px 14px 0; border-top: 1px solid var(--border); vertical-align: top; }
+.guide-table th { color: var(--text-sub); font-weight: 600; }
+.guide-table td { color: var(--text-sub); line-height: 1.6; }
+.guide-table td:first-child, .guide-table td:last-child { color: var(--text); white-space: nowrap; }
+@media (max-width: 700px) { .guide-more { grid-template-columns: 1fr; gap: 40px; margin-top: 48px; } }
