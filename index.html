@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="google-site-verification" content="rDAlnuTcXkSfmPS0eVBRwkKClUcrrSBWn76N086m31I" />
-  <meta name="theme-color" content="#101114">
-  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#101114">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f4f0">
+  <meta name="color-scheme" content="light dark">
   <meta name="robots" content="index, follow">
   <title>H.C 的 App｜SyncMirror 練舞、誰是臥底聚會遊戲等 9 款・隱私權政策與支援</title>
   <meta name="description" content="H.C 獨立開發的 9 款免費 App：練舞 App SyncMirror（鏡像、慢速、AB 循環、錄影比對）、派對遊戲誰是臥底（3–20 人一支手機玩），還有你畫我猜、真心話大冒險、比手畫腳、Cleaner 相簿清理、喵轉盤、快捷鍵盤、SoftPage 小說閱讀器。隱私權政策與支援也在本頁。">
@@ -26,112 +27,81 @@
   <meta name="twitter:image" content="https://momoxie0202.github.io/apps/img/og-hc.png">
   <link rel="icon" type="image/png" href="apps/img/hc-favicon.png">
   <link rel="apple-touch-icon" href="apps/img/hc-favicon.png">
-  <link rel="stylesheet" href="apps/portfolio.css">
-  <style>
-/* ---- 首頁 B 版：主打兩款＋9 款一句話＋常見問題 ---- */
-.hero-slim { display:block; min-height:0; padding:64px 12px 8px; }
-.hero-slim h1 { max-width:none; font-size:clamp(36px,4.6vw,58px); letter-spacing:-.03em; }
-.hero-slim .answer { max-width:820px; color:#c9cac5; }
-.hero-slim .answer b { color:var(--text); font-weight:700; }
-.pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
-.faq-section { padding:87px 12px 0; }
-.faq { margin:0 0 10px; border:1px solid var(--border); border-radius:16px; background:var(--panel); }
-.faq > summary { display:flex; align-items:center; gap:16px; padding:18px 22px; cursor:pointer; list-style:none; }
-.faq > summary::-webkit-details-marker { display:none; }
-.faq h3 { margin:0; font-size:18px; letter-spacing:-.02em; }
-.faq[open] .policy-chev { transform:rotate(-135deg) translateY(-3px); }
-.faq > p { max-width:860px; margin:0; padding:0 22px 20px; color:#c9cac5; font-size:15px; line-height:1.85; }
-@media (max-width:900px) {
-  .pair { grid-template-columns:1fr; }
-}
-@media (max-width:760px) {
-  .hero-slim { padding:44px 0 0; }
-  .faq-section { padding:64px 0 0; }
-}
-/* ---- 首頁底部：隱私權政策、使用條款、支援 ---- */
-.site-nav { display:flex; gap:22px; margin-left:auto; margin-right:20px; font-size:14px; }
-.site-nav a { color:#c9cac5; text-decoration:none; }
-.site-nav a:hover { color:var(--text); }
-html[lang="en"] [data-block="zh"], html:not([lang="en"]) [data-block="en"] { display:none; }
-.policy-section { padding:110px 12px 0; }
-.policy-section .section-heading p { max-width:none; }
-.policy { margin:0 0 12px; border:1px solid var(--border); border-radius:19px; background:var(--panel); scroll-margin-top:24px; }
-.policy > summary { display:flex; align-items:center; gap:18px; padding:22px 26px; cursor:pointer; list-style:none; }
-.policy > summary::-webkit-details-marker { display:none; }
-.policy-title { display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 16px; }
-.policy-title h2 { margin:0; font-size:21px; letter-spacing:-.03em; }
-.policy-title small { color:#9fa09b; font-size:14px; }
-.policy-chev { flex:none; width:11px; height:11px; margin-left:auto; border-right:2px solid #9fa09b; border-bottom:2px solid #9fa09b; transform:rotate(45deg) translateY(-3px); transition:transform .2s; }
-.policy[open] .policy-chev { transform:rotate(-135deg) translateY(-3px); }
-.policy-body { max-width:860px; padding:0 26px 26px; color:#c9cac5; font-size:15px; line-height:1.85; }
-.policy-body h3 { margin:30px 0 8px; color:var(--text); font-size:17px; scroll-margin-top:24px; }
-.policy-body a { color:var(--yellow); }
-.policy-body ul { padding-left:22px; }
-.policy-body .card { margin:6px 0 20px; padding:20px 22px; border:1px solid var(--border); border-radius:14px; background:#22252a; }
-.policy-body .card p { margin-top:0; }
-.policy-body .button { display:inline-block; padding:9px 16px; border-radius:10px; background:var(--yellow); color:#171717; font-weight:700; text-decoration:none; }
-.policy-body details { margin:0 0 8px; padding:12px 16px; border:1px solid var(--border); border-radius:12px; }
-.policy-body details summary { cursor:pointer; color:var(--text); font-weight:600; }
-.policy-body details p { margin:10px 0 0; }
-.site-footer .footer-links { display:flex; flex-wrap:wrap; gap:6px 18px; }
-.site-footer .footer-links a { text-decoration:none; }
-@media (max-width:760px) {
-  .site-nav { display:none; }
-  .policy-section { padding:72px 0 0; }
-  .policy > summary { padding:18px 18px; }
-  .policy-body { padding:0 18px 20px; }
-}
-  /* 首頁：練舞／聚會遊戲／生活工具（2026-11-19 手機優先版） */
-
-.h-sec{padding:96px 12px 0;border-top:1px solid var(--border);margin-top:72px}
-.h-dance{margin-top:40px}
-.h-sec h2{margin:0;font-size:clamp(28px,3.2vw,40px);line-height:1.2;letter-spacing:-.02em;font-weight:800}
-.h-lead{max-width:760px;margin:16px 0 0;color:#b9bab5;font-size:17px;line-height:1.8}
-.h-sm{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:56px;align-items:center;margin-top:44px}
-.h-sm-solo{grid-template-columns:minmax(0,560px)}
-.h-sm-shots{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.h-sm-shots img{width:100%;height:auto;border-radius:14px;display:block}
-.h-sm-shots img+img{margin-top:48px}
-.h-id{display:flex;align-items:center;gap:16px}.h-id img{border-radius:15px}
-.h-id h3{margin:0;font-size:32px;letter-spacing:-.02em}.h-id span{color:#9fa09b;font-size:14px}
-.h-feat{margin:28px 0;display:grid;gap:0}
-.h-feat div{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:12px 0;border-top:1px solid var(--border)}
-.h-feat div:last-child{border-bottom:1px solid var(--border)}
-.h-feat dt{font-weight:800}.h-feat dd{margin:0;color:#b9bab5}
-.h-text{display:inline-block;margin-top:16px;color:var(--text);font-weight:700;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#6b6c68}
-.h-text:hover{text-decoration-color:var(--yellow)}
-.h-apps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:48px;margin-top:28px;border-bottom:1px solid var(--border)}
-.h-app{display:grid;grid-template-columns:52px minmax(0,1fr);gap:16px;padding:20px 0;border-top:1px solid var(--border)}
-.h-app>img{border-radius:12px}.h-app h3{margin:2px 0 0;font-size:18px}.h-app p{margin:4px 0 0;color:#a9aaa5;font-size:14px;line-height:1.6}
-.h-app .acts{display:flex;align-items:center;gap:10px 16px;margin-top:12px;flex-wrap:wrap}.h-app .h-text{margin:0;font-size:14px}
-.h-app .store-button{min-height:34px;padding:6px 12px;gap:6px;font-size:13px;border-radius:9px}.h-app .store-button svg,.h-app .store-button img{width:15px;height:15px}
-.pc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:36px}
-.pc{display:grid;grid-template-columns:150px minmax(0,1fr);grid-template-areas:"shots head" "shots one" "shots feat" "shots acts";grid-template-rows:auto auto auto 1fr;column-gap:24px;padding:24px;border:1px solid var(--border);border-radius:20px;background:rgba(255,255,255,.035)}
-.pc-head{grid-area:head;display:flex;align-items:center;gap:14px}.pc-head img{border-radius:12px}.pc-head h3{margin:0;font-size:24px;letter-spacing:-.01em}.pc-head span{color:#9fa09b;font-size:13px}
-.pc-one{grid-area:one;margin:12px 0 0;color:#b9bab5;font-size:15px;line-height:1.65}
-.pc-shots{grid-area:shots}.pc-shots img{width:100%;height:auto;border-radius:12px;display:block}.pc-shots img+img{display:none}
-.pc-feat{grid-area:feat;margin:16px 0}.pc-feat div{grid-template-columns:104px 1fr;gap:12px;padding:9px 0;font-size:14px}
-.pc .acts{grid-area:acts;display:flex;align-items:center;gap:10px 16px;flex-wrap:wrap;align-self:end}.pc .h-text{margin:0}
-.more-h{margin:48px 0 0;color:#9fa09b;font-size:14px;font-weight:700;letter-spacing:.06em}.h-apps-more{margin-top:12px}
-@media (max-width:900px){.pc-grid{grid-template-columns:1fr}}
-@media (max-width:600px){
- .pc-grid{gap:16px;margin-top:24px}.pc{display:block;padding:18px}.pc-head img{width:48px;height:48px}.pc-head h3{font-size:21px}
- .pc-shots{display:flex;gap:10px;overflow-x:auto;margin:16px -18px 0;padding:0 18px;scroll-snap-type:x mandatory;scrollbar-width:none}.pc-shots::-webkit-scrollbar{display:none}
- .pc-shots img,.pc-shots img+img{display:block;width:44%;flex:none;scroll-snap-align:start}
- .pc .pc-feat{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}.pc .pc-feat div,.pc .pc-feat div:last-child{display:block;padding:5px 11px;font-size:13px;border:1px solid var(--border);border-radius:999px}.pc-feat dt{font-size:13px}.pc-feat dd{display:none}
- .pc .acts{margin-top:16px}.more-h{margin-top:32px}.h-apps-more{margin-top:8px}
-}
-@media (max-width:900px){.h-sm{grid-template-columns:1fr;gap:32px}.h-apps{grid-template-columns:1fr}.h-sec{padding-top:64px;margin-top:48px}}
-@media (max-width:600px){
- #hero-title,.hero-copy h1{font-size:30px;line-height:1.25}.hero .answer{font-size:15px;line-height:1.75}
- .h-sec{padding:44px 0 0;margin-top:40px}.h-dance{margin-top:28px}
- .h-sec h2{font-size:24px}.h-lead{font-size:15px;line-height:1.7;margin-top:10px}
- .h-sm{display:flex;flex-direction:column;gap:20px;margin-top:22px}
- .h-sm-copy{order:-1}.h-id h3{font-size:26px}.h-id img{width:56px;height:56px}
- .h-sm-shots{gap:10px}.h-sm-shots img+img{margin-top:0}
- .h-feat{margin:18px 0}.h-feat div{grid-template-columns:112px 1fr;gap:10px;padding:10px 0;font-size:15px}
- .store-actions{display:flex;gap:10px;flex-wrap:wrap}
-}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f4f0;--ink:#16171a;--mute:#6c6d6a;--line:#e3e1db;--accent:#9a7420;--mk:rgb(233 196 106/.45);--btn:#16171a;--btnt:#f5f4f0;--panel:#eae7de;--soft:#4a4b4e;--t-uc:#e7e6e2;--t-dg:#ece8dc;--t-td:#efe6dc;--frame:#16171a;--shadow:0 26px 44px -26px rgb(40 35 25/.4)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#101114;--ink:#f7f5ee;--mute:#8f908d;--line:#2a2c30;--accent:#e9c46a;--mk:rgb(233 196 106/.24);--btn:#e9c46a;--btnt:#101114;--panel:#1b1d21;--soft:#b9bab7;--t-uc:#1b1d21;--t-dg:#1e1f22;--t-td:#222023;--frame:#050506;--shadow:0 26px 44px -24px rgb(0 0 0/.75)}}
+:root[data-theme=dark]{--bg:#101114;--ink:#f7f5ee;--mute:#8f908d;--line:#2a2c30;--accent:#e9c46a;--mk:rgb(233 196 106/.24);--btn:#e9c46a;--btnt:#101114;--panel:#1b1d21;--soft:#b9bab7;--t-uc:#1b1d21;--t-dg:#1e1f22;--t-td:#222023;--frame:#050506;--shadow:0 26px 44px -24px rgb(0 0 0/.75)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.75 "Noto Sans TC",-apple-system,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}img{max-width:100%}.svg-defs{position:absolute;width:0;height:0}
+html[lang="en"] [data-block="zh"],html:not([lang="en"]) [data-block="en"]{display:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+h1,h2,h3{font-weight:700;letter-spacing:-.01em}
+.mark{color:var(--accent);background:linear-gradient(transparent 42%,var(--mk) 42%,var(--mk) 94%,transparent 94%);padding:0 .06em}
+.site-header{display:flex;align-items:center;gap:20px;max-width:1200px;margin:0 auto;padding:22px 40px}
+.identity{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700}.identity img{width:30px;height:30px;border-radius:8px}
+.site-nav{display:flex;gap:24px;margin-left:auto;font-size:14px}.site-nav a{color:var(--mute);text-decoration:none}.site-nav a:hover{color:var(--ink)}
+.lang-switch{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang-switch button{font:inherit;font-size:13px;border:0;background:none;color:var(--mute);padding:3px 11px;border-radius:999px;cursor:pointer}
+.lang-switch button[aria-pressed=true]{background:var(--btn);color:var(--btnt)}
+.store{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:12px;background:var(--btn);color:var(--btnt);text-decoration:none;font-size:15px;font-weight:500;border:1px solid var(--btn);transition:transform .2s}
+.store svg{width:18px;height:18px;fill:currentColor}.store:hover{transform:translateY(-2px)}
+.store.ghost{background:transparent;color:var(--ink);border-color:color-mix(in srgb,var(--ink) 25%,transparent)}
+.store.sm{padding:7px 13px;font-size:13px;border-radius:9px}.store.sm svg{width:15px;height:15px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.lk{font-size:15px;font-weight:500;text-underline-offset:4px}
+.spec{margin:0 0 26px;font-size:15px;border-top:1px solid var(--line)}.spec div{display:grid;grid-template-columns:8.5em 1fr;border-bottom:1px solid var(--line);padding:10px 0}
+.spec dt{font-weight:700}.spec dd{margin:0;color:var(--soft)}
+.phone{width:136px;height:auto;border-radius:22px;border:5px solid var(--frame);box-shadow:var(--shadow);display:block}
+.tablet{border-radius:22px;border:7px solid var(--frame);box-shadow:var(--shadow);display:block;height:auto}
+.ic{border-radius:22%;box-shadow:0 0 0 1px color-mix(in srgb,var(--ink) 8%,transparent)}
+.icons{display:flex;gap:10px;flex-wrap:wrap}.icons img{width:44px;height:44px;border-radius:22%;transition:transform .3s}.icons img:hover{transform:translateY(-5px) rotate(-6deg)}
+.intro{padding:70px 40px 60px;display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:end;border-bottom:1px solid var(--line)}
+.intro h1{font-size:clamp(36px,4.6vw,60px);line-height:1.25;margin:0}.answer{color:var(--soft);font-size:17px;margin:0 0 22px}
+.hero{display:grid;grid-template-columns:1fr 1.15fr;gap:50px;align-items:center;padding:80px 40px 90px;scroll-margin-top:10px}
+.hero h2{font-size:clamp(38px,4.6vw,60px);line-height:1.2;margin:0 0 .45em}.hero p{color:var(--soft);font-size:18px;margin:0 0 26px}
+.hero .art{background:var(--panel);border-radius:36px;height:600px;position:relative;overflow:hidden}
+.hero .art img{position:absolute;width:330px}.hero .art img:nth-child(1){left:8%;top:60px}.hero .art img:nth-child(2){right:6%;top:170px}
+.sec{padding:100px 40px;border-top:1px solid var(--line)}.sec-top{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:44px}
+.sec-top h2{font-size:clamp(28px,3.4vw,42px);margin:0}.sec-top p{color:var(--mute);margin:0}
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.g .stage{border-radius:28px;height:460px;display:flex;justify-content:center;align-items:center;gap:14px;padding-top:30px}.g .stage img:last-child{margin-top:46px}
+.t-uc{background:var(--t-uc)}.t-dg{background:var(--t-dg)}.t-td{background:var(--t-td)}
+.g h3{font-size:24px;margin:22px 0 6px;display:flex;gap:10px;align-items:center}.g p{color:var(--soft);font-size:16px;margin:0 0 16px;min-height:3.4em}.g .spec div{grid-template-columns:4.5em 1fr}html[lang=en] .g .spec div{grid-template-columns:6.5em 1fr}
+.others{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:34px 40px}
+.o{display:flex;gap:18px}.o .cat{font-size:13px;color:var(--mute)}.o h3{font-size:19px;margin:0 0 4px}.o p{color:var(--soft);font-size:15px;margin:0 0 12px;line-height:1.65}
+.faq-section,.policy-section{padding:100px 40px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 2fr;gap:60px}
+.section-heading h2{font-size:clamp(28px,3.4vw,42px);margin:0 0 8px}.section-heading p{color:var(--mute);margin:0}
+details.faq,details.policy{border-bottom:1px solid var(--line)}details.faq:first-child,details.policy:first-of-type{border-top:1px solid var(--line)}
+details>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 0}details>summary::-webkit-details-marker{display:none}
+details.faq h3{margin:0;font-size:18px}details.faq>p{margin:0 0 22px;color:var(--soft);font-size:16px;max-width:46em}
+.policy-chev{flex:none;width:10px;height:10px;border-right:2px solid var(--mute);border-bottom:2px solid var(--mute);transform:rotate(45deg) translateY(-3px);transition:transform .2s}
+details[open]>summary .policy-chev{transform:rotate(-135deg)}
+.policy-lang>.section-heading{display:none}.policy-title h2{font-size:20px;margin:0}.policy-title small{color:var(--mute);font-size:14px}
+.policy-body{padding:0 0 30px;color:var(--soft);font-size:15px;line-height:1.85}.policy-body h3{color:var(--ink);font-size:16px;margin:28px 0 8px}
+.policy-body .sup-h{font-size:19px;margin-top:42px;padding-top:26px;border-top:1px dashed var(--line)}
+.policy-body details summary{padding:10px 0;color:var(--ink);font-weight:500}.policy-body table{border-collapse:collapse;width:100%;font-size:14px}.policy-body td,.policy-body th{border:1px solid var(--line);padding:8px;text-align:left}
+.policy-body .card{background:var(--panel);border-radius:16px;padding:20px 22px}.policy-body .button{display:inline-block;margin-top:6px;padding:9px 18px;border-radius:10px;background:var(--btn);color:var(--btnt);text-decoration:none;font-weight:500}
+.site-footer{max-width:1200px;margin:0 auto;padding:30px 40px 50px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:14px;color:var(--mute)}
+.footer-links{display:flex;gap:22px;flex-wrap:wrap}.footer-links a{text-decoration:none}.footer-links a:hover{color:var(--ink)}
+@media(max-width:900px){.site-nav{display:none}.lang-switch{margin-left:auto}}
+@media(max-width:820px){.wrap,.site-header,.site-footer{padding-left:18px;padding-right:18px}
+.intro{grid-template-columns:1fr;gap:20px;padding:36px 18px 40px}.hero{grid-template-columns:1fr;padding:40px 18px 60px}.hero .art{height:420px;border-radius:26px}.hero .art img{width:190px}
+.sec,.faq-section,.policy-section{padding:64px 18px}.sec-top{display:block}.sec-top p{margin-top:6px}.cols3{grid-template-columns:1fr;gap:56px}.g .stage{height:420px}.g .stage img{width:140px}
+.faq-section,.policy-section{grid-template-columns:1fr;gap:20px}.others{grid-template-columns:1fr}
+.icons{display:grid;grid-template-columns:repeat(9,1fr);gap:6px}.icons img{width:100%;height:auto}
+.spec div{grid-template-columns:6.8em 1fr}.g .spec div{grid-template-columns:4.5em 1fr}
+.store,.store.sm{min-height:46px;padding:0 18px;font-size:15px;border-radius:12px}.store.sm svg,.store svg{width:17px;height:17px}
+.lk{display:inline-flex;align-items:center;min-height:44px}.o .cat{font-size:14px}
+.lang-switch button{min-height:38px;padding:0 13px;font-size:14px}.identity{min-height:44px}
+.footer-links a{display:inline-flex;align-items:center;min-height:44px}.policy-title small{font-size:14px}}
+.others{grid-template-columns:repeat(3,1fr);gap:20px}
+.o{flex-direction:column;background:var(--panel);border-radius:24px;padding:28px;gap:18px}.o>div{display:flex;flex-direction:column;flex:1}.o h3{font-size:20px;margin:2px 0 6px}.o p{margin:0 0 20px;flex:1}
+@media(max-width:1000px){.others{grid-template-columns:repeat(2,1fr)}}@media(max-width:620px){.others{grid-template-columns:1fr;gap:14px}.o{padding:22px}}
+@media(max-width:620px){.o{display:grid;grid-template-columns:52px 1fr;column-gap:14px;row-gap:0;align-items:center}.o>div{display:contents}
+.o .ic{grid-row:1/3;width:52px;height:52px}.o .cat{grid-column:2;align-self:end}.o h3{grid-column:2;align-self:start;margin:0}
+.o p{grid-column:1/-1;margin:14px 0 18px}.o .btns{grid-column:1/-1}}
 </style>
   <script type="application/ld+json">
 {
@@ -513,36 +483,55 @@ html[lang="en"] [data-block="zh"], html:not([lang="en"]) [data-block="en"] { dis
 </head>
 <body id="top">
 <svg class="svg-defs" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><symbol id="apple-mark" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></symbol></svg>
-<div class="site-shell">
-  <header class="site-header"><a class="identity" href="./"><img src="apps/img/hc-favicon.png" alt="" width="42" height="42"><strong>H.C</strong></a><nav class="site-nav" aria-label="Site"><a href="#dance" data-i18n="nav_dance">練舞</a><a href="#party" data-i18n="nav_party">聚會遊戲</a><a href="#tools" data-i18n="nav_tools">生活工具</a><a href="#faq" data-i18n="nav_faq">常見問題</a><a href="#privacy" data-zh-href="#privacy" data-en-href="#en-privacy" data-i18n="nav_privacy">隱私權政策</a><a href="#support" data-zh-href="#support" data-en-href="#en-support" data-i18n="nav_support">支援</a></nav><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="zh" aria-pressed="true">中文</button><button type="button" data-set-lang="en" aria-pressed="false">EN</button></div></header>
-  <main>
-    <section class="hero hero-slim" aria-labelledby="hero-title">
-      <div class="hero-copy"><div data-block="zh"><h1 id="hero-title">一支手機，<br>練舞、聚會、生活小事都搞定。</h1><p class="answer">H.C 是獨立開發者，做了 9 款免費 App。練舞用 SyncMirror，把影片鏡像、放慢、分段循環，再錄下自己並排對照；聚會有誰是臥底、你畫我猜、真心話大冒險、比手畫腳，不用道具、一支手機傳著玩；另外還有 Cleaner 相簿清理、喵轉盤、快捷鍵盤、SoftPage 小說閱讀器。</p></div><div data-block="en"><h1>One phone for dance practice, parties and everyday tasks.</h1><p class="answer">H.C is an indie developer with 9 free apps. Practice dance with SyncMirror: mirror a video, slow it down, loop a section, then record yourself side by side. For parties there are Who's the Spy?, Draw &amp; Guess, Truth or Dare and Charades: no props, just pass one phone. Plus Cleaner Photo Cleanup, MeowWheel, QuickKey and SoftPage Reader.</p></div></div>
-    </section>
-
-    <section class="h-sec h-dance" id="dance" aria-label="練舞 Dance">
-      <div data-block="zh"><h2>練舞：跟著影片學，一段一段練。</h2><p class="h-lead">自學跳舞最快的方法：影片鏡像、放慢、卡住的段落反覆循環，再錄下自己對照。SyncMirror 一個播放器全包。</p><div class="h-sm" data-app="6755509268" data-play="com.syncmirror.syncmirror_plus_android"><div class="h-sm-shots"><img src="apps/syncmirror/img/zh-tw/02_player.jpg" alt="SyncMirror 播放器畫面" width="760" height="1014" loading="lazy"><img src="apps/syncmirror/img/zh-tw/07_compare.jpg" alt="SyncMirror 並排比對畫面" width="760" height="1014" loading="lazy"></div><div class="h-sm-copy"><div class="h-id"><img src="apps/img/syncmirror.png" width="64" height="64" alt=""><div><h3>SyncMirror</h3><span>iPhone・iPad・Android・免費</span></div></div><dl class="h-feat"><div><dt>鏡像</dt><dd>左右翻轉，跟老師同方向</dd></div><div><dt>0.25–2 倍速</dt><dd>慢下來看清每個動作</dd></div><div><dt>AB 循環</dt><dd>卡住的八拍反覆練</dd></div><div><dt>錄影並排</dt><dd>自己和原影片同時播放對照</dd></div></dl><div class="store-actions"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6755509268" aria-label="SyncMirror App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="store-button store-google" data-store="android" href="https://play.google.com/store/apps/details?id=com.syncmirror.syncmirror_plus_android" aria-label="SyncMirror Google Play"><img src="apps/syncmirror/img/zh-tw/google-play.svg" width="20" height="20" alt=""><span>Google Play</span></a></div><a class="h-text" href="apps/syncmirror/zh-tw/">SyncMirror 完整介紹</a></div></div></div>
-      <div data-block="en"><h2>Dance practice: learn from a video, one section at a time.</h2><p class="h-lead">The fastest way to teach yourself a dance: mirror the video, slow it down, loop the part you're stuck on, then record yourself to compare. SyncMirror does all four in one player.</p><div class="h-sm h-sm-solo" data-app="6755509268" data-play="com.syncmirror.syncmirror_plus_android"><div class="h-sm-copy"><div class="h-id"><img src="apps/img/syncmirror.png" width="64" height="64" alt=""><div><h3>SyncMirror</h3><span>iPhone · iPad · Android · Free</span></div></div><dl class="h-feat"><div><dt>Mirror</dt><dd>Flip left and right to match the teacher</dd></div><div><dt>0.25–2× speed</dt><dd>Slow down to see every move</dd></div><div><dt>A-B loop</dt><dd>Repeat the eight-count you're stuck on</dd></div><div><dt>Side by side</dt><dd>Play your recording next to the original</dd></div></dl><div class="store-actions"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6755509268" aria-label="SyncMirror App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="store-button store-google" data-store="android" href="https://play.google.com/store/apps/details?id=com.syncmirror.syncmirror_plus_android" aria-label="SyncMirror Google Play"><img src="apps/syncmirror/img/zh-tw/google-play.svg" width="20" height="20" alt=""><span>Google Play</span></a></div><a class="h-text" href="apps/syncmirror/">About SyncMirror</a></div></div></div>
-    </section>
-
-    <section class="h-sec" id="party" aria-label="聚會遊戲 Party games">
-      <div data-block="zh"><h2>聚會遊戲：不用道具，一支手機傳著玩。</h2><p class="h-lead">人多玩誰是臥底（3–20 人），想笑翻玩你畫我猜，想破冰、聊心事玩真心話大冒險，想動起來玩比手畫腳。不用連網，拿出手機就能開局。</p><div class="pc-grid"><article class="pc" data-app="6757357535"><div class="pc-head"><img src="apps/img/undercover.png" width="52" height="52" alt=""><div><h3>誰是臥底</h3><span>3–20 人・不用連網・iPhone・iPad</span></div></div><p class="pc-one">輪流看詞、描述、投票，抓出拿到不同詞的人。</p><div class="pc-shots"><img src="apps/undercover/zh_01_home.jpg" alt="誰是臥底開局設定畫面" width="506" height="1101" loading="lazy"><img src="apps/undercover/zh_02_identity.jpg" alt="誰是臥底輪流看詞畫面" width="506" height="1101" loading="lazy"><img src="apps/undercover/zh_03_result.jpg" alt="誰是臥底結果畫面" width="506" height="1101" loading="lazy"></div><dl class="h-feat pc-feat"><div><dt>2,034 組題目</dt><dd>內建題庫，開局不用自己想</dd></div><div><dt>四種難度</dt><dd>簡單、中等、困難、地獄</dd></div><div><dt>白板角色</dt><dd>沒拿到詞的人也要裝懂</dd></div></dl><div class="acts"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6757357535" aria-label="誰是臥底 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="h-text" href="apps/undercover/">規則與題目</a></div></article><article class="pc" data-app="6778296953"><div class="pc-head"><img src="apps/img/drawguess.png" width="52" height="52" alt=""><div><h3>你畫我猜</h3><span>2 人起・不用連網・iPhone・iPad</span></div></div><p class="pc-one">輪流畫、大家猜，不會畫畫也能玩出笑點。</p><div class="pc-shots"><img src="apps/img/drawguess/zh_01.jpg" alt="你畫我猜畫圖畫面" width="506" height="1101" loading="lazy"><img src="apps/img/drawguess/zh_02.jpg" alt="你畫我猜首頁" width="506" height="1101" loading="lazy"><img src="apps/img/drawguess/zh_03.jpg" alt="你畫我猜揭曉畫面" width="506" height="1101" loading="lazy"></div><dl class="h-feat pc-feat"><div><dt>2 人就能玩</dt><dd>輪流當畫家，其他人搶答</dd></div><div><dt>多種玩法</dt><dd>單機同樂、接力共畫、畫圖傳話…</dd></div><div><dt>三種難度</dt><dd>題目分簡單、普通、困難</dd></div></dl><div class="acts"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6778296953" aria-label="你畫我猜 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="h-text" href="apps/drawguess/">玩法與題目</a></div></article></div><p class="more-h">更多聚會遊戲</p><div class="h-apps h-apps-more"><article class="h-app" data-app="6777689064"><img src="apps/img/truthordare.png" width="52" height="52" alt=""><div><h3>真心話大冒險</h3><p>轉瓶子決定誰先來，破冰、好友、情侶題目分好類。</p><div class="acts"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6777689064" aria-label="真心話大冒險 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="h-text" href="apps/truthordare/">玩法與題目</a></div></div></article><article class="h-app" data-app="6757603710"><img src="apps/img/charades.png" width="52" height="52" alt=""><div><h3>比手畫腳</h3><p>手機放額頭，朋友負責演，猜對蓋下、跳過抬起。</p><div class="acts"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6757603710" aria-label="比手畫腳 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></div></article></div></div>
-      <div data-block="en"><h2>Party games: no props, just pass one phone.</h2><p class="h-lead">Who's the Spy? for big groups (3–20 players), Draw &amp; Guess for laughs, Truth or Dare to break the ice, Charades to get everyone moving. No internet needed.</p><div class="pc-grid"><article class="pc" data-app="6757357535"><div class="pc-head"><img src="apps/img/undercover.png" width="52" height="52" alt=""><div><h3>Who's the Spy?</h3><span>3–20 players · Works offline · iPhone · iPad</span></div></div><p class="pc-one">Check your word, describe it in turn, then vote out the one with a different word.</p><div class="pc-shots"><img src="apps/undercover/en/en_01_home.jpg" alt="Who's the Spy? game setup" width="506" height="1101" loading="lazy"><img src="apps/undercover/en/en_02_identity.jpg" alt="Who's the Spy? checking your word" width="506" height="1101" loading="lazy"><img src="apps/undercover/en/en_03_result.jpg" alt="Who's the Spy? results" width="506" height="1101" loading="lazy"></div><dl class="h-feat pc-feat"><div><dt>2,034 word pairs</dt><dd>Built in, no need to come up with your own</dd></div><div><dt>4 difficulty levels</dt><dd>Easy, medium, hard and hell</dd></div><div><dt>Blank role</dt><dd>No word at all, so bluff your way through</dd></div></dl><div class="acts"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6757357535" aria-label="Who's the Spy? App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="h-text" href="apps/undercover/en/">Rules &amp; how to play</a></div></article><article class="pc" data-app="6778296953"><div class="pc-head"><img src="apps/img/drawguess.png" width="52" height="52" alt=""><div><h3>Draw &amp; Guess</h3><span>2+ players · Works offline · iPhone · iPad</span></div></div><p class="pc-one">Take turns drawing while everyone guesses. You don't need to be good at drawing.</p><div class="pc-shots"><img src="apps/img/drawguess/en_01.jpg" alt="Draw &amp; Guess drawing screen" width="506" height="1101" loading="lazy"><img src="apps/img/drawguess/en_02.jpg" alt="Draw &amp; Guess home screen" width="506" height="1101" loading="lazy"><img src="apps/img/drawguess/en_03.jpg" alt="Draw &amp; Guess reveal screen" width="506" height="1101" loading="lazy"></div><dl class="h-feat pc-feat"><div><dt>Two players</dt><dd>Take turns drawing while others guess</dd></div><div><dt>Many modes</dt><dd>Classic, relay drawing, picture telephone…</dd></div><div><dt>3 difficulty levels</dt><dd>Easy, medium and hard words</dd></div></dl><div class="acts"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6778296953" aria-label="Draw &amp; Guess App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="h-text" href="apps/drawguess/en/">How to play &amp; word ideas</a></div></article></div><p class="more-h">More party games</p><div class="h-apps h-apps-more"><article class="h-app" data-app="6777689064"><img src="apps/img/truthordare.png" width="52" height="52" alt=""><div><h3>Truth or Dare</h3><p>Spin the bottle to pick who's next, with icebreaker, friends and couples questions.</p><div class="acts"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6777689064" aria-label="Truth or Dare App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="h-text" href="apps/truthordare/en/">How to play &amp; questions</a></div></div></article><article class="h-app" data-app="6757603710"><img src="apps/img/charades.png" width="52" height="52" alt=""><div><h3>Charades</h3><p>Hold the phone to your forehead while friends act. Tilt down when you get it, up to skip.</p><div class="acts"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6757603710" aria-label="Charades App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></div></article></div></div>
-    </section>
-
-    <section class="h-sec" id="tools" aria-label="生活工具 Utilities">
-      <div data-block="zh"><h2>生活工具：讓手機更順手。</h2><div class="h-apps"><article class="h-app" data-app="6816571408"><img src="apps/img/cleaner.png" width="52" height="52" alt=""><div><h3>Cleaner 相簿清理</h3><p>往上滑刪照片、長影片當場剪短，買斷不用訂閱。</p><div class="acts"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6816571408" aria-label="Cleaner 相簿清理 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="h-text" href="apps/cleaner/">功能介紹</a></div></div></article><article class="h-app" data-app="6755671037" data-play="com.momoxie.meowwheel"><img src="apps/img/meowwheel.png" width="52" height="52" alt=""><div><h3>喵轉盤</h3><p>午餐吃什麼？讓貓咪轉盤決定。</p><div class="acts"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6755671037" aria-label="喵轉盤 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="store-button store-google" data-store="android" href="https://play.google.com/store/apps/details?id=com.momoxie.meowwheel" aria-label="喵轉盤 Google Play"><img src="apps/syncmirror/img/zh-tw/google-play.svg" width="20" height="20" alt=""><span>Google Play</span></a></div></div></article><article class="h-app" data-app="6827450635"><img src="apps/img/quickkey.png" width="52" height="52" alt=""><div><h3>快捷鍵盤</h3><p>常用句、顏文字存一次，任何 App 一點就輸入。</p><div class="acts"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6827450635" aria-label="快捷鍵盤 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></div></article><article class="h-app" data-app="6804235907"><img src="apps/img/softpage.png" width="52" height="52" alt=""><div><h3>SoftPage 小說閱讀器</h3><p>匯入 EPUB、TXT，自動記住讀到哪，沒有廣告。</p><div class="acts"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6804235907" aria-label="SoftPage 小說閱讀器 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></div></article></div></div>
-      <div data-block="en"><h2>Utilities: small tools for everyday tasks.</h2><div class="h-apps"><article class="h-app" data-app="6816571408"><img src="apps/img/cleaner.png" width="52" height="52" alt=""><div><h3>Cleaner Photo Cleanup</h3><p>Swipe up to delete photos and trim long videos. One-time purchase, no subscription.</p><div class="acts"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6816571408" aria-label="Cleaner Photo Cleanup App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="h-text" href="apps/cleaner/en/">About Cleaner</a></div></div></article><article class="h-app" data-app="6755671037" data-play="com.momoxie.meowwheel"><img src="apps/img/meowwheel.png" width="52" height="52" alt=""><div><h3>MeowWheel</h3><p>Can't decide on lunch? Let the cat wheel choose.</p><div class="acts"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6755671037" aria-label="MeowWheel App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="store-button store-google" data-store="android" href="https://play.google.com/store/apps/details?id=com.momoxie.meowwheel" aria-label="MeowWheel Google Play"><img src="apps/syncmirror/img/zh-tw/google-play.svg" width="20" height="20" alt=""><span>Google Play</span></a></div></div></article><article class="h-app" data-app="6827450635"><img src="apps/img/quickkey.png" width="52" height="52" alt=""><div><h3>QuickKey</h3><p>Save phrases and kaomoji once, then insert them with one tap in any app.</p><div class="acts"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6827450635" aria-label="QuickKey App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></div></article><article class="h-app" data-app="6804235907"><img src="apps/img/softpage.png" width="52" height="52" alt=""><div><h3>SoftPage Reader</h3><p>Open EPUB and TXT files and resume where you left off. No ads.</p><div class="acts"><a class="store-button store-apple" data-store="ios" href="https://apps.apple.com/app/id6804235907" aria-label="SoftPage Reader App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></div></article></div></div>
-    </section>
-
-    <section class="faq-section" id="faq" aria-labelledby="faq-title">
-      <div class="section-heading"><h2 id="faq-title" data-i18n="faq_title">常見問題</h2><p data-i18n="faq_intro">關於這些 App，大家最常問的。</p></div>
-      <div data-block="zh"><details class="faq" open><summary><h3>H.C 做了哪些 App？</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>共 9 款。練舞：SyncMirror。聚會遊戲：誰是臥底、你畫我猜、真心話大冒險、比手畫腳。生活工具：Cleaner 相簿清理、喵轉盤、快捷鍵盤、SoftPage 小說閱讀器。全部在 App Store 免費下載，支援 iPhone 和 iPad；SyncMirror 和喵轉盤也有 Google Play 版。</p></details><details class="faq" open><summary><h3>有推薦的練舞 App 嗎？</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>SyncMirror 是專為跟影片學舞設計的練舞 App：鏡像翻轉左右方向、0.25x～2.0x 變速、AB 循環只重播卡住的段落，還能錄下自己和原影片並排比對。匯入影片、鏡像、變速、AB 循環都免費，支援 iPhone、iPad 和 Android。</p></details><details class="faq"><summary><h3>誰是臥底 App 怎麼玩？</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>3 到 20 人、一支手機就能玩。手機輪流傳，每人偷看自己的詞，只有臥底拿到相近但不同的詞；大家輪流用一句話描述、投票淘汰最可疑的人，臥底全部出局就是平民贏。內建 2,034 組題目，不用連網。</p></details><details class="faq"><summary><h3>聚會沒有道具，用手機可以玩什麼？</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>誰是臥底（猜詞找臥底）、你畫我猜（輪流畫、大家猜）、真心話大冒險（轉瓶子決定誰回答）、比手畫腳（手機放額頭，朋友演）。都只要一支手機，不用每個人都下載。</p></details><details class="faq"><summary><h3>只有兩個人，可以玩什麼？</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>你畫我猜 2 人就能玩：一個人畫、另一個人猜，再輪流交換；還有接力共畫、畫圖傳話等玩法，不用連網。3 人以上可以再加上誰是臥底。</p></details><details class="faq"><summary><h3>這些 App 要付費嗎？</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>全部免費下載。完整題庫、移除廣告或進階功能是在 App 內購買，方案和價格以 App Store 頁面為準。</p></details></div><div data-block="en"><details class="faq" open><summary><h3>What apps does H.C make?</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>Nine. Dance practice: SyncMirror. Party games: Who's the Spy?, Draw &amp; Guess, Truth or Dare and Charades. Everyday tools: Cleaner Photo Cleanup, MeowWheel, QuickKey and SoftPage Reader. All are free on the App Store for iPhone and iPad, and SyncMirror and MeowWheel are also on Google Play.</p></details><details class="faq" open><summary><h3>What's a good app for learning dances from video?</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>SyncMirror is built for learning choreography from video: mirror the picture, slow it to 0.25x–2.0x, loop just the part you keep missing, then record yourself and compare side by side with the original. Importing, mirroring, speed control and A-B looping are free on iPhone, iPad and Android.</p></details><details class="faq"><summary><h3>How do you play Who's the Spy?</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>It takes 3 to 20 players and one phone. Pass the phone around so everyone sees their secret word; the spy gets a similar but different word. Take turns describing your word in one sentence, then vote out the most suspicious player. The civilians win when every spy is out. It includes 2,034 word pairs and works offline.</p></details><details class="faq"><summary><h3>What can we play at a party with just a phone?</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>Who's the Spy? (find the player with a different word), Draw &amp; Guess (take turns drawing), Truth or Dare (spin to pick who answers) and Charades (phone on your forehead while friends act). Each needs only one phone, so not everyone has to install it.</p></details><details class="faq"><summary><h3>Only two of us. What can we play?</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>Draw &amp; Guess works with just 2 players: one draws, the other guesses, then you swap. It also has modes like relay drawing and picture telephone, and it works offline. With 3 or more players, add Who's the Spy?</p></details><details class="faq"><summary><h3>Are these apps free?</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>All of them are free to download. Full word packs, ad removal or advanced features are in-app purchases; see each App Store page for current options and prices.</p></details></div>
-    </section>
-
-    <section class="policy-section" aria-label="Privacy Policy, Terms of Use &amp; Support">
-    <div class="policy-lang" data-block="zh" id="zh" lang="zh-Hant">
-      <div class="section-heading"><h2>隱私權政策與支援</h2><p>適用於以上所有 App・最後更新日期：2026 年 11 月 17 日</p></div>
+<header class="site-header"><a class="identity" href="./"><img src="apps/img/hc-favicon.png" alt="" width="30" height="30">H.C</a><nav class="site-nav" aria-label="Site">
+<a href="#dance" data-zh-href="#dance" data-en-href="#en-dance" data-i18n="nav_dance">練舞</a><a href="#party" data-zh-href="#party" data-en-href="#en-party" data-i18n="nav_party">聚會遊戲</a><a href="#tools" data-zh-href="#tools" data-en-href="#en-tools" data-i18n="nav_tools">更多 App</a><a href="#faq" data-i18n="nav_faq">常見問題</a><a href="#privacy" data-zh-href="#privacy" data-en-href="#en-privacy" data-i18n="nav_privacy">隱私權政策</a><a href="#terms" data-zh-href="#terms" data-en-href="#en-terms" data-i18n="foot_terms">使用條款與支援</a></nav><div class="lang-switch" role="group" aria-label="Language"><button type="button" data-set-lang="zh" aria-pressed="true">中文</button><button type="button" data-set-lang="en" aria-pressed="false">EN</button></div></header>
+<main>
+<div data-block="zh">
+<header class="intro wrap"><h1>練舞、聚會遊戲，<br><span class="mark">一支手機</span>搞定</h1><div><p class="answer">獨立開發者 H.C 的 9 款免費 App：練舞用 SyncMirror，聚會玩誰是臥底、你畫我猜、真心話大冒險、比手畫腳，還有 Cleaner 相簿清理、喵轉盤、快捷鍵盤、SoftPage 小說閱讀器。</p><div class="icons"><img src="apps/img/syncmirror.png" width="44" height="44" alt="SyncMirror"><img src="apps/img/undercover.png" width="44" height="44" alt="誰是臥底"><img src="apps/img/drawguess.png" width="44" height="44" alt="你畫我猜"><img src="apps/img/truthordare.png" width="44" height="44" alt="真心話大冒險"><img src="apps/img/charades.png" width="44" height="44" alt="比手畫腳"><img src="apps/img/cleaner.png" width="44" height="44" alt="Cleaner"><img src="apps/img/meowwheel.png" width="44" height="44" alt="喵轉盤"><img src="apps/img/quickkey.png" width="44" height="44" alt="快捷鍵盤"><img src="apps/img/softpage.png" width="44" height="44" alt="SoftPage"></div></div></header>
+<section class="hero wrap" id="dance" data-app="6755509268" data-play="com.syncmirror.syncmirror_plus_android" aria-label="SyncMirror">
+<div><h2>跟著影片練舞，<br><span class="mark">一段一段</span>來</h2><p>SyncMirror 是練舞 App：把舞蹈影片左右鏡像、放慢、卡住的段落反覆循環，再錄下自己和原影片並排對照。舞蹈教室、自學跳舞都用得到。</p><dl class="spec"><div><dt>平台</dt><dd>iPhone、iPad、Android，免費下載</dd></div><div><dt>鏡像</dt><dd>左右翻轉，跟老師同方向</dd></div><div><dt>0.25–2 倍速</dt><dd>放慢看清每個動作</dd></div><div><dt>A-B 循環</dt><dd>卡住的八拍反覆練</dd></div><div><dt>並排對照</dt><dd>錄下自己，和原影片一起播</dd></div></dl>
+<div class="btns"><a class="store" data-store="ios" href="https://apps.apple.com/app/id6755509268" aria-label="SyncMirror App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="store ghost" data-store="android" href="https://play.google.com/store/apps/details?id=com.syncmirror.syncmirror_plus_android" aria-label="SyncMirror Google Play"><img src="apps/syncmirror/img/zh-tw/google-play.svg" width="18" height="18" alt=""><span>Google Play</span></a><a class="lk" href="apps/syncmirror/zh-tw/">SyncMirror 完整介紹 →</a></div></div>
+<div class="art"><img class="tablet" src="apps/syncmirror/img/zh-tw/02_player.jpg" alt="SyncMirror 鏡像播放畫面" width="760" height="1014" loading="lazy"><img class="tablet" src="apps/syncmirror/img/zh-tw/07_compare.jpg" alt="SyncMirror 並排比對畫面" width="760" height="1014" loading="lazy"></div></section>
+<section class="sec wrap" id="party"><div class="sec-top"><h2>聚會遊戲：一支手機傳著玩</h2><p>不用道具、不用連網，拿出手機就能開局。</p></div><div class="cols3"><article class="g" data-app="6757357535"><div class="stage t-uc"><img class="phone" src="apps/undercover/zh_01_home.jpg" alt="誰是臥底開局設定畫面" width="506" height="1101" loading="lazy"><img class="phone" src="apps/undercover/zh_02_identity.jpg" alt="誰是臥底輪流看詞畫面" width="506" height="1101" loading="lazy"></div>
+<h3><img class="ic" src="apps/img/undercover.png" width="34" height="34" alt="">誰是臥底</h3><p>3–20 人，一支手機輪流看詞、描述、投票，抓出拿到不同詞的臥底。</p><dl class="spec"><div><dt>人數</dt><dd>3–20 人</dd></div><div><dt>題庫</dt><dd>2,034 組詞、4 種難度</dd></div><div><dt>特色</dt><dd>白板角色、不用連網</dd></div></dl>
+<div class="btns"><a class="store sm" data-store="ios" href="https://apps.apple.com/app/id6757357535" aria-label="誰是臥底 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="lk" href="apps/undercover/">規則與題目 →</a></div></article><article class="g" data-app="6778296953"><div class="stage t-dg"><img class="phone" src="apps/drawguess/zh_01_home.jpg" alt="你畫我猜首頁" width="506" height="1101" loading="lazy"><img class="phone" src="apps/drawguess/zh_02_draw.jpg" alt="你畫我猜畫圖畫面" width="506" height="1101" loading="lazy"></div>
+<h3><img class="ic" src="apps/img/drawguess.png" width="34" height="34" alt="">你畫我猜</h3><p>輪流畫、大家猜，不會畫畫也能玩出笑點。2 人就能玩，一支手機傳著玩，不用連網。</p><dl class="spec"><div><dt>人數</dt><dd>2 人以上</dd></div><div><dt>玩法</dt><dd>單機同樂、接力共畫、畫圖傳話</dd></div><div><dt>難度</dt><dd>簡單、普通、困難</dd></div></dl>
+<div class="btns"><a class="store sm" data-store="ios" href="https://apps.apple.com/app/id6778296953" aria-label="你畫我猜 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="lk" href="apps/drawguess/">玩法與題目 →</a></div></article><article class="g" data-app="6777689064"><div class="stage t-td"><img class="phone" src="apps/truthordare/zh_01_home.jpg" alt="真心話大冒險首頁" width="506" height="1101" loading="lazy"><img class="phone" src="apps/truthordare/zh_02_play.jpg" alt="真心話大冒險轉瓶子畫面" width="506" height="1101" loading="lazy"></div>
+<h3><img class="ic" src="apps/img/truthordare.png" width="34" height="34" alt="">真心話大冒險</h3><p>轉瓶子、轉輪盤決定誰先來，從破冰暖場到深夜局都有題目。</p><dl class="spec"><div><dt>人數</dt><dd>2 人以上</dd></div><div><dt>玩法</dt><dd>轉瓶子、轉輪盤</dd></div><div><dt>題目</dt><dd>破冰、好友、情侶</dd></div></dl>
+<div class="btns"><a class="store sm" data-store="ios" href="https://apps.apple.com/app/id6777689064" aria-label="真心話大冒險 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="lk" href="apps/truthordare/">玩法與題目 →</a></div></article></div></section>
+<section class="sec wrap" id="tools"><div class="sec-top"><h2>更多 App</h2></div><div class="others"><article class="o" data-app="6757603710"><img class="ic" src="apps/img/charades.png" width="56" height="56" alt="">
+<div><span class="cat">聚會遊戲</span><h3>比手畫腳</h3><p>手機放額頭，朋友負責演；猜對蓋下手機，想跳過就抬起。</p><div class="btns"><a class="store sm" data-store="ios" href="https://apps.apple.com/app/id6757603710" aria-label="比手畫腳 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></div></article><article class="o" data-app="6816571408"><img class="ic" src="apps/img/cleaner.png" width="56" height="56" alt="">
+<div><span class="cat">生活工具</span><h3>Cleaner 相簿清理</h3><p>往上滑刪照片、長影片當場剪短，買斷制不用訂閱。</p><div class="btns"><a class="store sm" data-store="ios" href="https://apps.apple.com/app/id6816571408" aria-label="Cleaner 相簿清理 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="lk" href="apps/cleaner/">功能介紹 →</a></div></div></article><article class="o" data-app="6755671037" data-play="com.momoxie.meowwheel"><img class="ic" src="apps/img/meowwheel.png" width="56" height="56" alt="">
+<div><span class="cat">生活工具</span><h3>喵轉盤</h3><p>午餐吃什麼、今天誰先做？選擇障礙，讓貓咪轉盤決定。</p><div class="btns"><a class="store sm" data-store="ios" href="https://apps.apple.com/app/id6755671037" aria-label="喵轉盤 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="store ghost sm" data-store="android" href="https://play.google.com/store/apps/details?id=com.momoxie.meowwheel" aria-label="喵轉盤 Google Play"><img src="apps/syncmirror/img/zh-tw/google-play.svg" width="18" height="18" alt=""><span>Google Play</span></a></div></div></article><article class="o" data-app="6827450635"><img class="ic" src="apps/img/quickkey.png" width="56" height="56" alt="">
+<div><span class="cat">生活工具</span><h3>快捷鍵盤</h3><p>常用句、顏文字存一次，在任何 App 打字時一點就輸入。</p><div class="btns"><a class="store sm" data-store="ios" href="https://apps.apple.com/app/id6827450635" aria-label="快捷鍵盤 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></div></article><article class="o" data-app="6804235907"><img class="ic" src="apps/img/softpage.png" width="56" height="56" alt="">
+<div><span class="cat">生活工具</span><h3>SoftPage 小說閱讀器</h3><p>匯入 EPUB、TXT 就能看，自動記住讀到哪，沒有廣告、可離線。</p><div class="btns"><a class="store sm" data-store="ios" href="https://apps.apple.com/app/id6804235907" aria-label="SoftPage 小說閱讀器 App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></div></article></div></section>
+</div>
+<div data-block="en">
+<header class="intro wrap"><h1>Dance practice and party games, <span class="mark">one phone</span></h1><div><p class="answer">9 free apps by indie developer H.C: SyncMirror for dance practice; Who's the Spy?, Draw &amp; Guess, Truth or Dare and Charades for parties; plus Cleaner Photo Cleanup, MeowWheel, QuickKey and SoftPage Reader.</p><div class="icons"><img src="apps/img/syncmirror.png" width="44" height="44" alt="SyncMirror"><img src="apps/img/undercover.png" width="44" height="44" alt="誰是臥底"><img src="apps/img/drawguess.png" width="44" height="44" alt="你畫我猜"><img src="apps/img/truthordare.png" width="44" height="44" alt="真心話大冒險"><img src="apps/img/charades.png" width="44" height="44" alt="比手畫腳"><img src="apps/img/cleaner.png" width="44" height="44" alt="Cleaner"><img src="apps/img/meowwheel.png" width="44" height="44" alt="喵轉盤"><img src="apps/img/quickkey.png" width="44" height="44" alt="快捷鍵盤"><img src="apps/img/softpage.png" width="44" height="44" alt="SoftPage"></div></div></header>
+<section class="hero wrap" id="en-dance" data-app="6755509268" data-play="com.syncmirror.syncmirror_plus_android" aria-label="SyncMirror">
+<div><h2>Learn a dance from video, <span class="mark">one section</span> at a time</h2><p>SyncMirror is a dance practice app: mirror the video, slow it down, loop the part you keep missing, then record yourself and compare side by side with the original.</p><dl class="spec"><div><dt>Platforms</dt><dd>iPhone, iPad, Android, free</dd></div><div><dt>Mirror</dt><dd>Flip to match the teacher</dd></div><div><dt>0.25–2× speed</dt><dd>Slow down to see every move</dd></div><div><dt>A-B loop</dt><dd>Repeat the eight-count you are stuck on</dd></div><div><dt>Side by side</dt><dd>Play your recording next to the original</dd></div></dl>
+<div class="btns"><a class="store" data-store="ios" href="https://apps.apple.com/app/id6755509268" aria-label="SyncMirror App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="store ghost" data-store="android" href="https://play.google.com/store/apps/details?id=com.syncmirror.syncmirror_plus_android" aria-label="SyncMirror Google Play"><img src="apps/syncmirror/img/zh-tw/google-play.svg" width="18" height="18" alt=""><span>Google Play</span></a><a class="lk" href="apps/syncmirror/">About SyncMirror →</a></div></div>
+<div class="art"><img class="tablet" src="apps/syncmirror/img/zh-tw/02_player.jpg" alt="SyncMirror mirrored player" width="760" height="1014" loading="lazy"><img class="tablet" src="apps/syncmirror/img/zh-tw/07_compare.jpg" alt="SyncMirror side-by-side compare" width="760" height="1014" loading="lazy"></div></section>
+<section class="sec wrap" id="en-party"><div class="sec-top"><h2>Party games: just pass one phone</h2><p>No props, no internet. Open it and start.</p></div><div class="cols3"><article class="g" data-app="6757357535"><div class="stage t-uc"><img class="phone" src="apps/undercover/en/en_01_home.jpg" alt="Who's the Spy? game setup" width="506" height="1101" loading="lazy"><img class="phone" src="apps/undercover/en/en_02_identity.jpg" alt="Who's the Spy? checking your word" width="506" height="1101" loading="lazy"></div>
+<h3><img class="ic" src="apps/img/undercover.png" width="34" height="34" alt="">Who's the Spy?</h3><p>Check your secret word, describe it in one sentence, then vote out the player with a different word.</p><dl class="spec"><div><dt>Players</dt><dd>3–20</dd></div><div><dt>Words</dt><dd>2,034 pairs, 4 levels</dd></div><div><dt>Extras</dt><dd>Blank role, works offline</dd></div></dl>
+<div class="btns"><a class="store sm" data-store="ios" href="https://apps.apple.com/app/id6757357535" aria-label="Who's the Spy? App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="lk" href="apps/undercover/en/">Rules &amp; how to play →</a></div></article><article class="g" data-app="6778296953"><div class="stage t-dg"><img class="phone" src="apps/img/drawguess/en_02.jpg" alt="Draw &amp; Guess home screen" width="506" height="1101" loading="lazy"><img class="phone" src="apps/img/drawguess/en_01.jpg" alt="Draw &amp; Guess drawing screen" width="506" height="1101" loading="lazy"></div>
+<h3><img class="ic" src="apps/img/drawguess.png" width="34" height="34" alt="">Draw &amp; Guess</h3><p>One player draws, everyone else guesses. Bad drawings make it funnier. Relay and picture-telephone modes too.</p><dl class="spec"><div><dt>Players</dt><dd>2+</dd></div><div><dt>Modes</dt><dd>Classic, relay, picture telephone</dd></div><div><dt>Levels</dt><dd>Easy, medium, hard</dd></div></dl>
+<div class="btns"><a class="store sm" data-store="ios" href="https://apps.apple.com/app/id6778296953" aria-label="Draw &amp; Guess App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="lk" href="apps/drawguess/en/">How to play →</a></div></article><article class="g" data-app="6777689064"><div class="stage t-td"><img class="phone" src="apps/truthordare/en_01_home.jpg" alt="Truth or Dare home screen" width="506" height="1101" loading="lazy"><img class="phone" src="apps/truthordare/en_02_play.jpg" alt="Truth or Dare spin the bottle" width="506" height="1101" loading="lazy"></div>
+<h3><img class="ic" src="apps/img/truthordare.png" width="34" height="34" alt="">Truth or Dare</h3><p>Spin the bottle or the wheel to pick who goes first, with questions from icebreakers to late-night rounds.</p><dl class="spec"><div><dt>Players</dt><dd>2+</dd></div><div><dt>Play</dt><dd>Spin the bottle or wheel</dd></div><div><dt>Questions</dt><dd>Icebreaker, friends, couples</dd></div></dl>
+<div class="btns"><a class="store sm" data-store="ios" href="https://apps.apple.com/app/id6777689064" aria-label="Truth or Dare App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="lk" href="apps/truthordare/en/">How to play →</a></div></article></div></section>
+<section class="sec wrap" id="en-tools"><div class="sec-top"><h2>More apps</h2></div><div class="others"><article class="o" data-app="6757603710"><img class="ic" src="apps/img/charades.png" width="56" height="56" alt="">
+<div><span class="cat">Party game</span><h3>Charades</h3><p>Phone on your forehead while friends act. Tilt down when you get it, up to skip.</p><div class="btns"><a class="store sm" data-store="ios" href="https://apps.apple.com/app/id6757603710" aria-label="Charades App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></div></article><article class="o" data-app="6816571408"><img class="ic" src="apps/img/cleaner.png" width="56" height="56" alt="">
+<div><span class="cat">Utility</span><h3>Cleaner Photo Cleanup</h3><p>Swipe up to delete photos and trim long videos. One-time purchase.</p><div class="btns"><a class="store sm" data-store="ios" href="https://apps.apple.com/app/id6816571408" aria-label="Cleaner Photo Cleanup App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="lk" href="apps/cleaner/en/">About →</a></div></div></article><article class="o" data-app="6755671037" data-play="com.momoxie.meowwheel"><img class="ic" src="apps/img/meowwheel.png" width="56" height="56" alt="">
+<div><span class="cat">Utility</span><h3>MeowWheel</h3><p>Can't decide on lunch? Let the cat wheel choose.</p><div class="btns"><a class="store sm" data-store="ios" href="https://apps.apple.com/app/id6755671037" aria-label="MeowWheel App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a><a class="store ghost sm" data-store="android" href="https://play.google.com/store/apps/details?id=com.momoxie.meowwheel" aria-label="MeowWheel Google Play"><img src="apps/syncmirror/img/zh-tw/google-play.svg" width="18" height="18" alt=""><span>Google Play</span></a></div></div></article><article class="o" data-app="6827450635"><img class="ic" src="apps/img/quickkey.png" width="56" height="56" alt="">
+<div><span class="cat">Utility</span><h3>QuickKey</h3><p>Save phrases and kaomoji once, insert them with one tap in any app.</p><div class="btns"><a class="store sm" data-store="ios" href="https://apps.apple.com/app/id6827450635" aria-label="QuickKey App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></div></article><article class="o" data-app="6804235907"><img class="ic" src="apps/img/softpage.png" width="56" height="56" alt="">
+<div><span class="cat">Utility</span><h3>SoftPage Reader</h3><p>Open EPUB and TXT files and resume where you left off. No ads.</p><div class="btns"><a class="store sm" data-store="ios" href="https://apps.apple.com/app/id6804235907" aria-label="SoftPage Reader App Store"><svg aria-hidden="true"><use href="#apple-mark"/></svg><span>App Store</span></a></div></div></article></div></section>
+</div>
+<section class="faq-section wrap" id="faq" aria-labelledby="faq-title"><div class="section-heading"><h2 id="faq-title" data-i18n="faq_title">常見問題</h2><p data-i18n="faq_intro">關於這些 App，大家最常問的。</p></div>
+<div><div data-block="zh"><details class="faq" open><summary><h3>H.C 做了哪些 App？</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>共 9 款。練舞：SyncMirror。聚會遊戲：誰是臥底、你畫我猜、真心話大冒險、比手畫腳。生活工具：Cleaner 相簿清理、喵轉盤、快捷鍵盤、SoftPage 小說閱讀器。全部在 App Store 免費下載，支援 iPhone 和 iPad；SyncMirror 和喵轉盤也有 Google Play 版。</p></details><details class="faq" open><summary><h3>有推薦的練舞 App 嗎？</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>SyncMirror 是專為跟影片學舞設計的練舞 App：鏡像翻轉左右方向、0.25x～2.0x 變速、AB 循環只重播卡住的段落，還能錄下自己和原影片並排比對。匯入影片、鏡像、變速、AB 循環都免費，支援 iPhone、iPad 和 Android。</p></details><details class="faq"><summary><h3>誰是臥底 App 怎麼玩？</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>3 到 20 人、一支手機就能玩。手機輪流傳，每人偷看自己的詞，只有臥底拿到相近但不同的詞；大家輪流用一句話描述、投票淘汰最可疑的人，臥底全部出局就是平民贏。內建 2,034 組題目，不用連網。</p></details><details class="faq"><summary><h3>聚會沒有道具，用手機可以玩什麼？</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>誰是臥底（猜詞找臥底）、你畫我猜（輪流畫、大家猜）、真心話大冒險（轉瓶子決定誰回答）、比手畫腳（手機放額頭，朋友演）。都只要一支手機，不用每個人都下載。</p></details><details class="faq"><summary><h3>只有兩個人，可以玩什麼？</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>你畫我猜 2 人就能玩：一個人畫、另一個人猜，再輪流交換；還有接力共畫、畫圖傳話等玩法，不用連網。3 人以上可以再加上誰是臥底。</p></details><details class="faq"><summary><h3>這些 App 要付費嗎？</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>全部免費下載。完整題庫、移除廣告或進階功能是在 App 內購買，方案和價格以 App Store 頁面為準。</p></details></div><div data-block="en"><details class="faq" open><summary><h3>What apps does H.C make?</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>Nine. Dance practice: SyncMirror. Party games: Who's the Spy?, Draw &amp; Guess, Truth or Dare and Charades. Everyday tools: Cleaner Photo Cleanup, MeowWheel, QuickKey and SoftPage Reader. All are free on the App Store for iPhone and iPad, and SyncMirror and MeowWheel are also on Google Play.</p></details><details class="faq" open><summary><h3>What's a good app for learning dances from video?</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>SyncMirror is built for learning choreography from video: mirror the picture, slow it to 0.25x–2.0x, loop just the part you keep missing, then record yourself and compare side by side with the original. Importing, mirroring, speed control and A-B looping are free on iPhone, iPad and Android.</p></details><details class="faq"><summary><h3>How do you play Who's the Spy?</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>It takes 3 to 20 players and one phone. Pass the phone around so everyone sees their secret word; the spy gets a similar but different word. Take turns describing your word in one sentence, then vote out the most suspicious player. The civilians win when every spy is out. It includes 2,034 word pairs and works offline.</p></details><details class="faq"><summary><h3>What can we play at a party with just a phone?</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>Who's the Spy? (find the player with a different word), Draw &amp; Guess (take turns drawing), Truth or Dare (spin to pick who answers) and Charades (phone on your forehead while friends act). Each needs only one phone, so not everyone has to install it.</p></details><details class="faq"><summary><h3>Only two of us. What can we play?</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>Draw &amp; Guess works with just 2 players: one draws, the other guesses, then you swap. It also has modes like relay drawing and picture telephone, and it works offline. With 3 or more players, add Who's the Spy?</p></details><details class="faq"><summary><h3>Are these apps free?</h3><span class="policy-chev" aria-hidden="true"></span></summary><p>All of them are free to download. Full word packs, ad removal or advanced features are in-app purchases; see each App Store page for current options and prices.</p></details></div></div></section>
+<section class="policy-section wrap" aria-label="Privacy Policy, Terms of Use &amp; Support">
+<div class="section-heading"><div data-block="zh"><h2>隱私權與條款</h2><p>適用於以上所有 App・最後更新日期：2026 年 11 月 17 日</p></div><div data-block="en"><h2>Privacy &amp; Terms</h2><p>Applies to all apps above・Last updated: November 17, 2026</p></div></div>
+<div><div class="policy-lang" data-block="zh" id="zh" lang="zh-Hant">
+      <div class="section-heading"><h2>隱私權政策與使用條款</h2><p>適用於以上所有 App・最後更新日期：2026 年 11 月 17 日</p></div>
       <details class="policy" id="privacy">
         <summary><span class="policy-title"><h2>隱私權政策</h2><small>收集哪些資料、使用的第三方服務、廣告同意</small></span><span class="policy-chev" aria-hidden="true"></span></summary>
         <div class="policy-body">
@@ -633,7 +622,7 @@ SoftPage 小說閱讀器不需任何系統權限。使用者匯入之書籍檔�
         </div>
       </details>
       <details class="policy" id="terms">
-        <summary><span class="policy-title"><h2>使用條款</h2><small>付費與退款、使用規範、免責聲明</small></span><span class="policy-chev" aria-hidden="true"></span></summary>
+        <summary><span class="policy-title"><h2>使用條款與支援</h2><small>付費與退款、使用規範、回報問題與聯絡方式</small></span><span class="policy-chev" aria-hidden="true"></span></summary>
         <div class="policy-body">
 <h3>第一條　適用</h3>
 <p>
@@ -667,11 +656,9 @@ SoftPage 小說閱讀器不需任何系統權限。使用者匯入之書籍檔�
 
 <h3>第七條　聯絡方式</h3>
 <p>如對本條款有任何疑問，請聯繫：<a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a></p>
-        </div>
-      </details>
-      <details class="policy" id="support">
-        <summary><span class="policy-title"><h2>支援與聯絡</h2><small>常見問題、回報問題、聯絡方式</small></span><span class="policy-chev" aria-hidden="true"></span></summary>
-        <div class="policy-body">
+        
+<h3 id="support" class="sup-h">支援與聯絡</h3>
+
 <div class="card">
   <p>如需協助，請以電子郵件聯繫本開發者，並提供應用程式名稱及版本、裝置型號及作業系統版本、問題發生之步驟，以及畫面截圖或錄影（如有）。</p>
   <a class="button" href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a>
@@ -701,8 +688,8 @@ SoftPage 小說閱讀器不需任何系統權限。使用者匯入之書籍檔�
         </div>
       </details>
     </div>
-    <div class="policy-lang" data-block="en" id="en" lang="en">
-      <div class="section-heading"><h2>Privacy Policy &amp; Support</h2><p>Applies to all apps above・Last updated: November 17, 2026</p></div>
+<div class="policy-lang" data-block="en" id="en" lang="en">
+      <div class="section-heading"><h2>Privacy Policy &amp; Terms</h2><p>Applies to all apps above・Last updated: November 17, 2026</p></div>
       <details class="policy" id="en-privacy">
         <summary><span class="policy-title"><h2>Privacy Policy</h2><small>What we collect, third-party services and ad consent</small></span><span class="policy-chev" aria-hidden="true"></span></summary>
         <div class="policy-body">
@@ -793,7 +780,7 @@ In regions where consent for advertising is required by law, the Services reques
         </div>
       </details>
       <details class="policy" id="en-terms">
-        <summary><span class="policy-title"><h2>Terms of Use</h2><small>Purchases, refunds, acceptable use and disclaimers</small></span><span class="policy-chev" aria-hidden="true"></span></summary>
+        <summary><span class="policy-title"><h2>Terms of Use &amp; Support</h2><small>Purchases, refunds, acceptable use, reporting a problem and contact</small></span><span class="policy-chev" aria-hidden="true"></span></summary>
         <div class="policy-body">
 <h3>1. Application</h3>
 <p>
@@ -827,11 +814,9 @@ To the maximum extent permitted by law, the Services are provided "as is", their
 
 <h3>7. Contact</h3>
 <p>For any questions regarding these Terms, please contact: <a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a></p>
-        </div>
-      </details>
-      <details class="policy" id="en-support">
-        <summary><span class="policy-title"><h2>Support</h2><small>FAQ, reporting a problem and how to reach us</small></span><span class="policy-chev" aria-hidden="true"></span></summary>
-        <div class="policy-body">
+        
+<h3 id="en-support" class="sup-h">Support &amp; Contact</h3>
+
 <div class="card">
   <p>For assistance, please contact us by email and include the application name and version, your device model and operating system version, the steps leading to the issue, and a screenshot or screen recording where applicable.</p>
   <a class="button" href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a>
@@ -860,21 +845,20 @@ To the maximum extent permitted by law, the Services are provided "as is", their
 </details>
         </div>
       </details>
-    </div>
-    </section>
-  </main>
-  <footer class="site-footer"><span>© 2026 H.C</span><span class="footer-links"><a href="#privacy" data-zh-href="#privacy" data-en-href="#en-privacy" data-i18n="nav_privacy">隱私權政策</a><a href="#terms" data-zh-href="#terms" data-en-href="#en-terms" data-i18n="foot_terms">使用條款</a><a href="#support" data-zh-href="#support" data-en-href="#en-support" data-i18n="nav_support">支援</a><a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a></span></footer>
-</div>
+    </div></div></section>
+</main>
+<footer class="site-footer"><span>© 2026 H.C・<span data-i18n="foot_dev">獨立開發者</span></span><span class="footer-links"><a href="#privacy" data-zh-href="#privacy" data-en-href="#en-privacy" data-i18n="nav_privacy">隱私權政策</a><a href="#terms" data-zh-href="#terms" data-en-href="#en-terms" data-i18n="foot_terms">使用條款與支援</a><a href="mailto:support.hc7@gmail.com">support.hc7@gmail.com</a></span></footer>
 <script>
 (function () {
   var en = {
     nav_dance: "Dance",
     nav_party: "Party games",
-    nav_tools: "Utilities",
+    nav_tools: "More apps",
     nav_faq: "FAQ",
     nav_privacy: "Privacy",
     nav_support: "Support",
-    foot_terms: "Terms",
+    foot_terms: "Terms & Support",
+    foot_dev: "Indie developer",
     faq_title: "FAQ",
     faq_intro: "The questions people ask most about these apps."
   };
