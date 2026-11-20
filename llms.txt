@@ -22,6 +22,8 @@
 
 - [自學跳舞怎麼練？跟著影片學舞的 6 個步驟](https://momoxie0202.github.io/apps/syncmirror/zh-tw/#practice-guide)：鏡像、0.5 倍速拆八拍、AB 循環、錄影並排比對，附一週練習菜單。
 - [誰是臥底題目 30 組](https://momoxie0202.github.io/apps/undercover/#words)：簡單、中等、困難、地獄四種難度，附人數與臥底配置。
+- [你畫我猜玩法與題目](https://momoxie0202.github.io/apps/drawguess/)：一人畫、大家猜，7 種玩法含傳話遊戲，600 多個題目分簡單、普通、困難，附題目範例。英文：https://momoxie0202.github.io/apps/drawguess/en/
+- [真心話大冒險玩法與題目](https://momoxie0202.github.io/apps/truthordare/)：轉瓶子、命運轉盤、快速抽牌選人，2,000 多題真心話與大冒險，附題目範例與挑題訣竅。英文：https://momoxie0202.github.io/apps/truthordare/en/
 
 ## 政策與支援
 
