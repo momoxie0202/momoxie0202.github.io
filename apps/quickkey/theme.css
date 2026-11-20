@@ -1,0 +1,4 @@
+/* quickkey 品牌色（版型在 ../app.css） */
+:root{--bg:#f5f7fc;--ink:#141c33;--soft:#3d465c;--mute:#636c83;--line:#dfe4f0;--accent:#2853c7;--panel:#e3eaff;--btn:#2853c7;--btnt:#ffffff;--f:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",system-ui,sans-serif;--hf:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",system-ui,sans-serif;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0f1424;--ink:#e9edf8;--soft:#b6bfd4;--mute:#8a94ab;--line:#252e45;--accent:#8fa8ff;--panel:#1a2238;--btn:#8fa8ff;--btnt:#0f1424}}
+:root[data-theme=dark]{--bg:#0f1424;--ink:#e9edf8;--soft:#b6bfd4;--mute:#8a94ab;--line:#252e45;--accent:#8fa8ff;--panel:#1a2238;--btn:#8fa8ff;--btnt:#0f1424}

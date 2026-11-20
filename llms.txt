@@ -10,12 +10,12 @@
 
 ## 其他 App
 
-- [你畫我猜](https://apps.apple.com/app/id6778296953)：輪流畫、大家猜，2 人就能玩，一支手機傳著玩、不用連網。有單機同樂、接力共畫、畫圖傳話等玩法，題目分簡單、普通、困難三種難度。
-- [真心話大冒險](https://apps.apple.com/app/id6777689064)：轉瓶子、轉輪盤決定誰先來。
+- [你畫我猜](https://momoxie0202.github.io/apps/drawguess/)：輪流畫、大家猜，2 人就能玩，一支手機傳著玩、不用連網。有單機同樂、接力共畫、畫圖傳話等玩法，題目分簡單、普通、困難三種難度。
+- [真心話大冒險](https://momoxie0202.github.io/apps/truthordare/)：轉瓶子、轉輪盤決定誰先來。
 - [Cleaner 相簿清理](https://momoxie0202.github.io/apps/cleaner/)：往上滑刪照片、長影片當場剪短，買斷制。
 - [比手畫腳](https://apps.apple.com/app/id6757603710)：手機放額頭，朋友負責演。
 - [喵轉盤](https://apps.apple.com/app/id6755671037)：選擇障礙時用貓咪轉盤決定。iPhone、Android。
-- [快捷鍵盤](https://apps.apple.com/app/id6827450635)：常用句、顏文字存一次，任何 App 一點就輸入。
+- [快捷鍵盤](https://momoxie0202.github.io/apps/quickkey/)：常用句、顏文字存一次，任何 App 一點就輸入。
 - [SoftPage 小說閱讀器](https://apps.apple.com/app/id6804235907)：匯入 EPUB、TXT 閱讀，無廣告、可離線。
 
 ## 教學（在各 App 介紹頁內）

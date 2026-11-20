@@ -1,0 +1,4 @@
+/* cleaner 品牌色（版型在 ../app.css） */
+:root{--bg:#f5f5f7;--ink:#1d1d1f;--soft:#3f3f44;--mute:#6e6e73;--line:#e2e2e7;--accent:#9a7300;--panel:#e9e9ee;--btn:#1d1d1f;--btnt:#f5f5f7;--f:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",system-ui,sans-serif;--hf:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",system-ui,sans-serif;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a0a0a;--ink:#ffffff;--soft:#c7c7cc;--mute:#a1a1a6;--line:#2c2c2e;--accent:#ffd60a;--panel:#1c1c1e;--btn:#ffd60a;--btnt:#0a0a0a}}
+:root[data-theme=dark]{--bg:#0a0a0a;--ink:#ffffff;--soft:#c7c7cc;--mute:#a1a1a6;--line:#2c2c2e;--accent:#ffd60a;--panel:#1c1c1e;--btn:#ffd60a;--btnt:#0a0a0a}
