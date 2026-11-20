@@ -1,0 +1,4 @@
+/* meowwheel 品牌色（版型在 ../app.css） */
+:root{--bg:#f6f4f1;--ink:#1e2a33;--soft:#45525c;--mute:#68737b;--line:#e2ddd6;--accent:#274255;--panel:#e8e2da;--btn:#274255;--btnt:#ffffff;--f:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",system-ui,sans-serif;--hf:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",system-ui,sans-serif;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#141a1f;--ink:#ebeff2;--soft:#bcc6cd;--mute:#8d99a2;--line:#28323a;--accent:#9cc0d6;--panel:#1d262d;--btn:#9cc0d6;--btnt:#141a1f}}
+:root[data-theme=dark]{--bg:#141a1f;--ink:#ebeff2;--soft:#bcc6cd;--mute:#8d99a2;--line:#28323a;--accent:#9cc0d6;--panel:#1d262d;--btn:#9cc0d6;--btnt:#141a1f}

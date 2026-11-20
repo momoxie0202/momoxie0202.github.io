@@ -1,0 +1,4 @@
+/* softpage 品牌色（版型在 ../app.css） */
+:root{--bg:#f7f3ec;--ink:#211b16;--soft:#4f463d;--mute:#756b5e;--line:#e6ddcf;--accent:#2c6f67;--panel:#efe8dc;--btn:#2c6f67;--btnt:#ffffff;--f:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",system-ui,sans-serif;--hf:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",system-ui,sans-serif;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161514;--ink:#eee8dd;--soft:#c9c1b5;--mute:#aca59a;--line:#2c2a27;--accent:#80b6aa;--panel:#202322;--btn:#80b6aa;--btnt:#161514}}
+:root[data-theme=dark]{--bg:#161514;--ink:#eee8dd;--soft:#c9c1b5;--mute:#aca59a;--line:#2c2a27;--accent:#80b6aa;--panel:#202322;--btn:#80b6aa;--btnt:#161514}

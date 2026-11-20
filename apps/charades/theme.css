@@ -1,0 +1,9 @@
+/* charades 品牌色（版型在 ../app.css） */
+:root{--bg:#fff7f0;--ink:#2a1a10;--soft:#5a4334;--mute:#7a6252;--line:#f0dccb;--accent:#c2410c;--panel:#ffe7d4;--btn:#c2410c;--btnt:#ffffff;--f:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",system-ui,sans-serif;--hf:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC",system-ui,sans-serif;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#1c1410;--ink:#f6ebe2;--soft:#d4c0b2;--mute:#a8907f;--line:#3a2a20;--accent:#ff9a5c;--panel:#2b1d15;--btn:#ff9a5c;--btnt:#1c1410}}
+:root[data-theme=dark]{--bg:#1c1410;--ink:#f6ebe2;--soft:#d4c0b2;--mute:#a8907f;--line:#3a2a20;--accent:#ff9a5c;--panel:#2b1d15;--btn:#ff9a5c;--btnt:#1c1410}
+/* 比手畫腳是橫向畫面：兩張一列，手機上橫向滑 */
+.rail.wide{flex-wrap:wrap}
+.rail.wide img{width:min(48%,420px);border-radius:16px}
+.rail.wide img:nth-child(2){margin-top:0}
+@media (max-width:860px){.rail.wide{flex-wrap:nowrap}.rail.wide img{flex:0 0 86%;width:86%}}

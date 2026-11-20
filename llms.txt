@@ -1,5 +1,7 @@
 # H.C 的 App（Apps by H.C）
 
+英文首頁：https://momoxie0202.github.io/en/
+
 > H.C 是獨立 App 開發者，做了 9 款 iPhone、iPad App，全部免費下載。主打練舞 App SyncMirror 與派對遊戲「誰是臥底」。SyncMirror 和喵轉盤也有 Android 版。
 > H.C is an indie developer of 9 free iPhone and iPad apps, led by the dance practice app SyncMirror and the party game Who's the Spy?.
 
@@ -13,10 +15,10 @@
 - [你畫我猜](https://momoxie0202.github.io/apps/drawguess/)：輪流畫、大家猜，2 人就能玩，一支手機傳著玩、不用連網。有單機同樂、接力共畫、畫圖傳話等玩法，題目分簡單、普通、困難三種難度。
 - [真心話大冒險](https://momoxie0202.github.io/apps/truthordare/)：轉瓶子、轉輪盤決定誰先來。
 - [Cleaner 相簿清理](https://momoxie0202.github.io/apps/cleaner/)：往上滑刪照片、長影片當場剪短，買斷制。
-- [比手畫腳](https://apps.apple.com/app/id6757603710)：手機放額頭，朋友負責演。
-- [喵轉盤](https://apps.apple.com/app/id6755671037)：選擇障礙時用貓咪轉盤決定。iPhone、Android。
+- [比手畫腳](https://momoxie0202.github.io/apps/charades/)：手機放額頭，朋友負責演；猜對往下蓋、跳過往上抬。超過 2,000 題、12 類，經典、限時、生存三種模式。英文：https://momoxie0202.github.io/apps/charades/en/
+- [喵轉盤](https://momoxie0202.github.io/apps/meowwheel/)：中午吃什麼、去哪裡玩，點貓掌轉一圈決定。可建多個轉盤，iPhone、Apple Watch、Android。英文：https://momoxie0202.github.io/apps/meowwheel/en/
 - [快捷鍵盤](https://momoxie0202.github.io/apps/quickkey/)：常用句、顏文字存一次，任何 App 一點就輸入。
-- [SoftPage 小說閱讀器](https://apps.apple.com/app/id6804235907)：匯入 EPUB、TXT 閱讀，無廣告、可離線。
+- [SoftPage 小說閱讀器](https://momoxie0202.github.io/apps/softpage/)：從「檔案」匯入 EPUB、TXT 閱讀，自動分章、記住讀到哪，簡體可轉繁體，無廣告。iPhone、iPad。英文：https://momoxie0202.github.io/apps/softpage/en/
 
 ## 教學（在各 App 介紹頁內）
 

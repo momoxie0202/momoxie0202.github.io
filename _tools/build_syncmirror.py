@@ -50,7 +50,7 @@ FONT_FAMILY = {
 T = {}
 
 T[""] = dict(
-    title="SyncMirror – K-pop Dance Practice App: Mirror, Slow-Mo AB Loop, Record & Compare",
+    title="SyncMirror: K-pop Dance Practice App, Mirror and Slow-Mo",
     desc="Practice dance covers on iPhone and Android: mirror the video, slow it down to 0.25x, loop the hard part, then record yourself and compare side by side with the original.",
     keywords="dance practice app, kpop dance practice, dance cover, mirror video, flip video, slow motion dance, AB loop, compare dance video side by side, choreography practice",
     og_title="SyncMirror – Mirror, slow down, loop, record and compare your dance",
@@ -427,6 +427,17 @@ def build(slug, lang, hreflang, menu_name):
             for q, a in t["faqs"]
         ],
     }
+    # HowTo 照頁面上看得到的「使用方式」三步驟（結構化資料要和可見內容一致）
+    how_ld = {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": t["how_title"],
+        "inLanguage": hreflang,
+        "step": [
+            {"@type": "HowToStep", "position": i + 1, "name": a, "text": b}
+            for i, (a, b) in enumerate(t["steps"])
+        ],
+    }
     ld = lambda o: json.dumps(o, ensure_ascii=False, indent=2).replace("</", "<\\/")
 
     menu = "\n".join(
@@ -469,6 +480,14 @@ def build(slug, lang, hreflang, menu_name):
 
     legal_anchor = "" if slug in ("zh-tw/", "zh-hk/") else "en-"
     support_label = {"": "Support", "zh-tw/": "支援", "zh-hk/": "支援", "ko/": "지원", "ja/": "サポート"}[slug]
+    # 回到開發者的 App 清單（站內連結）；中文首頁在 /，其他語言用英文首頁 /en/
+    home_href, home_label = {
+        "": ("/en/", "All apps by H.C"),
+        "zh-tw/": ("/", "H.C 的所有 App"),
+        "zh-hk/": ("/", "H.C 的所有 App"),
+        "ko/": ("/en/", "H.C의 다른 앱"),
+        "ja/": ("/en/", "H.C のほかのアプリ"),
+    }[slug]
     return f'''<!DOCTYPE html>
 <html lang="{lang}">
 <head>
@@ -510,6 +529,9 @@ def build(slug, lang, hreflang, menu_name):
   </script>
   <script type="application/ld+json">
 {ld(faq_ld)}
+  </script>
+  <script type="application/ld+json">
+{ld(how_ld)}
   </script>
 </head>
 <body>
@@ -619,6 +641,7 @@ def build(slug, lang, hreflang, menu_name):
     <div class="container footer-inner">
       <div class="footer-left">&copy; 2026 SyncMirror</div>
       <nav class="footer-links" aria-label="Footer">
+        <a href="{home_href}">{e(home_label)}</a>
         <a href="https://momoxie0202.github.io/#{legal_anchor}privacy">{e(t["privacy"])}</a>
         <a href="https://momoxie0202.github.io/#{legal_anchor}terms">{e(t["terms"])}</a>
         <a href="https://momoxie0202.github.io/#{legal_anchor}support">{e(support_label)}</a>
@@ -663,7 +686,10 @@ def build(slug, lang, hreflang, menu_name):
 
 def main():
     for slug, lang, hreflang, name in LOCALES:
-        out = ROOT / "apps" / "syncmirror" / slug / "index.html"
+        if slug == "zh-tw/":
+            # 台灣版 2026-10 改版後直接改 HTML（多了實際畫面、練舞教學），不再由這支產生，重跑會蓋掉
+            continue
+        out =ROOT / "apps" / "syncmirror" / slug / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(build(slug, lang, hreflang, name), encoding="utf-8")
         print("wrote", out.relative_to(ROOT))
